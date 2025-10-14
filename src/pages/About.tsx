@@ -78,19 +78,12 @@ export default function About() {
 
   const stats = [
     { icon: Users, value: '50+', label: 'Team Members' },
-    { icon: Award, value: '100+', label: 'Awards Won' },
+    { icon: Award, value: '100+', label: 'Happy customer' },
     { icon: TrendingUp, value: '500+', label: 'Projects Delivered' },
     { icon: Zap, value: '10+', label: 'Years Experience' }
   ];
 
-  const milestones = [
-    { year: '2014', title: 'Company Founded', description: 'Started with a vision to transform digital experiences' },
-    { year: '2016', title: 'Team Expansion', description: 'Grew to 20+ talented professionals' },
-    { year: '2018', title: 'International Reach', description: 'Expanded services to clients worldwide' },
-    { year: '2020', title: 'Innovation Award', description: 'Recognized for excellence in development' },
-    { year: '2023', title: '500+ Projects', description: 'Milestone of successful project deliveries' },
-    { year: '2025', title: 'Leading Agency', description: 'Established as top development company' }
-  ];
+
 
   return (
     <div className="min-h-screen bg-slate-950 text-white pt-20">
@@ -106,7 +99,7 @@ export default function About() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mt-3 mb-6">
               Building Digital Excellence
               <span className="block bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                Since 2014
+                Since 2025
               </span>
             </h1>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
@@ -189,83 +182,9 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              Meet Our <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Team</span>
-            </h2>
-            <p className="text-slate-400 text-lg">
-              Talented professionals dedicated to your success
-            </p>
-          </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <div
-                key={index}
-                className="group bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl overflow-hidden border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300 hover:transform hover:-translate-y-2"
-              >
-                <div className="aspect-square overflow-hidden">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-1">{member.name}</h3>
-                  <p className="text-cyan-400 text-sm mb-3">{member.role}</p>
-                  <p className="text-slate-400 text-sm">{member.bio}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      <section className="py-20 px-4 bg-slate-900/50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              Our <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Journey</span>
-            </h2>
-            <p className="text-slate-400 text-lg">
-              Key milestones in our growth story
-            </p>
-          </div>
 
-          <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-cyan-500 to-blue-600 hidden lg:block"></div>
-
-            <div className="space-y-12">
-              {milestones.map((milestone, index) => (
-                <div
-                  key={index}
-                  className={`flex flex-col lg:flex-row gap-8 items-center ${
-                    index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-                  }`}
-                >
-                  <div className={`flex-1 ${index % 2 === 0 ? 'lg:text-right' : 'lg:text-left'}`}>
-                    <div className="bg-gradient-to-br from-slate-900 to-slate-800 p-6 rounded-2xl border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300">
-                      <h3 className="text-2xl font-bold mb-2">{milestone.title}</h3>
-                      <p className="text-slate-400">{milestone.description}</p>
-                    </div>
-                  </div>
-
-                  <div className="relative flex items-center justify-center">
-                    <div className="w-20 h-20 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center font-bold text-lg z-10">
-                      {milestone.year}
-                    </div>
-                  </div>
-
-                  <div className="flex-1"></div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="py-20 px-4">
         <div className="max-w-5xl mx-auto">

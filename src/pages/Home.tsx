@@ -113,17 +113,58 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-20 animate-fade-in animation-delay-500">
-            {stats.map((stat, index) => (
-              <div
-                key={index}
-                className="bg-gradient-to-br from-slate-900 to-slate-800 p-6 rounded-2xl border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl hover:shadow-cyan-500/20"
-              >
-                <stat.icon className="w-8 h-8 text-cyan-400 mb-3" />
-                <div className="text-3xl font-bold mb-1">{stat.value}</div>
-                <div className="text-slate-400 text-sm">{stat.label}</div>
+
+        </div>
+      </section>
+
+      <section className="py-20 px-4 bg-slate-900/50">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <div>
+                <span className="text-cyan-400 font-semibold text-sm uppercase tracking-wider">About Us</span>
+                <h2 className="text-4xl sm:text-5xl font-bold mt-3 mb-6">
+                  Transforming Ideas Into
+                  <span className="block bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                    Digital Reality
+                  </span>
+                </h2>
+                <p className="text-xl text-slate-300 leading-relaxed mb-8">
+                  We are a leading software development agency specializing in creating innovative digital solutions that drive business growth. With years of experience and a team of expert developers, we transform complex ideas into user-friendly applications that deliver real results.
+                </p>
+                <p className="text-lg text-slate-400 leading-relaxed mb-8">
+                  Our mission is to empower businesses with cutting-edge technology, helping them stay ahead in the digital landscape. We believe in quality, innovation, and building long-term partnerships with our clients.
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  <div className="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 px-4 py-2 rounded-full border border-cyan-500/30">
+                    <span className="text-cyan-300 font-semibold">Innovation First</span>
+                  </div>
+                  <div className="bg-gradient-to-r from-emerald-500/20 to-teal-500/20 px-4 py-2 rounded-full border border-emerald-500/30">
+                    <span className="text-emerald-300 font-semibold">Quality Driven</span>
+                  </div>
+                  <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 px-4 py-2 rounded-full border border-purple-500/30">
+                    <span className="text-purple-300 font-semibold">Client Focused</span>
+                  </div>
+                </div>
               </div>
-            ))}
+            </div>
+
+            <div className="relative">
+              <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-3xl border border-slate-700/50 shadow-2xl overflow-hidden">
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl opacity-20 animate-pulse"></div>
+                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
+
+                <div className="w-full h-80 bg-gradient-to-br from-slate-700 to-slate-600 rounded-2xl flex items-center justify-center border-2 border-dashed border-slate-500/50">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-slate-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+                      <Code2 className="w-8 h-8 text-slate-400" />
+                    </div>
+                    <p className="text-slate-400 text-sm font-medium">About Image</p>
+                    <p className="text-slate-500 text-xs mt-1">Add your image here</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
