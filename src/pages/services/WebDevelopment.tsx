@@ -24,52 +24,7 @@ export default function WebDevelopment() {
     { name: 'Vue.js', icon: Code2 }
   ];
 
-  const packages = [
-    {
-      name: 'Starter',
-      price: '$2,999',
-      description: 'Perfect for small businesses and startups',
-      features: [
-        'Up to 5 pages',
-        'Responsive design',
-        'Basic SEO setup',
-        'Contact form',
-        '30 days support',
-        'Social media integration'
-      ]
-    },
-    {
-      name: 'Professional',
-      price: '$5,999',
-      description: 'Ideal for growing businesses',
-      features: [
-        'Up to 15 pages',
-        'Advanced animations',
-        'Advanced SEO optimization',
-        'CMS integration',
-        'E-commerce ready',
-        '90 days support',
-        'Analytics dashboard',
-        'Custom features'
-      ],
-      popular: true
-    },
-    {
-      name: 'Enterprise',
-      price: 'Custom',
-      description: 'For large-scale applications',
-      features: [
-        'Unlimited pages',
-        'Custom functionality',
-        'Advanced integrations',
-        'Performance optimization',
-        'Security audit',
-        '1 year support',
-        'Dedicated team',
-        'Priority updates'
-      ]
-    }
-  ];
+
 
   const process = [
     {
@@ -99,26 +54,7 @@ export default function WebDevelopment() {
     }
   ];
 
-  const portfolio = [
-    {
-      title: 'TechCorp Solutions',
-      category: 'Corporate Website',
-      image: 'https://images.pexels.com/photos/3182759/pexels-photo-3182759.jpeg?auto=compress&cs=tinysrgb&w=800',
-      stats: { pages: '12', time: '6 weeks', tech: 'Next.js' }
-    },
-    {
-      title: 'HealthPlus Medical',
-      category: 'Healthcare Portal',
-      image: 'https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?auto=compress&cs=tinysrgb&w=800',
-      stats: { pages: '20', time: '8 weeks', tech: 'React' }
-    },
-    {
-      title: 'EduLearn Platform',
-      category: 'E-Learning Website',
-      image: 'https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg?auto=compress&cs=tinysrgb&w=800',
-      stats: { pages: '25', time: '10 weeks', tech: 'Vue.js' }
-    }
-  ];
+
 
   return (
     <div className="min-h-screen bg-slate-950 text-white pt-20">
@@ -197,53 +133,7 @@ export default function WebDevelopment() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-slate-900/50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              Pricing <span className="bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent">Packages</span>
-            </h2>
-            <p className="text-slate-400 text-lg">Choose the perfect plan for your business needs</p>
-          </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {packages.map((pkg, idx) => (
-              <div key={idx} className={`relative bg-gradient-to-br from-slate-900 to-slate-800 p-8 rounded-3xl border transition-all duration-300 hover:transform hover:-translate-y-2 ${
-                pkg.popular ? 'border-emerald-500 shadow-xl shadow-emerald-500/20' : 'border-slate-700/50'
-              }`}>
-                {pkg.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-gradient-to-r from-emerald-500 to-teal-600 px-4 py-1 rounded-full text-sm font-semibold">
-                      Most Popular
-                    </span>
-                  </div>
-                )}
-                <h3 className="text-2xl font-bold mb-2">{pkg.name}</h3>
-                <div className="text-4xl font-bold text-emerald-400 mb-2">{pkg.price}</div>
-                <p className="text-slate-400 mb-6">{pkg.description}</p>
-                <ul className="space-y-3 mb-8">
-                  {pkg.features.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-2">
-                      <CheckCircle className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
-                      <span className="text-slate-300">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Link
-                  to="/contact"
-                  className={`block text-center py-3 rounded-full font-semibold transition-all duration-300 ${
-                    pkg.popular
-                      ? 'bg-gradient-to-r from-emerald-500 to-teal-600 hover:shadow-lg hover:shadow-emerald-500/50'
-                      : 'border-2 border-emerald-500/30 hover:bg-emerald-500/10'
-                  }`}
-                >
-                  Get Started
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
@@ -270,44 +160,7 @@ export default function WebDevelopment() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-slate-900/50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              Recent <span className="bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent">Projects</span>
-            </h2>
-            <p className="text-slate-400 text-lg">Successful websites we've built</p>
-          </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {portfolio.map((project, idx) => (
-              <div key={idx} className="group bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl overflow-hidden border border-slate-700/50 hover:border-emerald-500/50 transition-all duration-300 hover:transform hover:-translate-y-2">
-                <div className="aspect-video overflow-hidden">
-                  <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                </div>
-                <div className="p-6">
-                  <p className="text-emerald-400 text-sm mb-2">{project.category}</p>
-                  <h3 className="text-xl font-bold mb-4">{project.title}</h3>
-                  <div className="grid grid-cols-3 gap-4 text-center">
-                    <div>
-                      <div className="text-2xl font-bold text-emerald-400">{project.stats.pages}</div>
-                      <div className="text-xs text-slate-400">Pages</div>
-                    </div>
-                    <div>
-                      <div className="text-2xl font-bold text-emerald-400">{project.stats.time}</div>
-                      <div className="text-xs text-slate-400">Timeline</div>
-                    </div>
-                    <div>
-                      <div className="text-sm font-bold text-emerald-400">{project.stats.tech}</div>
-                      <div className="text-xs text-slate-400">Tech</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="py-20 px-4">
         <div className="max-w-5xl mx-auto">

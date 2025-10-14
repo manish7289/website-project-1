@@ -38,54 +38,7 @@ export default function Ecommerce() {
     }
   ];
 
-  const packages = [
-    {
-      name: 'Starter Store',
-      price: '$4,999',
-      description: 'Perfect for small online businesses',
-      features: [
-        'Up to 100 products',
-        'Basic theme customization',
-        'Payment gateway integration',
-        'Mobile responsive design',
-        'Product categories',
-        'Order management',
-        '60 days support'
-      ]
-    },
-    {
-      name: 'Professional Store',
-      price: '$12,999',
-      description: 'Ideal for growing online businesses',
-      features: [
-        'Unlimited products',
-        'Custom design',
-        'Multiple payment gateways',
-        'Advanced inventory management',
-        'Customer reviews system',
-        'Email marketing integration',
-        'SEO optimization',
-        'Analytics & reporting',
-        '90 days support'
-      ],
-      popular: true
-    },
-    {
-      name: 'Enterprise Store',
-      price: 'Custom',
-      description: 'For large-scale e-commerce operations',
-      features: [
-        'Multi-vendor marketplace',
-        'Advanced customization',
-        'API integrations',
-        'Multi-warehouse support',
-        'Advanced security',
-        'Custom features',
-        'Dedicated account manager',
-        '1 year premium support'
-      ]
-    }
-  ];
+
 
   const features_detailed = [
     {
@@ -210,52 +163,7 @@ export default function Ecommerce() {
         </div>
       </section>
 
-      <section className="py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              Pricing <span className="bg-gradient-to-r from-orange-400 to-rose-500 bg-clip-text text-transparent">Packages</span>
-            </h2>
-          </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {packages.map((pkg, idx) => (
-              <div key={idx} className={`relative bg-gradient-to-br from-slate-900 to-slate-800 p-8 rounded-3xl border transition-all duration-300 hover:transform hover:-translate-y-2 ${
-                pkg.popular ? 'border-orange-500 shadow-xl shadow-orange-500/20' : 'border-slate-700/50'
-              }`}>
-                {pkg.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-gradient-to-r from-orange-500 to-rose-600 px-4 py-1 rounded-full text-sm font-semibold">
-                      Most Popular
-                    </span>
-                  </div>
-                )}
-                <h3 className="text-2xl font-bold mb-2">{pkg.name}</h3>
-                <div className="text-4xl font-bold text-orange-400 mb-2">{pkg.price}</div>
-                <p className="text-slate-400 mb-6">{pkg.description}</p>
-                <ul className="space-y-3 mb-8">
-                  {pkg.features.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-2">
-                      <CheckCircle className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" />
-                      <span className="text-slate-300">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Link
-                  to="/contact"
-                  className={`block text-center py-3 rounded-full font-semibold transition-all duration-300 ${
-                    pkg.popular
-                      ? 'bg-gradient-to-r from-orange-500 to-rose-600 hover:shadow-lg hover:shadow-orange-500/50'
-                      : 'border-2 border-orange-500/30 hover:bg-orange-500/10'
-                  }`}
-                >
-                  Get Started
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="py-20 px-4 bg-slate-900/50">
         <div className="max-w-7xl mx-auto">

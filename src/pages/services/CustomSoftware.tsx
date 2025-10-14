@@ -44,53 +44,7 @@ export default function CustomSoftware() {
     }
   ];
 
-  const packages = [
-    {
-      name: 'Small Business',
-      price: '$14,999',
-      description: 'Custom tools for small to medium businesses',
-      features: [
-        'Requirements analysis',
-        'Custom development',
-        'Database design',
-        'Admin panel',
-        'User management',
-        'Basic integrations',
-        '90 days support'
-      ]
-    },
-    {
-      name: 'Enterprise',
-      price: '$49,999',
-      description: 'Comprehensive enterprise solutions',
-      features: [
-        'Complex business logic',
-        'Advanced integrations',
-        'Scalable architecture',
-        'Security implementation',
-        'Performance optimization',
-        'API development',
-        'Training & documentation',
-        '6 months support'
-      ],
-      popular: true
-    },
-    {
-      name: 'Custom Quote',
-      price: 'Contact Us',
-      description: 'Tailored solutions for unique needs',
-      features: [
-        'Unlimited customization',
-        'Dedicated development team',
-        'Project management',
-        'Quality assurance',
-        'Security audit',
-        'Deployment assistance',
-        'Long-term partnership',
-        'Premium support'
-      ]
-    }
-  ];
+
 
   const industries = [
     {
@@ -218,52 +172,7 @@ export default function CustomSoftware() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-slate-900/50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              Pricing <span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">Packages</span>
-            </h2>
-          </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {packages.map((pkg, idx) => (
-              <div key={idx} className={`relative bg-gradient-to-br from-slate-900 to-slate-800 p-8 rounded-3xl border transition-all duration-300 hover:transform hover:-translate-y-2 ${
-                pkg.popular ? 'border-purple-500 shadow-xl shadow-purple-500/20' : 'border-slate-700/50'
-              }`}>
-                {pkg.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-gradient-to-r from-purple-500 to-pink-600 px-4 py-1 rounded-full text-sm font-semibold">
-                      Most Popular
-                    </span>
-                  </div>
-                )}
-                <h3 className="text-2xl font-bold mb-2">{pkg.name}</h3>
-                <div className="text-4xl font-bold text-purple-400 mb-2">{pkg.price}</div>
-                <p className="text-slate-400 mb-6">{pkg.description}</p>
-                <ul className="space-y-3 mb-8">
-                  {pkg.features.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-2">
-                      <CheckCircle className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
-                      <span className="text-slate-300">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Link
-                  to="/contact"
-                  className={`block text-center py-3 rounded-full font-semibold transition-all duration-300 ${
-                    pkg.popular
-                      ? 'bg-gradient-to-r from-purple-500 to-pink-600 hover:shadow-lg hover:shadow-purple-500/50'
-                      : 'border-2 border-purple-500/30 hover:bg-purple-500/10'
-                  }`}
-                >
-                  Get Started
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="py-20 px-4">
         <div className="max-w-5xl mx-auto">

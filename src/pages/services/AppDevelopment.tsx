@@ -36,85 +36,9 @@ export default function AppDevelopment() {
     }
   ];
 
-  const packages = [
-    {
-      name: 'MVP Launch',
-      price: '$9,999',
-      description: 'Get your app idea to market quickly',
-      features: [
-        'Single platform (iOS or Android)',
-        'Core features development',
-        'Basic UI/UX design',
-        'App store submission',
-        'Bug fixes for 30 days',
-        'User authentication'
-      ]
-    },
-    {
-      name: 'Professional',
-      price: '$19,999',
-      description: 'Full-featured mobile application',
-      features: [
-        'Both iOS & Android platforms',
-        'Advanced features',
-        'Custom UI/UX design',
-        'Backend development',
-        'Push notifications',
-        'Analytics integration',
-        '90 days support',
-        'App store optimization'
-      ],
-      popular: true
-    },
-    {
-      name: 'Enterprise',
-      price: 'Custom',
-      description: 'Large-scale mobile solutions',
-      features: [
-        'Unlimited platforms',
-        'Complex integrations',
-        'Advanced security',
-        'Scalable architecture',
-        'Admin dashboard',
-        'Real-time features',
-        '1 year support',
-        'Dedicated team'
-      ]
-    }
-  ];
 
-  const appTypes = [
-    {
-      title: 'E-commerce Apps',
-      description: 'Shopping apps with payment integration, product catalogs, and order management.',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800'
-    },
-    {
-      title: 'Social Networking',
-      description: 'Connect users with messaging, feeds, profiles, and social interactions.',
-      image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800'
-    },
-    {
-      title: 'On-Demand Services',
-      description: 'Apps for food delivery, ride-sharing, home services, and more.',
-      image: 'https://images.pexels.com/photos/4393021/pexels-photo-4393021.jpeg?auto=compress&cs=tinysrgb&w=800'
-    },
-    {
-      title: 'Health & Fitness',
-      description: 'Workout tracking, nutrition planning, and wellness management apps.',
-      image: 'https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=800'
-    },
-    {
-      title: 'Education & E-Learning',
-      description: 'Interactive learning platforms with courses, quizzes, and progress tracking.',
-      image: 'https://images.pexels.com/photos/5905713/pexels-photo-5905713.jpeg?auto=compress&cs=tinysrgb&w=800'
-    },
-    {
-      title: 'Business & Productivity',
-      description: 'Tools for task management, team collaboration, and workflow optimization.',
-      image: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800'
-    }
-  ];
+
+
 
   return (
     <div className="min-h-screen bg-slate-950 text-white pt-20">
@@ -185,77 +109,9 @@ export default function AppDevelopment() {
         </div>
       </section>
 
-      <section className="py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              App Types <span className="bg-gradient-to-r from-blue-400 to-cyan-500 bg-clip-text text-transparent">We Build</span>
-            </h2>
-            <p className="text-slate-400 text-lg">Specialized solutions for every industry</p>
-          </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {appTypes.map((type, idx) => (
-              <div key={idx} className="group bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl overflow-hidden border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 hover:transform hover:-translate-y-2">
-                <div className="aspect-video overflow-hidden">
-                  <img src={type.image} alt={type.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3">{type.title}</h3>
-                  <p className="text-slate-400">{type.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      <section className="py-20 px-4 bg-slate-900/50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              Pricing <span className="bg-gradient-to-r from-blue-400 to-cyan-500 bg-clip-text text-transparent">Packages</span>
-            </h2>
-          </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {packages.map((pkg, idx) => (
-              <div key={idx} className={`relative bg-gradient-to-br from-slate-900 to-slate-800 p-8 rounded-3xl border transition-all duration-300 hover:transform hover:-translate-y-2 ${
-                pkg.popular ? 'border-blue-500 shadow-xl shadow-blue-500/20' : 'border-slate-700/50'
-              }`}>
-                {pkg.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-gradient-to-r from-blue-500 to-cyan-600 px-4 py-1 rounded-full text-sm font-semibold">
-                      Most Popular
-                    </span>
-                  </div>
-                )}
-                <h3 className="text-2xl font-bold mb-2">{pkg.name}</h3>
-                <div className="text-4xl font-bold text-blue-400 mb-2">{pkg.price}</div>
-                <p className="text-slate-400 mb-6">{pkg.description}</p>
-                <ul className="space-y-3 mb-8">
-                  {pkg.features.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-2">
-                      <CheckCircle className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
-                      <span className="text-slate-300">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Link
-                  to="/contact"
-                  className={`block text-center py-3 rounded-full font-semibold transition-all duration-300 ${
-                    pkg.popular
-                      ? 'bg-gradient-to-r from-blue-500 to-cyan-600 hover:shadow-lg hover:shadow-blue-500/50'
-                      : 'border-2 border-blue-500/30 hover:bg-blue-500/10'
-                  }`}
-                >
-                  Get Started
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="py-20 px-4">
         <div className="max-w-5xl mx-auto">
