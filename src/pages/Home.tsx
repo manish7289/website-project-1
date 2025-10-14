@@ -29,7 +29,7 @@ export default function Home() {
 
   const stats = [
     { icon: Users, value: '500+', label: 'Happy Clients' },
-    { icon: Award, value: '50+', label: 'Awards Won' },
+    { icon: Award, value: '50+', label: 'Happy customer' },
     { icon: TrendingUp, value: '98%', label: 'Success Rate' },
     { icon: Zap, value: '1000+', label: 'Projects Done' }
   ];
