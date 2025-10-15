@@ -1,9 +1,11 @@
-# TODO: Add About Section Above Our Core Services
+# TODO: Make Website More Unique with Development Vibe
 
 ## Tasks
-- [x] Add new About section before "Our Core Services" section in Home.tsx
-- [x] Implement grid layout with content on left and image placeholder on right
-- [x] Add compelling about content describing the company
-- [x] Style consistently with existing dark theme and gradients
-- [x] Verify layout renders correctly
-- [x] Remove stats section from home page as requested
+- [ ] Add typing animation effect to hero section title
+- [ ] Create floating code particles background component
+- [ ] Add Code Showcase section with syntax-highlighted snippets
+- [ ] Create interactive terminal/command prompt section
+- [ ] Integrate code examples into service descriptions
+- [ ] Add enhanced particle animations and effects
+- [ ] Update CSS animations for more dynamic effects
+- [ ] Test all new features and ensure responsiveness
