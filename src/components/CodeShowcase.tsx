@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { Copy, Check } from 'lucide-react';
 
-const codeExamples = {
+type CodeExampleKey = 'react' | 'node' | 'python';
+
+const codeExamples: Record<CodeExampleKey, { title: string; language: string; code: string }> = {
   react: {
     title: 'React Component',
     language: 'jsx',
@@ -88,7 +90,7 @@ if __name__ == '__main__':
 };
 
 export default function CodeShowcase() {
-  const [activeTab, setActiveTab] = useState('react');
+  const [activeTab, setActiveTab] = useState<CodeExampleKey>('react');
   const [copied, setCopied] = useState(false);
 
   const copyToClipboard = async () => {
@@ -121,7 +123,7 @@ export default function CodeShowcase() {
               {Object.entries(codeExamples).map(([key, example]) => (
                 <button
                   key={key}
-                  onClick={() => setActiveTab(key)}
+                  onClick={() => setActiveTab(key as CodeExampleKey)}
                   className={`px-6 py-4 font-medium transition-colors ${
                     activeTab === key
                       ? 'text-cyan-400 border-b-2 border-cyan-400 bg-slate-800/50'
