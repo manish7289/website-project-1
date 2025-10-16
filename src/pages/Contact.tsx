@@ -28,26 +28,35 @@ export default function Contact() {
     setErrorMessage('');
 
     try {
-      // Simulate form submission (replace with your backend API call)
-      await new Promise(resolve => setTimeout(resolve, 2000)); // Simulate network delay
-
-      setStatus('success');
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        company: '',
-        service: 'web-development',
-        message: ''
+      const response = await fetch('http://localhost:3001/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
 
-      setTimeout(() => {
-        setStatus('idle');
-      }, 5000);
+      const data = await response.json();
+
+      if (data.success) {
+        setStatus('success');
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          company: '',
+          service: 'web-development',
+          message: ''
+        });
+      } else {
+        setStatus('error');
+        setErrorMessage(data.message || 'Failed to send message. Please try again.');
+      }
     } catch (error) {
       console.error('Error submitting form:', error);
       setStatus('error');
-      setErrorMessage('Failed to submit form. Please try again.');
+      setErrorMessage('Failed to send message. Please check your connection and try again.');
+    } finally {
       setTimeout(() => {
         setStatus('idle');
       }, 5000);
@@ -111,8 +120,8 @@ export default function Contact() {
                 <MapPin className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold mb-2">Visit Us</h3>
-              <p className="text-slate-400 mb-2">123 Tech Street</p>
-              <p className="text-slate-400">Silicon Valley, CA 94025</p>
+              <p className="text-slate-400 mb-2"></p>
+              <p className="text-slate-400">Udaipur Rajasthan </p>
             </div>
           </div>
 
