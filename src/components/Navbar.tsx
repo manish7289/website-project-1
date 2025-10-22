@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+  import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Code2, ChevronDown } from 'lucide-react';
 
@@ -7,6 +7,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [closeTimeout, setCloseTimeout] = useState<NodeJS.Timeout | null>(null);
+
   const location = useLocation();
 
   useEffect(() => {
@@ -26,11 +27,22 @@ export default function Navbar() {
     }
   }, [location]);
 
-  const serviceLinks = [
+  const developmentLinks = [
     { name: 'Web Development', path: '/services/web-development' },
     { name: 'App Development', path: '/services/app-development' },
     { name: 'E-commerce Solutions', path: '/services/ecommerce' },
-    { name: 'Custom Software', path: '/services/custom-software' }
+    { name: 'Custom Software', path: '/services/custom-software' },
+    { name: 'Graphic Design', path: '/services/graphic-design' }
+  ];
+
+  const digitalMarketingLinks = [
+    { name: 'Digital Marketing', path: '/services/digital-marketing' },
+    { name: 'SEO', path: '/services/digital-marketing/seo' },
+    { name: 'Social Media Marketing', path: '/services/digital-marketing/social-media' },
+    { name: 'PPC', path: '/services/digital-marketing/ppc' },
+    { name: 'Content Marketing', path: '/services/digital-marketing/content' },
+    { name: 'Email Marketing', path: '/services/digital-marketing/email' },
+    { name: 'Content Writing', path: '/services/content-writing' }
   ];
 
   return (
@@ -87,16 +99,35 @@ export default function Navbar() {
               </Link>
 
               {servicesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-56 bg-slate-900 border border-slate-700 rounded-xl shadow-xl overflow-hidden">
-                  {serviceLinks.map((link) => (
-                    <Link
-                      key={link.path}
-                      to={link.path}
-                      className="block px-4 py-3 hover:bg-slate-800 hover:text-cyan-400 transition-colors border-b border-slate-800 last:border-b-0"
-                    >
-                      {link.name}
-                    </Link>
-                  ))}
+                <div className="absolute top-full left-0 mt-2 w-96 bg-slate-900 border border-slate-700 rounded-xl shadow-xl overflow-hidden flex">
+                  <div className="flex-1 border-r border-slate-700">
+                    <div className="px-4 py-3 text-cyan-400 font-semibold text-sm uppercase tracking-wider border-b border-slate-700">
+                      Development
+                    </div>
+                    {developmentLinks.map((link) => (
+                      <Link
+                        key={link.path}
+                        to={link.path}
+                        className="block px-4 py-3 text-white hover:bg-slate-800 hover:text-cyan-400 transition-colors border-b border-slate-800 last:border-b-0"
+                      >
+                        {link.name}
+                      </Link>
+                    ))}
+                  </div>
+                  <div className="flex-1">
+                    <div className="px-4 py-3 text-cyan-400 font-semibold text-sm uppercase tracking-wider border-b border-slate-700">
+                      Digital Marketing
+                    </div>
+                    {digitalMarketingLinks.map((link) => (
+                      <Link
+                        key={link.path}
+                        to={link.path}
+                        className="block px-4 py-3 text-white hover:bg-slate-800 hover:text-cyan-400 transition-colors border-b border-slate-800 last:border-b-0"
+                      >
+                        {link.name}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
@@ -177,7 +208,10 @@ export default function Navbar() {
               </button>
               {servicesOpen && (
                 <div className="pl-4 mt-2 space-y-2">
-                  {serviceLinks.map((link) => (
+                  <div className="text-cyan-400 font-semibold text-sm uppercase tracking-wider mb-2">
+                    Development
+                  </div>
+                  {developmentLinks.map((link) => (
                     <Link
                       key={link.path}
                       to={link.path}
@@ -186,6 +220,20 @@ export default function Navbar() {
                       {link.name}
                     </Link>
                   ))}
+                  <div className="border-t border-slate-700 pt-2 mt-2">
+                    <div className="text-cyan-400 font-semibold text-sm uppercase tracking-wider mb-2">
+                      Digital Marketing
+                    </div>
+                    {digitalMarketingLinks.map((link) => (
+                      <Link
+                        key={link.path}
+                        to={link.path}
+                        className="block py-2 text-slate-300 hover:text-cyan-400 transition-colors"
+                      >
+                        {link.name}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>

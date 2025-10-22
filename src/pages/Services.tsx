@@ -4,8 +4,10 @@ import {
   Smartphone,
   ShoppingCart,
   Database,
-  Globe,
+  TrendingUp,
   Palette,
+  PenTool,
+  Globe,
   Shield,
   Zap,
   CheckCircle,
@@ -76,6 +78,51 @@ export default function Services() {
       ],
       technologies: ['Python', 'Java', 'PostgreSQL', 'MongoDB', 'AWS'],
       color: 'from-purple-500 to-pink-600'
+    },
+    {
+      icon: TrendingUp,
+      title: 'Digital Marketing',
+      description: 'Comprehensive digital marketing strategies to boost your online presence and drive growth.',
+      features: [
+        'SEO Optimization',
+        'Social Media Marketing',
+        'PPC Advertising',
+        'Content Marketing',
+        'Email Marketing',
+        'Analytics & Reporting'
+      ],
+      technologies: ['Google Analytics', 'Facebook Ads', 'SEMrush', 'Mailchimp', 'Hootsuite'],
+      color: 'from-orange-500 to-red-600'
+    },
+    {
+      icon: Palette,
+      title: 'Graphic Design',
+      description: 'Creative visual solutions that bring your brand to life and captivate your audience.',
+      features: [
+        'Logo Design & Branding',
+        'UI/UX Design',
+        'Print Design',
+        'Digital Graphics',
+        'Social Media Graphics',
+        'Packaging Design'
+      ],
+      technologies: ['Adobe Creative Suite', 'Figma', 'Sketch', 'Canva', 'Illustrator'],
+      color: 'from-pink-500 to-purple-600'
+    },
+    {
+      icon: PenTool,
+      title: 'Content Writing',
+      description: 'Professional content writing that engages your audience and drives conversions.',
+      features: [
+        'Blog Writing',
+        'Website Content',
+        'SEO Content Creation',
+        'Social Media Content',
+        'Email Copywriting',
+        'Product Descriptions'
+      ],
+      technologies: ['SEO Tools', 'Content Management Systems', 'Analytics', 'Keyword Research', 'Copywriting Frameworks'],
+      color: 'from-teal-500 to-cyan-600'
     }
   ];
 

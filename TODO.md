@@ -1,11 +1,15 @@
-# TODO: Make Website More Unique with Development Vibe
+# TODO List for Adding Digital Marketing and Graphic Design Services
 
 ## Tasks
-- [ ] Add typing animation effect to hero section title
-- [ ] Create floating code particles background component
-- [ ] Add Code Showcase section with syntax-highlighted snippets
-- [ ] Create interactive terminal/command prompt section
-- [ ] Integrate code examples into service descriptions
-- [ ] Add enhanced particle animations and effects
-- [ ] Update CSS animations for more dynamic effects
-- [ ] Test all new features and ensure responsiveness
+- [x] Update Navbar.tsx to support nested dropdown for Digital Marketing and add Graphic Design
+- [x] Create DigitalMarketing.tsx service page
+- [x] Create GraphicDesign.tsx service page
+- [x] Create sub-service pages for Digital Marketing:
+  - [x] SEO.tsx
+  - [x] SocialMediaMarketing.tsx
+  - [x] PPC.tsx
+  - [x] ContentMarketing.tsx
+  - [x] EmailMarketing.tsx
+- [x] Update App.tsx to add routes for all new pages
+- [x] Update Services.tsx to include Digital Marketing and Graphic Design in main services list
+- [x] Test navigation and ensure all links work
