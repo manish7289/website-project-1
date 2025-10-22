@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+  import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import {
   ArrowRight,
@@ -174,14 +174,12 @@ export default function Home() {
                 <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl opacity-20 animate-pulse"></div>
                 <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
 
-                <div className="w-full h-80 bg-gradient-to-br from-slate-700 to-slate-600 rounded-2xl flex items-center justify-center border-2 border-dashed border-slate-500/50">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-slate-600 rounded-xl flex items-center justify-center mx-auto mb-4">
-                      <Code2 className="w-8 h-8 text-slate-400" />
-                    </div>
-                    <p className="text-slate-400 text-sm font-medium">About Image</p>
-                    <p className="text-slate-500 text-xs mt-1">Add your image here</p>
-                  </div>
+                <div className="w-full h-[400px] md:h-[600px] rounded-2xl flex items-center justify-center overflow-hidden">
+                  <img
+                    src="/src/assets/images/desktop-smartphone-app-development_23-2148683810.png"
+                    alt="Desktop and smartphone app development illustration"
+                    className="w-full h-full object-cover rounded-2xl"
+                  />
                 </div>
               </div>
             </div>
