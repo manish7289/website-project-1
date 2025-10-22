@@ -1,4 +1,4 @@
-  import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import {
   ArrowRight,
@@ -21,6 +21,7 @@ import {
   Palette,
   PenTool
 } from 'lucide-react';
+import aboutUsImage from '../assets/images/desktop-smartphone-app-development_23-2148683810.png';
 
 export default function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -176,7 +177,7 @@ export default function Home() {
 
                 <div className="w-full h-[400px] md:h-[600px] rounded-2xl flex items-center justify-center overflow-hidden">
                   <img
-                    src="src/assets/images/desktop-smartphone-app-development_23-2148683810.png"
+                    src={aboutUsImage}
                     alt="Desktop and smartphone app development illustration"
                     className="w-full h-full object-cover rounded-2xl"
                   />
