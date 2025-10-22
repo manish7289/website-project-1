@@ -232,6 +232,138 @@ export default function Home() {
 
 
 
+
+
+
+
+      <section className="py-20 px-4 bg-slate-900/50">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="mb-8">
+                <span className="text-cyan-400 font-semibold text-sm uppercase tracking-wider">Frequently Asked Questions</span>
+                <h2 className="text-4xl sm:text-5xl font-bold mt-3 mb-4">
+                  Got <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Questions?</span>
+                </h2>
+                <p className="text-slate-400 text-lg mb-8">
+                  Find answers to common questions about our services and development process.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                {[
+                  {
+                    question: "How long does a typical project take?",
+                    answer: "Project timelines vary based on complexity and scope. Web development projects typically take 4-8 weeks, mobile apps take 8-16 weeks, and custom software solutions can range from 12-24 weeks. We'll provide a detailed timeline during our initial consultation.",
+                    color: "cyan"
+                  },
+                  {
+                    question: "What is your development process?",
+                    answer: "We follow a proven 5-step process: Discovery (understanding requirements), Planning (wireframes and specifications), Development (agile coding), Testing (quality assurance), and Launch (deployment and support). This ensures high-quality results delivered on time.",
+                    color: "emerald"
+                  },
+                  {
+                    question: "Do you provide ongoing support?",
+                    answer: "Yes! We offer comprehensive maintenance and support packages. This includes bug fixes, security updates, performance optimization, and feature enhancements. We also provide 24/7 monitoring and emergency support for critical applications.",
+                    color: "blue"
+                  },
+                  {
+                    question: "What technologies do you use?",
+                    answer: "We use modern, scalable technologies including React, Next.js, Node.js, Python, React Native, Flutter, AWS, Azure, and more. We choose the best technology stack based on your project requirements and long-term goals.",
+                    color: "purple"
+                  },
+                  {
+                    question: "How much does a project cost?",
+                    answer: "Costs vary based on project complexity, features, and timeline. We offer flexible pricing models including fixed-price projects and hourly rates. Contact us for a free consultation and detailed quote tailored to your specific needs.",
+                    color: "orange"
+                  },
+                  {
+                    question: "Can you work with our existing systems?",
+                    answer: "Absolutely! We specialize in integrating with existing systems, modernizing legacy applications, and adding new features to current platforms. We'll assess your existing infrastructure and provide seamless integration solutions.",
+                    color: "rose"
+                  }
+                ].map((faq, index) => (
+                  <div key={index} className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl border border-slate-700/50 hover:border-slate-600/50 transition-all duration-300">
+                    <button
+                      onClick={() => toggleFaq(index)}
+                      className="w-full p-6 text-left flex items-center justify-between hover:bg-slate-800/50 rounded-xl transition-colors duration-200"
+                    >
+                      <h3 className={`text-lg font-bold text-${faq.color}-400`}>{faq.question}</h3>
+                      {openFaq === index ? (
+                        <ChevronUp className="w-5 h-5 text-slate-400 flex-shrink-0 ml-4" />
+                      ) : (
+                        <ChevronDown className="w-5 h-5 text-slate-400 flex-shrink-0 ml-4" />
+                      )}
+                    </button>
+                    {openFaq === index && (
+                      <div className="px-6 pb-6">
+                        <p className="text-slate-400 text-sm leading-relaxed">
+                          {faq.answer}
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-8">
+                <p className="text-slate-400 mb-6">
+                  Still have questions? We're here to help!
+                </p>
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 px-8 py-4 rounded-full hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 font-medium"
+                >
+                  Contact Us
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-3xl border border-slate-700/50 shadow-2xl overflow-hidden">
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl opacity-20 animate-pulse"></div>
+                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
+
+                {/* Image Placeholder */}
+                <div className="relative mb-6">
+                  <div className="w-full h-64 bg-gradient-to-br from-slate-700 to-slate-600 rounded-2xl flex items-center justify-center border-2 border-dashed border-slate-500/50">
+                    <div className="text-center">
+                      <div className="w-16 h-16 bg-slate-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <Code2 className="w-8 h-8 text-slate-400" />
+                      </div>
+                      <p className="text-slate-400 text-sm font-medium">Image Placeholder</p>
+                      <p className="text-slate-500 text-xs mt-1">Add your image here</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="text-center">
+                  <h3 className="text-2xl font-bold mb-4">Have Questions?</h3>
+                  <p className="text-slate-400 mb-6">
+                    Our team is always ready to help you with any questions about our services, pricing, or development process.
+                  </p>
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3 text-sm">
+                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <span className="text-slate-300">24/7 Support Available</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-sm">
+                      <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
+                      <span className="text-slate-300">Free Initial Consultation</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-sm">
+                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                      <span className="text-slate-300">Detailed Project Quotes</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"></div>
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -435,131 +567,195 @@ export default function Home() {
 
       <section className="py-20 px-4 bg-slate-900/50">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="mb-8">
-                <span className="text-cyan-400 font-semibold text-sm uppercase tracking-wider">Frequently Asked Questions</span>
-                <h2 className="text-4xl sm:text-5xl font-bold mt-3 mb-4">
-                  Got <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Questions?</span>
-                </h2>
-                <p className="text-slate-400 text-lg mb-8">
-                  Find answers to common questions about our services and development process.
-                </p>
-              </div>
+          <div className="text-center mb-16">
+            <span className="text-cyan-400 font-semibold text-sm uppercase tracking-wider">Latest Blog Posts</span>
+            <h2 className="text-4xl sm:text-5xl font-bold mt-3 mb-4">
+              Stay Updated with Our <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Insights</span>
+            </h2>
+            <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+              Discover the latest trends, tips, and insights in web development and technology.
+            </p>
+          </div>
 
-              <div className="space-y-4">
-                {[
-                  {
-                    question: "How long does a typical project take?",
-                    answer: "Project timelines vary based on complexity and scope. Web development projects typically take 4-8 weeks, mobile apps take 8-16 weeks, and custom software solutions can range from 12-24 weeks. We'll provide a detailed timeline during our initial consultation.",
-                    color: "cyan"
-                  },
-                  {
-                    question: "What is your development process?",
-                    answer: "We follow a proven 5-step process: Discovery (understanding requirements), Planning (wireframes and specifications), Development (agile coding), Testing (quality assurance), and Launch (deployment and support). This ensures high-quality results delivered on time.",
-                    color: "emerald"
-                  },
-                  {
-                    question: "Do you provide ongoing support?",
-                    answer: "Yes! We offer comprehensive maintenance and support packages. This includes bug fixes, security updates, performance optimization, and feature enhancements. We also provide 24/7 monitoring and emergency support for critical applications.",
-                    color: "blue"
-                  },
-                  {
-                    question: "What technologies do you use?",
-                    answer: "We use modern, scalable technologies including React, Next.js, Node.js, Python, React Native, Flutter, AWS, Azure, and more. We choose the best technology stack based on your project requirements and long-term goals.",
-                    color: "purple"
-                  },
-                  {
-                    question: "How much does a project cost?",
-                    answer: "Costs vary based on project complexity, features, and timeline. We offer flexible pricing models including fixed-price projects and hourly rates. Contact us for a free consultation and detailed quote tailored to your specific needs.",
-                    color: "orange"
-                  },
-                  {
-                    question: "Can you work with our existing systems?",
-                    answer: "Absolutely! We specialize in integrating with existing systems, modernizing legacy applications, and adding new features to current platforms. We'll assess your existing infrastructure and provide seamless integration solutions.",
-                    color: "rose"
-                  }
-                ].map((faq, index) => (
-                  <div key={index} className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl border border-slate-700/50 hover:border-slate-600/50 transition-all duration-300">
-                    <button
-                      onClick={() => toggleFaq(index)}
-                      className="w-full p-6 text-left flex items-center justify-between hover:bg-slate-800/50 rounded-xl transition-colors duration-200"
-                    >
-                      <h3 className={`text-lg font-bold text-${faq.color}-400`}>{faq.question}</h3>
-                      {openFaq === index ? (
-                        <ChevronUp className="w-5 h-5 text-slate-400 flex-shrink-0 ml-4" />
-                      ) : (
-                        <ChevronDown className="w-5 h-5 text-slate-400 flex-shrink-0 ml-4" />
-                      )}
-                    </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6">
-                        <p className="text-slate-400 text-sm leading-relaxed">
-                          {faq.answer}
-                        </p>
+          <div className="relative overflow-hidden">
+            <div className="flex animate-scroll-right-to-left">
+              {[
+                {
+                  id: 1,
+                  title: 'The Future of React Development: What to Expect in 2025',
+                  excerpt: 'Explore the upcoming features and trends that will shape React development.',
+                  image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
+                  category: 'Web Development'
+                },
+                {
+                  id: 2,
+                  title: 'Building Scalable Mobile Apps with React Native',
+                  excerpt: 'Learn best practices for creating high-performance mobile applications.',
+                  image: 'https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
+                  category: 'Mobile Apps'
+                },
+                {
+                  id: 3,
+                  title: 'Why Your Business Needs a Custom Software Solution',
+                  excerpt: 'Discover how tailored software can give your business a competitive edge.',
+                  image: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
+                  category: 'Business'
+                },
+                {
+                  id: 4,
+                  title: 'The Rise of AI in Web Development',
+                  excerpt: 'How artificial intelligence is transforming the way we build websites.',
+                  image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
+                  category: 'Technology'
+                },
+                {
+                  id: 5,
+                  title: 'Optimizing Performance in React Applications',
+                  excerpt: 'Essential techniques for building fast and efficient React apps.',
+                  image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
+                  category: 'Web Development'
+                },
+                {
+                  id: 6,
+                  title: 'Cross-Platform Development: Pros and Cons',
+                  excerpt: 'A comprehensive guide to choosing between native and cross-platform development.',
+                  image: 'https://images.pexels.com/photos/1108102/pexels-photo-1108102.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
+                  category: 'Mobile Apps'
+                }
+              ].map((post, index) => (
+                <div key={index} className="flex-shrink-0 w-80 mx-4">
+                  <article className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl overflow-hidden border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300 group cursor-pointer h-full">
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={post.image}
+                        alt={post.title}
+                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute top-4 left-4">
+                        <span className="px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-cyan-400 rounded-full text-xs font-medium">
+                          {post.category}
+                        </span>
                       </div>
-                    )}
-                  </div>
-                ))}
-              </div>
+                    </div>
 
-              <div className="mt-8">
-                <p className="text-slate-400 mb-6">
-                  Still have questions? We're here to help!
-                </p>
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 px-8 py-4 rounded-full hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 font-medium"
-                >
-                  Contact Us
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-              </div>
-            </div>
+                    <div className="p-6">
+                      <h3 className="text-lg font-bold mb-3 group-hover:text-cyan-400 transition-colors leading-tight line-clamp-2">
+                        {post.title}
+                      </h3>
+                      <p className="text-slate-400 text-sm mb-4 leading-relaxed line-clamp-3">
+                        {post.excerpt}
+                      </p>
 
-            <div className="relative">
-              <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-3xl border border-slate-700/50 shadow-2xl overflow-hidden">
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl opacity-20 animate-pulse"></div>
-                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
-
-                {/* Image Placeholder */}
-                <div className="relative mb-6">
-                  <div className="w-full h-64 bg-gradient-to-br from-slate-700 to-slate-600 rounded-2xl flex items-center justify-center border-2 border-dashed border-slate-500/50">
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-slate-600 rounded-xl flex items-center justify-center mx-auto mb-4">
-                        <Code2 className="w-8 h-8 text-slate-400" />
+                      <Link
+                        to={`/blog/${post.id}`}
+                        className="inline-flex items-center gap-2 text-cyan-400 font-medium hover:gap-3 transition-all group-hover:text-cyan-300"
+                      >
+                        Read More
+                        <ArrowRight className="w-4 h-4" />
+                      </Link>
+                    </div>
+                  </article>
+                </div>
+              ))}
+              {/* Duplicate for seamless loop */}
+              {[
+                {
+                  id: 1,
+                  title: 'The Future of React Development: What to Expect in 2025',
+                  excerpt: 'Explore the upcoming features and trends that will shape React development.',
+                  image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
+                  category: 'Web Development'
+                },
+                {
+                  id: 2,
+                  title: 'Building Scalable Mobile Apps with React Native',
+                  excerpt: 'Learn best practices for creating high-performance mobile applications.',
+                  image: 'https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
+                  category: 'Mobile Apps'
+                },
+                {
+                  id: 3,
+                  title: 'Why Your Business Needs a Custom Software Solution',
+                  excerpt: 'Discover how tailored software can give your business a competitive edge.',
+                  image: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
+                  category: 'Business'
+                },
+                {
+                  id: 4,
+                  title: 'The Rise of AI in Web Development',
+                  excerpt: 'How artificial intelligence is transforming the way we build websites.',
+                  image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
+                  category: 'Technology'
+                },
+                {
+                  id: 5,
+                  title: 'Optimizing Performance in React Applications',
+                  excerpt: 'Essential techniques for building fast and efficient React apps.',
+                  image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
+                  category: 'Web Development'
+                },
+                {
+                  id: 6,
+                  title: 'Cross-Platform Development: Pros and Cons',
+                  excerpt: 'A comprehensive guide to choosing between native and cross-platform development.',
+                  image: 'https://images.pexels.com/photos/1108102/pexels-photo-1108102.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
+                  category: 'Mobile Apps'
+                }
+              ].map((post, index) => (
+                <div key={`duplicate-${index}`} className="flex-shrink-0 w-80 mx-4">
+                  <article className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl overflow-hidden border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300 group cursor-pointer h-full">
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={post.image}
+                        alt={post.title}
+                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute top-4 left-4">
+                        <span className="px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-cyan-400 rounded-full text-xs font-medium">
+                          {post.category}
+                        </span>
                       </div>
-                      <p className="text-slate-400 text-sm font-medium">Image Placeholder</p>
-                      <p className="text-slate-500 text-xs mt-1">Add your image here</p>
                     </div>
-                  </div>
-                </div>
 
-                <div className="text-center">
-                  <h3 className="text-2xl font-bold mb-4">Have Questions?</h3>
-                  <p className="text-slate-400 mb-6">
-                    Our team is always ready to help you with any questions about our services, pricing, or development process.
-                  </p>
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-3 text-sm">
-                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                      <span className="text-slate-300">24/7 Support Available</span>
+                    <div className="p-6">
+                      <h3 className="text-lg font-bold mb-3 group-hover:text-cyan-400 transition-colors leading-tight line-clamp-2">
+                        {post.title}
+                      </h3>
+                      <p className="text-slate-400 text-sm mb-4 leading-relaxed line-clamp-3">
+                        {post.excerpt}
+                      </p>
+
+                      <Link
+                        to={`/blog/${post.id}`}
+                        className="inline-flex items-center gap-2 text-cyan-400 font-medium hover:gap-3 transition-all group-hover:text-cyan-300"
+                      >
+                        Read More
+                        <ArrowRight className="w-4 h-4" />
+                      </Link>
                     </div>
-                    <div className="flex items-center gap-3 text-sm">
-                      <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                      <span className="text-slate-300">Free Initial Consultation</span>
-                    </div>
-                    <div className="flex items-center gap-3 text-sm">
-                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                      <span className="text-slate-300">Detailed Project Quotes</span>
-                    </div>
-                  </div>
+                  </article>
                 </div>
-              </div>
+              ))}
             </div>
+          </div>
+
+          <div className="text-center mt-10">
+            <Link
+              to="/blog"
+              className="inline-flex items-center gap-2 text-cyan-400 font-semibold hover:gap-3 transition-all"
+            >
+              View All Blog Posts
+              <ArrowRight className="w-5 h-5" />
+            </Link>
           </div>
         </div>
       </section>
+
+
+
+
+
+
 
       <section className="py-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"></div>
