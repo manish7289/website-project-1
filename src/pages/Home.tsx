@@ -74,6 +74,12 @@ export default function Home() {
       color: 'from-emerald-500 to-teal-600'
     },
     {
+      icon: FileText,
+      title: 'WordPress & Shopify',
+      description: 'Powerful CMS and e-commerce platforms for scalable websites and online stores.',
+      color: 'from-purple-500 to-pink-600'
+    },
+    {
       icon: Smartphone,
       title: 'App Development',
       description: 'Native and cross-platform mobile applications for iOS and Android.',
@@ -808,123 +814,149 @@ export default function Home() {
 
         <div className="max-w-7xl mx-auto relative">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 px-6 py-3 rounded-full border border-cyan-500/30 mb-8">
+            <div className="inline-flex items-center gap-3 px-6 py-3 border border-cyan-500/30 mb-8">
               <div className="w-2 h-2 bg-cyan-400 rounded-full animate-ping"></div>
               <span className="text-cyan-300 font-semibold text-sm uppercase tracking-wider">Let's Get Started</span>
-              <div className="w-2 h-2 bg-purple-400 rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
+              <div className="w-2 h-2 bg-cyan-400 rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
             </div>
 
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
+            <h2 className="text-5xl sm:text-6xl font-bold mb-6 text-white">
               Ready to Transform Your
-              <span className="block bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent mt-2">
-                Digital Vision?
-              </span>
+              <span className="block text-cyan-400">Digital Vision?</span>
             </h2>
 
             <p className="text-xl sm:text-2xl text-slate-300 mb-12 max-w-3xl mx-auto leading-relaxed">
               Join hundreds of satisfied clients who have turned their ideas into
-              <span className="text-cyan-400 font-semibold"> successful digital products</span>
+              <span className="text-cyan-400 font-semibold">successful digital products</span>
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8 mb-16">
-            <div className="group bg-gradient-to-br from-slate-900 to-slate-800 p-8 rounded-2xl border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-500 hover:transform hover:-translate-y-2">
-              <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <Rocket className="w-8 h-8 text-white" />
+          <div className="grid lg:grid-cols-2 gap-12 mb-16">
+            <div className="flex flex-col gap-8 h-full">
+              <div className="group bg-gradient-to-br from-slate-900 to-slate-800 p-8 rounded-2xl border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-500 hover:transform hover:-translate-y-2 flex-1 flex flex-col">
+                <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Rocket className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 group-hover:text-cyan-400 transition-colors">Fast Delivery</h3>
+                <p className="text-slate-400 leading-relaxed mb-6 flex-grow">
+                  We deliver high-quality projects on time with our proven development process and agile methodology.
+                </p>
+                <div className="flex items-center gap-2 text-cyan-400 font-semibold mt-auto">
+                  <span>Learn More</span>
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </div>
               </div>
-              <h3 className="text-2xl font-bold mb-4 group-hover:text-cyan-400 transition-colors">Fast Delivery</h3>
-              <p className="text-slate-400 leading-relaxed mb-6">
-                We deliver high-quality projects on time with our proven development process and agile methodology.
-              </p>
-              <div className="flex items-center gap-2 text-cyan-400 font-semibold">
-                <span>Learn More</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+
+              <div className="group bg-gradient-to-br from-slate-900 to-slate-800 p-8 rounded-2xl border border-slate-700/50 hover:border-emerald-500/50 transition-all duration-500 hover:transform hover:-translate-y-2 flex-1 flex flex-col">
+                <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Award className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 group-hover:text-emerald-400 transition-colors">Quality Assured</h3>
+                <p className="text-slate-400 leading-relaxed mb-6 flex-grow">
+                  Every project undergoes rigorous testing and quality checks to ensure exceptional performance and user experience.
+                </p>
+                <div className="flex items-center gap-2 text-emerald-400 font-semibold mt-auto">
+                  <span>Learn More</span>
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
+
+              <div className="group bg-gradient-to-br from-slate-900 to-slate-800 p-8 rounded-2xl border border-slate-700/50 hover:border-purple-500/50 transition-all duration-500 hover:transform hover:-translate-y-2 flex-1 flex flex-col">
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Users className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 group-hover:text-purple-400 transition-colors">Dedicated Support</h3>
+                <p className="text-slate-400 leading-relaxed mb-6 flex-grow">
+                  Our team provides ongoing support and maintenance to keep your digital solutions running smoothly.
+                </p>
+                <div className="flex items-center gap-2 text-purple-400 font-semibold mt-auto">
+                  <span>Learn More</span>
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </div>
               </div>
             </div>
 
-            <div className="group bg-gradient-to-br from-slate-900 to-slate-800 p-8 rounded-2xl border border-slate-700/50 hover:border-emerald-500/50 transition-all duration-500 hover:transform hover:-translate-y-2">
-              <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <Award className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 group-hover:text-emerald-400 transition-colors">Quality Assured</h3>
-              <p className="text-slate-400 leading-relaxed mb-6">
-                Every project undergoes rigorous testing and quality checks to ensure exceptional performance and user experience.
-              </p>
-              <div className="flex items-center gap-2 text-emerald-400 font-semibold">
-                <span>Learn More</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </div>
-            </div>
+            <div className="relative">
+              <div className="relative bg-gradient-to-br from-cyan-600 via-blue-600 to-purple-700 rounded-3xl p-16 overflow-hidden shadow-2xl min-h-[600px]">
+                {/* Enhanced animated background elements */}
+                <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
+                <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-white/5 rounded-full animate-ping" style={{ animationDelay: '2s' }}></div>
 
-            <div className="group bg-gradient-to-br from-slate-900 to-slate-800 p-8 rounded-2xl border border-slate-700/50 hover:border-purple-500/50 transition-all duration-500 hover:transform hover:-translate-y-2">
-              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <Users className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 group-hover:text-purple-400 transition-colors">Dedicated Support</h3>
-              <p className="text-slate-400 leading-relaxed mb-6">
-                Our team provides ongoing support and maintenance to keep your digital solutions running smoothly.
-              </p>
-              <div className="flex items-center gap-2 text-purple-400 font-semibold">
-                <span>Learn More</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                {/* Floating geometric shapes */}
+                <div className="absolute top-10 left-10 w-6 h-6 bg-white/20 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+                <div className="absolute top-20 right-20 w-4 h-4 bg-yellow-300/30 rotate-45 animate-spin" style={{ animationDelay: '1.5s', animationDuration: '3s' }}></div>
+                <div className="absolute bottom-20 left-20 w-8 h-8 border-2 border-white/20 rounded-lg animate-pulse" style={{ animationDelay: '2.5s' }}></div>
+                <div className="absolute bottom-10 right-10 w-3 h-3 bg-cyan-300/40 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
+
+                {/* Animated rings */}
+                <div className="absolute top-1/4 left-1/4 w-20 h-20 border border-white/10 rounded-full animate-spin" style={{ animationDuration: '8s' }}></div>
+                <div className="absolute bottom-1/4 right-1/4 w-16 h-16 border border-white/10 rounded-full animate-spin" style={{ animationDuration: '6s', animationDirection: 'reverse' }}></div>
+
+                <div className="relative text-center">
+                  {/* Enhanced badge with animation */}
+                  <div className="inline-flex items-center gap-3 px-6 py-3 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-8 animate-fade-in">
+                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                    <span className="text-white font-semibold text-sm">Free Consultation Available</span>
+                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" style={{ animationDelay: '0.3s' }}></div>
+                  </div>
+
+                  {/* Dynamic heading with gradient animation */}
+                  <h3 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
+                    Let's Build Something
+                    <span className="block bg-gradient-to-r from-yellow-300 via-orange-300 to-red-300 bg-clip-text text-transparent animate-gradient-x">
+                      Amazing Together
+                    </span>
+                  </h3>
+
+                  <p className="text-xl text-blue-100 mb-10 max-w-3xl mx-auto leading-relaxed">
+                    Schedule a free consultation and discover how we can help bring your vision to life with cutting-edge technology and creative solutions.
+                  </p>
+
+                  {/* Enhanced buttons with better animations - stacked vertically */}
+                  <div className="flex flex-col gap-6 justify-center items-center mb-10">
+                    <Link
+                      to="/contact"
+                      className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 px-8 py-6 rounded-full hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 font-medium"
+                    >
+                      Let's Build Something Amazing Together
+                      <ArrowRight className="w-5 h-5" />
+                    </Link>
+
+                    <Link
+                      to="/portfolio"
+                      className="group px-10 py-5 rounded-full text-lg font-semibold border-2 border-white/40 text-white hover:bg-white/10 hover:border-white/60 transition-all duration-300 backdrop-blur-sm"
+                    >
+                      View Our Work
+                    </Link>
+                  </div>
+
+                  {/* Additional animated elements */}
+                  <div className="mt-8 flex justify-center">
+                    <div className="flex items-center gap-2 text-white/60">
+                      <div className="w-1 h-1 bg-cyan-400 rounded-full animate-ping"></div>
+                      <span className="text-xs font-medium">Available 24/7</span>
+                      <div className="w-1 h-1 bg-cyan-400 rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="relative">
-            <div className="relative bg-gradient-to-br from-cyan-600 via-blue-600 to-purple-700 rounded-3xl p-12 overflow-hidden shadow-2xl">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
-              <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-white/5 rounded-full animate-ping" style={{ animationDelay: '2s' }}></div>
-
-              <div className="relative text-center">
-                <div className="inline-flex items-center gap-4 mb-6">
-                  <div className="w-3 h-3 bg-white rounded-full animate-bounce"></div>
-                  <span className="text-white/80 font-semibold">Free Consultation Available</span>
-                  <div className="w-3 h-3 bg-white rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-                </div>
-
-                <h3 className="text-4xl sm:text-5xl font-bold mb-6 text-white">
-                  Let's Build Something
-                  <span className="block text-yellow-300">Amazing Together</span>
-                </h3>
-
-                <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto leading-relaxed">
-                  Schedule a free consultation and discover how we can help bring your vision to life with cutting-edge technology and creative solutions.
-                </p>
-
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                  <Link
-                    to="/contact"
-                    className="group bg-white text-blue-600 px-10 py-4 rounded-full text-lg font-bold hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center gap-2"
-                  >
-                    Get Free Consultation
-                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-
-                  <Link
-                    to="/portfolio"
-                    className="px-8 py-4 rounded-full text-lg font-semibold border-2 border-white/30 text-white hover:bg-white/10 transition-all duration-300"
-                  >
-                    View Our Work
-                  </Link>
-                </div>
-
-                <div className="mt-8 flex justify-center items-center gap-8 text-white/60">
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
-                    <span className="text-sm">No Obligation</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
-                    <span className="text-sm">Expert Consultation</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
-                    <span className="text-sm">Custom Solutions</span>
-                  </div>
-                </div>
-              </div>
+          {/* Enhanced feature list outside the main box */}
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
+            <div className="flex items-center gap-2 text-white/80 group">
+              <CheckCircle className="w-4 h-4 text-green-400 group-hover:scale-110 transition-transform" />
+              <span className="text-xs font-medium">No Obligation</span>
+            </div>
+            <div className="flex items-center gap-2 text-white/80 group">
+              <CheckCircle className="w-4 h-4 text-green-400 group-hover:scale-110 transition-transform" />
+              <span className="text-xs font-medium">Expert Consultation</span>
+            </div>
+            <div className="flex items-center gap-2 text-white/80 group">
+              <CheckCircle className="w-4 h-4 text-green-400 group-hover:scale-110 transition-transform" />
+              <span className="text-xs font-medium">Custom Solutions</span>
             </div>
           </div>
         </div>

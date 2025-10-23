@@ -29,6 +29,7 @@ export default function Navbar() {
 
   const developmentLinks = [
     { name: 'Web Development', path: '/services/web-development' },
+    { name: 'WordPress & Shopify', path: '/services/wordpress-development' },
     { name: 'App Development', path: '/services/app-development' },
     { name: 'E-commerce Solutions', path: '/services/ecommerce' },
     { name: 'Custom Software', path: '/services/custom-software' },
@@ -146,6 +147,17 @@ export default function Navbar() {
             </Link>
 
             <Link
+              to="/portfolio"
+              className={`transition-colors ${
+                location.pathname === '/portfolio'
+                  ? 'text-cyan-400'
+                  : 'text-white hover:text-cyan-400'
+              }`}
+            >
+              Portfolio
+            </Link>
+
+            <Link
               to="/blog"
               className={`transition-colors ${
                 location.pathname === '/blog'
@@ -249,6 +261,17 @@ export default function Navbar() {
               }`}
             >
               About
+            </Link>
+
+            <Link
+              to="/portfolio"
+              className={`block py-2 transition-colors ${
+                location.pathname === '/portfolio'
+                  ? 'text-cyan-400'
+                  : 'text-white hover:text-cyan-400'
+              }`}
+            >
+              Portfolio
             </Link>
 
             <Link

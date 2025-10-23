@@ -7,7 +7,9 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
+import Portfolio from './pages/Portfolio';
 import WebDevelopment from './pages/services/WebDevelopment';
+import WordPressDevelopment from './pages/services/WordPressDevelopment';
 import AppDevelopment from './pages/services/AppDevelopment';
 import Ecommerce from './pages/services/Ecommerce';
 import CustomSoftware from './pages/services/CustomSoftware';
@@ -29,6 +31,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/web-development" element={<WebDevelopment />} />
+          <Route path="/services/wordpress-development" element={<WordPressDevelopment />} />
           <Route path="/services/app-development" element={<AppDevelopment />} />
           <Route path="/services/ecommerce" element={<Ecommerce />} />
           <Route path="/services/custom-software" element={<CustomSoftware />} />
@@ -41,6 +44,7 @@ function App() {
           <Route path="/services/graphic-design" element={<GraphicDesign />} />
           <Route path="/services/content-writing" element={<ContentWriting />} />
           <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />

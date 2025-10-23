@@ -21,7 +21,9 @@ export default function WebDevelopment() {
     { name: 'TypeScript', icon: Code2 },
     { name: 'Tailwind CSS', icon: Layers },
     { name: 'Node.js', icon: Globe },
-    { name: 'Vue.js', icon: Code2 }
+    { name: 'Vue.js', icon: Code2 },
+    { name: 'WordPress', icon: Globe },
+    { name: 'Shopify', icon: Smartphone }
   ];
 
 
@@ -122,7 +124,7 @@ export default function WebDevelopment() {
             <p className="text-slate-400 text-lg">Modern frameworks and tools for robust applications</p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {technologies.map((tech, idx) => (
               <div key={idx} className="bg-gradient-to-br from-slate-900 to-slate-800 p-8 rounded-2xl border border-slate-700/50 hover:border-emerald-500/50 transition-all duration-300 text-center hover:transform hover:-translate-y-2">
                 <tech.icon className="w-12 h-12 text-emerald-400 mx-auto mb-4" />
