@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import {
   ArrowRight,
   Code2,
@@ -22,12 +22,41 @@ import {
   PenTool
 } from 'lucide-react';
 import aboutUsImage from '../assets/images/desktop-smartphone-app-development_23-2148683810.png';
+import patternVideo from '../assets/images/Updated-Pattern.mp4';
 
 export default function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   const toggleFaq = (index: number) => {
     setOpenFaq(openFaq === index ? null : index);
+  };
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    setIsDragging(true);
+    setStartX(e.pageX - (scrollRef.current?.offsetLeft || 0));
+    setScrollLeft(scrollRef.current?.scrollLeft || 0);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - (scrollRef.current?.offsetLeft || 0);
+    const walk = (x - startX) * 2;
+    if (scrollRef.current) {
+      scrollRef.current.scrollLeft = scrollLeft - walk;
+    }
   };
 
   const stats = [
@@ -87,6 +116,15 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
       <section className="relative pt-32 pb-20 px-4 overflow-hidden min-h-screen flex items-center">
+        <video
+          className="absolute inset-0 w-full h-full object-cover opacity-100"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src={patternVideo} type="video/mp4" />
+        </video>
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute w-[600px] h-[600px] bg-cyan-500/30 rounded-full blur-3xl -top-48 left-1/4 animate-pulse"></div>
           <div className="absolute w-[600px] h-[600px] bg-blue-500/30 rounded-full blur-3xl top-1/2 right-1/4 animate-pulse" style={{ animationDelay: '2s' }}></div>
@@ -579,7 +617,20 @@ export default function Home() {
           </div>
 
           <div className="relative overflow-hidden">
-            <div className="flex animate-scroll-right-to-left">
+            <div
+              ref={scrollRef}
+              className="flex animate-scroll-right-to-left cursor-grab active:cursor-grabbing"
+              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+              onMouseDown={handleMouseDown}
+              onMouseLeave={handleMouseLeave}
+              onMouseUp={handleMouseUp}
+              onMouseMove={handleMouseMove}
+            >
+              <style jsx>{`
+                .flex::-webkit-scrollbar {
+                  display: none;
+                }
+              `}</style>
               {[
                 {
                   id: 1,

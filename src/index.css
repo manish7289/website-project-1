@@ -15,6 +15,10 @@
   animation: scroll-right-to-left 30s linear infinite;
 }
 
+.animate-scroll-right-to-left:hover {
+  animation-play-state: paused;
+}
+
 .line-clamp-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -27,4 +31,64 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.code-particle {
+  position: absolute;
+  font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
+  font-weight: 500;
+  color: rgba(6, 182, 212, 0.4);
+  white-space: nowrap;
+  pointer-events: none;
+  animation: floatAndFade infinite ease-in-out;
+  opacity: 0;
+  animation-fill-mode: both;
+  text-shadow: 0 0 10px rgba(6, 182, 212, 0.3);
+}
+
+@keyframes floatAndFade {
+  0% {
+    transform: translateY(100vh) translateX(0) rotate(0deg) scale(0.8);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+    transform: translateY(80vh) translateX(10px) rotate(45deg) scale(1);
+  }
+  20% {
+    opacity: 0.9;
+    transform: translateY(60vh) translateX(-5px) rotate(90deg) scale(1.1);
+  }
+  30% {
+    opacity: 0.7;
+    transform: translateY(40vh) translateX(15px) rotate(135deg) scale(0.9);
+  }
+  40% {
+    opacity: 0.8;
+    transform: translateY(20vh) translateX(-10px) rotate(180deg) scale(1.2);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translateY(0vh) translateX(5px) rotate(225deg) scale(0.8);
+  }
+  60% {
+    opacity: 0.7;
+    transform: translateY(-20vh) translateX(-15px) rotate(270deg) scale(1);
+  }
+  70% {
+    opacity: 0.5;
+    transform: translateY(-40vh) translateX(10px) rotate(315deg) scale(1.1);
+  }
+  80% {
+    opacity: 0.4;
+    transform: translateY(-60vh) translateX(-5px) rotate(360deg) scale(0.9);
+  }
+  90% {
+    opacity: 0.2;
+    transform: translateY(-80vh) translateX(0px) rotate(405deg) scale(1);
+  }
+  100% {
+    transform: translateY(-100vh) translateX(0) rotate(450deg) scale(0.8);
+    opacity: 0;
+  }
 }
