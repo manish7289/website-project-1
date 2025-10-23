@@ -209,9 +209,8 @@ export default function Home() {
             </div>
 
             <div className="relative">
-              <div className="relative p-8 rounded-3xl overflow-hidden">
-
-                <div className="w-[611px] h-[440px] rounded-2xl overflow-hidden">
+              <div className="relative p-4 sm:p-8 rounded-3xl overflow-hidden">
+                <div className="w-full max-w-[611px] h-auto aspect-[611/440] rounded-2xl overflow-hidden mx-auto">
                   <img
                     src={aboutUsImage}
                     alt="About Us - Transforming Ideas Into Digital Reality vector illustration"

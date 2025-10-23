@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 border-t border-slate-800 py-12 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           <div className="text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start space-x-2 mb-4">
               <div className="w-10 h-10 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-lg flex items-center justify-center">
@@ -25,6 +25,17 @@ export default function Footer() {
               <li><Link to="/services" className="hover:text-cyan-400 transition-colors">App Development</Link></li>
               <li><Link to="/services" className="hover:text-cyan-400 transition-colors">E-commerce Solutions</Link></li>
               <li><Link to="/services" className="hover:text-cyan-400 transition-colors">Custom Software</Link></li>
+            </ul>
+          </div>
+
+          <div className="text-center">
+            <h4 className="font-semibold mb-4 text-white">Digital Marketing</h4>
+            <ul className="space-y-2 text-slate-400 text-sm">
+              <li><Link to="/services/digital-marketing/seo" className="hover:text-cyan-400 transition-colors">SEO</Link></li>
+              <li><Link to="/services/digital-marketing/ppc" className="hover:text-cyan-400 transition-colors">PPC</Link></li>
+              <li><Link to="/services/digital-marketing/social-media-marketing" className="hover:text-cyan-400 transition-colors">Social Media Marketing</Link></li>
+              <li><Link to="/services/digital-marketing/content-marketing" className="hover:text-cyan-400 transition-colors">Content Marketing</Link></li>
+              <li><Link to="/services/digital-marketing/email-marketing" className="hover:text-cyan-400 transition-colors">Email Marketing</Link></li>
             </ul>
           </div>
 
