@@ -21,7 +21,7 @@ import {
   Palette,
   PenTool
 } from 'lucide-react';
-import aboutUsImage from '../assets/images/desktop-smartphone-app-development_23-2148683810.png';
+import aboutUsImage from '../assets/images/web-development-programming-.png';
 import patternVideo from '../assets/images/Updated-Pattern.mp4';
 
 export default function Home() {
@@ -209,14 +209,12 @@ export default function Home() {
             </div>
 
             <div className="relative">
-              <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-3xl border border-slate-700/50 shadow-2xl overflow-hidden">
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl opacity-20 animate-pulse"></div>
-                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
+              <div className="relative p-8 rounded-3xl overflow-hidden">
 
-                <div className="w-full h-[400px] md:h-[600px] rounded-2xl flex items-center justify-center overflow-hidden">
+                <div className="w-[611px] h-[440px] rounded-2xl overflow-hidden">
                   <img
                     src={aboutUsImage}
-                    alt="Desktop and smartphone app development illustration"
+                    alt="About Us - Transforming Ideas Into Digital Reality vector illustration"
                     className="w-full h-full object-cover rounded-2xl"
                   />
                 </div>
@@ -275,130 +273,7 @@ export default function Home() {
 
 
 
-      <section className="py-20 px-4 bg-slate-900/50">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="mb-8">
-                <span className="text-cyan-400 font-semibold text-sm uppercase tracking-wider">Frequently Asked Questions</span>
-                <h2 className="text-4xl sm:text-5xl font-bold mt-3 mb-4">
-                  Got <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Questions?</span>
-                </h2>
-                <p className="text-slate-400 text-lg mb-8">
-                  Find answers to common questions about our services and development process.
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                {[
-                  {
-                    question: "How long does a typical project take?",
-                    answer: "Project timelines vary based on complexity and scope. Web development projects typically take 4-8 weeks, mobile apps take 8-16 weeks, and custom software solutions can range from 12-24 weeks. We'll provide a detailed timeline during our initial consultation.",
-                    color: "cyan"
-                  },
-                  {
-                    question: "What is your development process?",
-                    answer: "We follow a proven 5-step process: Discovery (understanding requirements), Planning (wireframes and specifications), Development (agile coding), Testing (quality assurance), and Launch (deployment and support). This ensures high-quality results delivered on time.",
-                    color: "emerald"
-                  },
-                  {
-                    question: "Do you provide ongoing support?",
-                    answer: "Yes! We offer comprehensive maintenance and support packages. This includes bug fixes, security updates, performance optimization, and feature enhancements. We also provide 24/7 monitoring and emergency support for critical applications.",
-                    color: "blue"
-                  },
-                  {
-                    question: "What technologies do you use?",
-                    answer: "We use modern, scalable technologies including React, Next.js, Node.js, Python, React Native, Flutter, AWS, Azure, and more. We choose the best technology stack based on your project requirements and long-term goals.",
-                    color: "purple"
-                  },
-                  {
-                    question: "How much does a project cost?",
-                    answer: "Costs vary based on project complexity, features, and timeline. We offer flexible pricing models including fixed-price projects and hourly rates. Contact us for a free consultation and detailed quote tailored to your specific needs.",
-                    color: "orange"
-                  },
-                  {
-                    question: "Can you work with our existing systems?",
-                    answer: "Absolutely! We specialize in integrating with existing systems, modernizing legacy applications, and adding new features to current platforms. We'll assess your existing infrastructure and provide seamless integration solutions.",
-                    color: "rose"
-                  }
-                ].map((faq, index) => (
-                  <div key={index} className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl border border-slate-700/50 hover:border-slate-600/50 transition-all duration-300">
-                    <button
-                      onClick={() => toggleFaq(index)}
-                      className="w-full p-6 text-left flex items-center justify-between hover:bg-slate-800/50 rounded-xl transition-colors duration-200"
-                    >
-                      <h3 className={`text-lg font-bold text-${faq.color}-400`}>{faq.question}</h3>
-                      {openFaq === index ? (
-                        <ChevronUp className="w-5 h-5 text-slate-400 flex-shrink-0 ml-4" />
-                      ) : (
-                        <ChevronDown className="w-5 h-5 text-slate-400 flex-shrink-0 ml-4" />
-                      )}
-                    </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6">
-                        <p className="text-slate-400 text-sm leading-relaxed">
-                          {faq.answer}
-                        </p>
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-8">
-                <p className="text-slate-400 mb-6">
-                  Still have questions? We're here to help!
-                </p>
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 px-8 py-4 rounded-full hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 font-medium"
-                >
-                  Contact Us
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-3xl border border-slate-700/50 shadow-2xl overflow-hidden">
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl opacity-20 animate-pulse"></div>
-                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
-
-                <div className="relative mb-6">
-                  <div className="w-full h-64 rounded-2xl overflow-hidden">
-                    <img
-                      src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&w=600&h=400"
-                      alt="Professional support and consultation illustration"
-                      className="w-full h-full object-cover rounded-2xl"
-                    />
-                  </div>
-                </div>
-
-                <div className="text-center">
-                  <h3 className="text-2xl font-bold mb-4">Have Questions?</h3>
-                  <p className="text-slate-400 mb-6">
-                    Our team is always ready to help you with any questions about our services, pricing, or development process.
-                  </p>
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-3 text-sm">
-                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                      <span className="text-slate-300">24/7 Support Available</span>
-                    </div>
-                    <div className="flex items-center gap-3 text-sm">
-                      <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                      <span className="text-slate-300">Free Initial Consultation</span>
-                    </div>
-                    <div className="flex items-center gap-3 text-sm">
-                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                      <span className="text-slate-300">Detailed Project Quotes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    
 
       <section className="py-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"></div>
@@ -802,11 +677,130 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="py-20 px-4 bg-slate-900/50">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="mb-8">
+                <span className="text-cyan-400 font-semibold text-sm uppercase tracking-wider">Frequently Asked Questions</span>
+                <h2 className="text-4xl sm:text-5xl font-bold mt-3 mb-4">
+                  Got <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Questions?</span>
+                </h2>
+                <p className="text-slate-400 text-lg mb-8">
+                  Find answers to common questions about our services and development process.
+                </p>
+              </div>
 
+              <div className="space-y-4">
+                {[
+                  {
+                    question: "How long does a typical project take?",
+                    answer: "Project timelines vary based on complexity and scope. Web development projects typically take 4-8 weeks, mobile apps take 8-16 weeks, and custom software solutions can range from 12-24 weeks. We'll provide a detailed timeline during our initial consultation.",
+                    color: "cyan"
+                  },
+                  {
+                    question: "What is your development process?",
+                    answer: "We follow a proven 5-step process: Discovery (understanding requirements), Planning (wireframes and specifications), Development (agile coding), Testing (quality assurance), and Launch (deployment and support). This ensures high-quality results delivered on time.",
+                    color: "emerald"
+                  },
+                  {
+                    question: "Do you provide ongoing support?",
+                    answer: "Yes! We offer comprehensive maintenance and support packages. This includes bug fixes, security updates, performance optimization, and feature enhancements. We also provide 24/7 monitoring and emergency support for critical applications.",
+                    color: "blue"
+                  },
+                  {
+                    question: "What technologies do you use?",
+                    answer: "We use modern, scalable technologies including React, Next.js, Node.js, Python, React Native, Flutter, AWS, Azure, and more. We choose the best technology stack based on your project requirements and long-term goals.",
+                    color: "purple"
+                  },
+                  {
+                    question: "How much does a project cost?",
+                    answer: "Costs vary based on project complexity, features, and timeline. We offer flexible pricing models including fixed-price projects and hourly rates. Contact us for a free consultation and detailed quote tailored to your specific needs.",
+                    color: "orange"
+                  },
+                  {
+                    question: "Can you work with our existing systems?",
+                    answer: "Absolutely! We specialize in integrating with existing systems, modernizing legacy applications, and adding new features to current platforms. We'll assess your existing infrastructure and provide seamless integration solutions.",
+                    color: "rose"
+                  }
+                ].map((faq, index) => (
+                  <div key={index} className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl border border-slate-700/50 hover:border-slate-600/50 transition-all duration-300">
+                    <button
+                      onClick={() => toggleFaq(index)}
+                      className="w-full p-6 text-left flex items-center justify-between hover:bg-slate-800/50 rounded-xl transition-colors duration-200"
+                    >
+                      <h3 className={`text-lg font-bold ${faq.color === 'cyan' ? 'text-cyan-400' : faq.color === 'emerald' ? 'text-emerald-400' : faq.color === 'blue' ? 'text-blue-400' : faq.color === 'purple' ? 'text-purple-400' : faq.color === 'orange' ? 'text-orange-400' : 'text-rose-400'}`}>{faq.question}</h3>
+                      {openFaq === index ? (
+                        <ChevronUp className="w-5 h-5 text-slate-400 flex-shrink-0 ml-4" />
+                      ) : (
+                        <ChevronDown className="w-5 h-5 text-slate-400 flex-shrink-0 ml-4" />
+                      )}
+                    </button>
+                    {openFaq === index && (
+                      <div className="px-6 pb-6">
+                        <p className="text-slate-400 text-sm leading-relaxed">
+                          {faq.answer}
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
 
+              <div className="mt-8">
+                <p className="text-slate-400 mb-6">
+                  Still have questions? We're here to help!
+                </p>
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 px-8 py-4 rounded-full hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 font-medium"
+                >
+                  Contact Us
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+              </div>
+            </div>
 
+            <div className="relative">
+              <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-3xl border border-slate-700/50 shadow-2xl overflow-hidden">
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl opacity-20 animate-pulse"></div>
+                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
 
+                <div className="relative mb-6">
+                  <div className="w-full h-64 rounded-2xl overflow-hidden">
+                    <img
+                      src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=600&h=400"
+                      alt="Website development vector illustration"
+                      className="w-full h-full object-cover rounded-2xl"
+                    />
+                  </div>
+                </div>
 
+                <div className="text-center">
+                  <h3 className="text-2xl font-bold mb-4">Have Questions?</h3>
+                  <p className="text-slate-400 mb-6">
+                    Our team is always ready to help you with any questions about our services, pricing, or development process.
+                  </p>
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3 text-sm">
+                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <span className="text-slate-300">24/7 Support Available</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-sm">
+                      <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
+                      <span className="text-slate-300">Free Initial Consultation</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-sm">
+                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                      <span className="text-slate-300">Detailed Project Quotes</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="py-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"></div>
