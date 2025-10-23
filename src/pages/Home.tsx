@@ -126,46 +126,46 @@ export default function Home() {
           <source src={patternVideo} type="video/mp4" />
         </video>
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute w-[600px] h-[600px] bg-cyan-500/30 rounded-full blur-3xl -top-48 left-1/4 animate-pulse"></div>
-          <div className="absolute w-[600px] h-[600px] bg-blue-500/30 rounded-full blur-3xl top-1/2 right-1/4 animate-pulse" style={{ animationDelay: '2s' }}></div>
-          <div className="absolute w-[400px] h-[400px] bg-purple-500/20 rounded-full blur-3xl bottom-0 left-1/2 animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px] bg-cyan-500/30 rounded-full blur-3xl -top-24 sm:-top-32 md:-top-48 left-1/4 animate-pulse"></div>
+          <div className="absolute w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px] bg-blue-500/30 rounded-full blur-3xl top-1/2 right-1/4 animate-pulse" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] bg-purple-500/20 rounded-full blur-3xl bottom-0 left-1/2 animate-pulse" style={{ animationDelay: '1s' }}></div>
 
-          <div className="absolute top-20 left-10 w-2 h-2 bg-cyan-400 rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
-          <div className="absolute top-40 right-20 w-3 h-3 bg-blue-400 rounded-full animate-ping" style={{ animationDelay: '1.5s' }}></div>
-          <div className="absolute bottom-40 left-1/3 w-2 h-2 bg-purple-400 rounded-full animate-ping" style={{ animationDelay: '2.5s' }}></div>
-          <div className="absolute bottom-20 right-1/3 w-3 h-3 bg-cyan-400 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-1 h-1 sm:w-2 sm:h-2 bg-cyan-400 rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
+          <div className="absolute top-20 sm:top-40 right-5 sm:right-20 w-2 h-2 sm:w-3 sm:h-3 bg-blue-400 rounded-full animate-ping" style={{ animationDelay: '1.5s' }}></div>
+          <div className="absolute bottom-20 sm:bottom-40 left-1/3 w-1 h-1 sm:w-2 sm:h-2 bg-purple-400 rounded-full animate-ping" style={{ animationDelay: '2.5s' }}></div>
+          <div className="absolute bottom-10 sm:bottom-20 right-1/3 w-2 h-2 sm:w-3 sm:h-3 bg-cyan-400 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
         </div>
 
-        <div className="max-w-7xl mx-auto relative">
+        <div className="max-w-7xl mx-auto relative px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="inline-block mb-6 animate-fade-in">
-              <span className="px-6 py-3 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border-2 border-cyan-500/40 rounded-full text-cyan-300 text-sm font-semibold backdrop-blur-sm shadow-lg shadow-cyan-500/20">
+            <div className="inline-block mb-4 sm:mb-6 animate-fade-in">
+              <span className="px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border-2 border-cyan-500/40 rounded-full text-cyan-300 text-xs sm:text-sm font-semibold backdrop-blur-sm shadow-lg shadow-cyan-500/20">
                 #1 Development Agency 2025
               </span>
             </div>
 
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8 animate-slide-up leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold mb-6 sm:mb-8 animate-slide-up leading-tight">
               Transforming Ideas Into
-              <span className="block bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent mt-2">
+              <span className="block bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent mt-1 sm:mt-2">
                 Digital Reality
               </span>
             </h1>
 
-            <p className="text-xl sm:text-2xl text-slate-300 mb-12 max-w-3xl mx-auto animate-slide-up animation-delay-200 leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl text-slate-300 mb-8 sm:mb-12 max-w-3xl mx-auto animate-slide-up animation-delay-200 leading-relaxed px-4 sm:px-0">
               We craft innovative <span className="text-cyan-400 font-semibold">web applications</span>, <span className="text-blue-400 font-semibold">mobile apps</span>, and <span className="text-purple-400 font-semibold">custom software</span> that transform businesses and delight users worldwide.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up animation-delay-300">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up animation-delay-300 px-4 sm:px-0">
               <Link
                 to="/contact"
-                className="group bg-gradient-to-r from-cyan-500 to-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl hover:shadow-cyan-500/50 transition-all duration-300 flex items-center justify-center gap-2"
+                className="group bg-gradient-to-r from-cyan-500 to-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:shadow-2xl hover:shadow-cyan-500/50 transition-all duration-300 flex items-center justify-center gap-2 w-full sm:w-auto"
               >
                 Start Your Project
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
                 to="/portfolio"
-                className="px-8 py-4 rounded-full text-lg font-semibold border-2 border-cyan-500/30 hover:bg-cyan-500/10 transition-all duration-300"
+                className="px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold border-2 border-cyan-500/30 hover:bg-cyan-500/10 transition-all duration-300 w-full sm:w-auto text-center"
               >
                 View Our Work
               </Link>
@@ -176,33 +176,33 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-slate-900/50">
+      <section className="py-12 sm:py-16 md:py-20 px-4 bg-slate-900/50">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="space-y-4 sm:space-y-6">
               <div>
-                <span className="text-cyan-400 font-semibold text-sm uppercase tracking-wider">About Us</span>
-                <h2 className="text-4xl sm:text-5xl font-bold mt-3 mb-6">
+                <span className="text-cyan-400 font-semibold text-xs sm:text-sm uppercase tracking-wider">About Us</span>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-2 sm:mt-3 mb-4 sm:mb-6">
                   Transforming Ideas Into
                   <span className="block bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
                     Digital Reality
                   </span>
                 </h2>
-                <p className="text-xl text-slate-300 leading-relaxed mb-8">
+                <p className="text-base sm:text-lg md:text-xl text-slate-300 leading-relaxed mb-6 sm:mb-8">
                   We are a leading software development agency specializing in creating innovative digital solutions that drive business growth. With years of experience and a team of expert developers, we transform complex ideas into user-friendly applications that deliver real results.
                 </p>
-                <p className="text-lg text-slate-400 leading-relaxed mb-8">
+                <p className="text-sm sm:text-base md:text-lg text-slate-400 leading-relaxed mb-6 sm:mb-8">
                   Our mission is to empower businesses with cutting-edge technology, helping them stay ahead in the digital landscape. We believe in quality, innovation, and building long-term partnerships with our clients.
                 </p>
-                <div className="flex flex-wrap gap-4">
-                  <div className="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 px-4 py-2 rounded-full border border-cyan-500/30">
-                    <span className="text-cyan-300 font-semibold">Innovation First</span>
+                <div className="flex flex-wrap gap-3 sm:gap-4">
+                  <div className="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-cyan-500/30">
+                    <span className="text-cyan-300 font-semibold text-sm sm:text-base">Innovation First</span>
                   </div>
-                  <div className="bg-gradient-to-r from-emerald-500/20 to-teal-500/20 px-4 py-2 rounded-full border border-emerald-500/30">
-                    <span className="text-emerald-300 font-semibold">Quality Driven</span>
+                  <div className="bg-gradient-to-r from-emerald-500/20 to-teal-500/20 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-emerald-500/30">
+                    <span className="text-emerald-300 font-semibold text-sm sm:text-base">Quality Driven</span>
                   </div>
-                  <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 px-4 py-2 rounded-full border border-purple-500/30">
-                    <span className="text-purple-300 font-semibold">Client Focused</span>
+                  <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-purple-500/30">
+                    <span className="text-purple-300 font-semibold text-sm sm:text-base">Client Focused</span>
                   </div>
                 </div>
               </div>
@@ -364,16 +364,13 @@ export default function Home() {
                 <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl opacity-20 animate-pulse"></div>
                 <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
 
-                {/* Image Placeholder */}
                 <div className="relative mb-6">
-                  <div className="w-full h-64 bg-gradient-to-br from-slate-700 to-slate-600 rounded-2xl flex items-center justify-center border-2 border-dashed border-slate-500/50">
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-slate-600 rounded-xl flex items-center justify-center mx-auto mb-4">
-                        <Code2 className="w-8 h-8 text-slate-400" />
-                      </div>
-                      <p className="text-slate-400 text-sm font-medium">Image Placeholder</p>
-                      <p className="text-slate-500 text-xs mt-1">Add your image here</p>
-                    </div>
+                  <div className="w-full h-64 rounded-2xl overflow-hidden">
+                    <img
+                      src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&w=600&h=400"
+                      alt="Professional support and consultation illustration"
+                      className="w-full h-full object-cover rounded-2xl"
+                    />
                   </div>
                 </div>
 
@@ -619,18 +616,20 @@ export default function Home() {
           <div className="relative overflow-hidden">
             <div
               ref={scrollRef}
-              className="flex animate-scroll-right-to-left cursor-grab active:cursor-grabbing"
+              className="flex animate-scroll-right-to-left cursor-grab active:cursor-grabbing overflow-x-auto"
               style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
               onMouseDown={handleMouseDown}
               onMouseLeave={handleMouseLeave}
               onMouseUp={handleMouseUp}
               onMouseMove={handleMouseMove}
             >
-              <style jsx>{`
-                .flex::-webkit-scrollbar {
-                  display: none;
-                }
-              `}</style>
+              <style dangerouslySetInnerHTML={{
+                __html: `
+                  .flex::-webkit-scrollbar {
+                    display: none;
+                  }
+                `
+              }} />
               {[
                 {
                   id: 1,
