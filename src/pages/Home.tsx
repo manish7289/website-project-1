@@ -286,17 +286,18 @@ export default function Home() {
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
 
         <div className="max-w-7xl mx-auto relative">
+        <div className="text-center mb-16">
+            <span className="text-cyan-400 font-semibold text-sm uppercase tracking-wider">Our Expertise</span>
+            <h2 className="text-4xl sm:text-5xl font-bold mt-3 mb-4">
+            Cutting-Edge <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Technology Stack</span>
+            </h2>
+            <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+            We leverage the latest technologies and frameworks to build robust, scalable, and future-proof solutions that drive your business forward.
+            </p>
+          </div>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <div>
-                <span className="text-cyan-400 font-semibold text-sm uppercase tracking-wider">Our Expertise</span>
-                <h2 className="text-4xl sm:text-5xl font-bold mt-3 mb-6">
-                  Cutting-Edge <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Technology Stack</span>
-                </h2>
-                <p className="text-xl text-slate-300 leading-relaxed mb-8">
-                  We leverage the latest technologies and frameworks to build robust, scalable, and future-proof solutions that drive your business forward.
-                </p>
-              </div>
+             
 
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-gradient-to-br from-slate-800 to-slate-700 p-6 rounded-2xl border border-slate-600/50 hover:border-cyan-500/50 transition-all duration-300 group">
