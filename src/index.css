@@ -18,7 +18,7 @@
 }
 
 .animate-scroll-right-to-left {
-  animation: scroll-right-to-left 30s linear infinite;
+  animation: scroll-right-to-left 15s linear infinite;
 }
 
 .animate-scroll-right-to-left:hover {

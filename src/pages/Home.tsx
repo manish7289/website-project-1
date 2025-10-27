@@ -21,7 +21,7 @@ import {
   Palette,
   PenTool
 } from 'lucide-react';
-import aboutUsImage from '../assets/images/web-development-programming-.png';
+import aboutUsImage from '../assets/images/about us image-Photoroom.png';
 import patternVideo from '../assets/images/Updated-Pattern.mp4';
 
 export default function Home() {
@@ -336,8 +336,6 @@ export default function Home() {
 
             <div className="relative">
               <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-3xl border border-slate-700/50 shadow-2xl">
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl opacity-20 animate-pulse"></div>
-                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
 
                 <div className="space-y-6">
                   <div className="flex items-center gap-4 p-4 bg-slate-800/50 rounded-xl border border-slate-600/30">
@@ -494,184 +492,110 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="relative overflow-hidden">
-            <div
-              ref={scrollRef}
-              className="flex animate-scroll-right-to-left cursor-grab active:cursor-grabbing overflow-x-auto"
-              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-              onMouseDown={handleMouseDown}
-              onMouseLeave={handleMouseLeave}
-              onMouseUp={handleMouseUp}
-              onMouseMove={handleMouseMove}
-            >
-              <style dangerouslySetInnerHTML={{
-                __html: `
-                  .flex::-webkit-scrollbar {
-                    display: none;
+          <div className="grid lg:grid-cols-4 gap-8">
+            {/* Featured Blog Post - Left Side */}
+            <div className="lg:col-span-2">
+              <article className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl overflow-hidden border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300 group cursor-pointer h-full">
+                <div className="relative overflow-hidden">
+                  <img
+                    src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=600&h=400"
+                    alt="The Future of React Development: What to Expect in 2025"
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-cyan-400 rounded-full text-xs font-medium">
+                      Web Development
+                    </span>
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <span className="px-3 py-1 bg-cyan-500/20 backdrop-blur-sm text-cyan-300 rounded-full text-xs font-medium">
+                      Latest
+                    </span>
+                  </div>
+                </div>
+
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold mb-4 group-hover:text-cyan-400 transition-colors leading-tight">
+                    The Future of React Development: What to Expect in 2025
+                  </h3>
+                  <p className="text-slate-400 text-base mb-6 leading-relaxed">
+                    Explore the upcoming features and trends that will shape React development in the coming year. From concurrent features to improved performance optimizations, discover what's next for the most popular frontend library. Learn about the latest hooks, server components, and how these innovations will impact your development workflow. Stay ahead of the curve with insights into React's roadmap and best practices for modern web development.
+                  </p>
+
+                  <Link
+                    to="/blog/1"
+                    className="inline-flex items-center gap-2 text-cyan-400 font-semibold hover:gap-3 transition-all group-hover:text-cyan-300"
+                  >
+                    Read Full Article
+                    <ArrowRight className="w-5 h-5" />
+                  </Link>
+                </div>
+              </article>
+            </div>
+
+            {/* Blog Grid - Right Side - Single Column with 3 Posts */}
+            <div className="lg:col-span-2">
+              <div className="grid grid-cols-1 gap-6">
+                {[
+                  {
+                    id: 2,
+                    title: 'Building Scalable Mobile Apps with React Native',
+                    excerpt: 'Learn best practices for creating high-performance mobile applications.',
+                    image: 'https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
+                    category: 'Mobile Apps'
+                  },
+                  {
+                    id: 3,
+                    title: 'Why Your Business Needs a Custom Software Solution',
+                    excerpt: 'Discover how tailored software can give your business a competitive edge.',
+                    image: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
+                    category: 'Business'
+                  },
+                  {
+                    id: 4,
+                    title: 'The Rise of AI in Web Development',
+                    excerpt: 'How artificial intelligence is transforming the way we build websites.',
+                    image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
+                    category: 'Technology'
                   }
-                `
-              }} />
-              {[
-                {
-                  id: 1,
-                  title: 'The Future of React Development: What to Expect in 2025',
-                  excerpt: 'Explore the upcoming features and trends that will shape React development.',
-                  image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
-                  category: 'Web Development'
-                },
-                {
-                  id: 2,
-                  title: 'Building Scalable Mobile Apps with React Native',
-                  excerpt: 'Learn best practices for creating high-performance mobile applications.',
-                  image: 'https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
-                  category: 'Mobile Apps'
-                },
-                {
-                  id: 3,
-                  title: 'Why Your Business Needs a Custom Software Solution',
-                  excerpt: 'Discover how tailored software can give your business a competitive edge.',
-                  image: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
-                  category: 'Business'
-                },
-                {
-                  id: 4,
-                  title: 'The Rise of AI in Web Development',
-                  excerpt: 'How artificial intelligence is transforming the way we build websites.',
-                  image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
-                  category: 'Technology'
-                },
-                {
-                  id: 5,
-                  title: 'Optimizing Performance in React Applications',
-                  excerpt: 'Essential techniques for building fast and efficient React apps.',
-                  image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
-                  category: 'Web Development'
-                },
-                {
-                  id: 6,
-                  title: 'Cross-Platform Development: Pros and Cons',
-                  excerpt: 'A comprehensive guide to choosing between native and cross-platform development.',
-                  image: 'https://images.pexels.com/photos/1108102/pexels-photo-1108102.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
-                  category: 'Mobile Apps'
-                }
-              ].map((post, index) => (
-                <div key={index} className="flex-shrink-0 w-80 mx-4">
-                  <article className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl overflow-hidden border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300 group cursor-pointer h-full">
+                ].map((post, index) => (
+                  <article key={post.id} className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl overflow-hidden border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300 group cursor-pointer">
                     <div className="relative overflow-hidden">
                       <img
                         src={post.image}
                         alt={post.title}
-                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
                       />
-                      <div className="absolute top-4 left-4">
-                        <span className="px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-cyan-400 rounded-full text-xs font-medium">
+                      <div className="absolute top-2 left-2">
+                        <span className="px-2 py-1 bg-slate-900/80 backdrop-blur-sm text-cyan-400 rounded-full text-xs font-medium">
                           {post.category}
                         </span>
                       </div>
                     </div>
 
-                    <div className="p-6">
-                      <h3 className="text-lg font-bold mb-3 group-hover:text-cyan-400 transition-colors leading-tight line-clamp-2">
+                    <div className="p-4">
+                      <h4 className="text-sm font-bold mb-2 group-hover:text-cyan-400 transition-colors leading-tight line-clamp-2">
                         {post.title}
-                      </h3>
-                      <p className="text-slate-400 text-sm mb-4 leading-relaxed line-clamp-3">
+                      </h4>
+                      <p className="text-slate-400 text-xs mb-3 leading-relaxed line-clamp-2">
                         {post.excerpt}
                       </p>
 
                       <Link
                         to={`/blog/${post.id}`}
-                        className="inline-flex items-center gap-2 text-cyan-400 font-medium hover:gap-3 transition-all group-hover:text-cyan-300"
+                        className="inline-flex items-center gap-1 text-cyan-400 font-medium text-xs hover:gap-2 transition-all group-hover:text-cyan-300"
                       >
                         Read More
-                        <ArrowRight className="w-4 h-4" />
+                        <ArrowRight className="w-3 h-3" />
                       </Link>
                     </div>
                   </article>
-                </div>
-              ))}
-              {/* Duplicate for seamless loop */}
-              {[
-                {
-                  id: 1,
-                  title: 'The Future of React Development: What to Expect in 2025',
-                  excerpt: 'Explore the upcoming features and trends that will shape React development.',
-                  image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
-                  category: 'Web Development'
-                },
-                {
-                  id: 2,
-                  title: 'Building Scalable Mobile Apps with React Native',
-                  excerpt: 'Learn best practices for creating high-performance mobile applications.',
-                  image: 'https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
-                  category: 'Mobile Apps'
-                },
-                {
-                  id: 3,
-                  title: 'Why Your Business Needs a Custom Software Solution',
-                  excerpt: 'Discover how tailored software can give your business a competitive edge.',
-                  image: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
-                  category: 'Business'
-                },
-                {
-                  id: 4,
-                  title: 'The Rise of AI in Web Development',
-                  excerpt: 'How artificial intelligence is transforming the way we build websites.',
-                  image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
-                  category: 'Technology'
-                },
-                {
-                  id: 5,
-                  title: 'Optimizing Performance in React Applications',
-                  excerpt: 'Essential techniques for building fast and efficient React apps.',
-                  image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
-                  category: 'Web Development'
-                },
-                {
-                  id: 6,
-                  title: 'Cross-Platform Development: Pros and Cons',
-                  excerpt: 'A comprehensive guide to choosing between native and cross-platform development.',
-                  image: 'https://images.pexels.com/photos/1108102/pexels-photo-1108102.jpeg?auto=compress&cs=tinysrgb&w=400&h=250',
-                  category: 'Mobile Apps'
-                }
-              ].map((post, index) => (
-                <div key={`duplicate-${index}`} className="flex-shrink-0 w-80 mx-4">
-                  <article className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl overflow-hidden border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300 group cursor-pointer h-full">
-                    <div className="relative overflow-hidden">
-                      <img
-                        src={post.image}
-                        alt={post.title}
-                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-                      <div className="absolute top-4 left-4">
-                        <span className="px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-cyan-400 rounded-full text-xs font-medium">
-                          {post.category}
-                        </span>
-                      </div>
-                    </div>
-
-                    <div className="p-6">
-                      <h3 className="text-lg font-bold mb-3 group-hover:text-cyan-400 transition-colors leading-tight line-clamp-2">
-                        {post.title}
-                      </h3>
-                      <p className="text-slate-400 text-sm mb-4 leading-relaxed line-clamp-3">
-                        {post.excerpt}
-                      </p>
-
-                      <Link
-                        to={`/blog/${post.id}`}
-                        className="inline-flex items-center gap-2 text-cyan-400 font-medium hover:gap-3 transition-all group-hover:text-cyan-300"
-                      >
-                        Read More
-                        <ArrowRight className="w-4 h-4" />
-                      </Link>
-                    </div>
-                  </article>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
 
-          <div className="text-center mt-10">
+          <div className="text-center mt-12">
             <Link
               to="/blog"
               className="inline-flex items-center gap-2 text-cyan-400 font-semibold hover:gap-3 transition-all"
@@ -769,8 +693,6 @@ export default function Home() {
 
             <div className="relative">
               <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-3xl border border-slate-700/50 shadow-2xl overflow-hidden">
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl opacity-20 animate-pulse"></div>
-                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
 
                 <div className="relative mb-6">
                   <div className="w-full h-64 rounded-2xl overflow-hidden">
@@ -832,53 +754,53 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 mb-16">
-            <div className="flex flex-col gap-8 h-full">
-              <div className="group bg-gradient-to-br from-slate-900 to-slate-800 p-8 rounded-2xl border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-500 hover:transform hover:-translate-y-2 flex-1 flex flex-col">
-                <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Rocket className="w-8 h-8 text-white" />
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16">
+            <div className="flex flex-col gap-6 lg:gap-8 h-full">
+              <div className="group bg-gradient-to-br from-slate-900 to-slate-800 p-6 lg:p-8 rounded-2xl border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-500 hover:transform hover:-translate-y-2 flex-1 flex flex-col">
+                <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center mb-4 lg:mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Rocket className="w-6 h-6 lg:w-8 lg:h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 group-hover:text-cyan-400 transition-colors">Fast Delivery</h3>
-                <p className="text-slate-400 leading-relaxed mb-6 flex-grow">
+                <h3 className="text-xl lg:text-2xl font-bold mb-3 lg:mb-4 group-hover:text-cyan-400 transition-colors">Fast Delivery</h3>
+                <p className="text-slate-400 text-sm lg:text-base leading-relaxed mb-4 lg:mb-6 flex-grow">
                   We deliver high-quality projects on time with our proven development process and agile methodology.
                 </p>
                 <div className="flex items-center gap-2 text-cyan-400 font-semibold mt-auto">
-                  <span>Learn More</span>
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  <span className="text-sm lg:text-base">Learn More</span>
+                  <ArrowRight className="w-3 h-3 lg:w-4 lg:h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
 
-              <div className="group bg-gradient-to-br from-slate-900 to-slate-800 p-8 rounded-2xl border border-slate-700/50 hover:border-emerald-500/50 transition-all duration-500 hover:transform hover:-translate-y-2 flex-1 flex flex-col">
-                <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Award className="w-8 h-8 text-white" />
+              <div className="group bg-gradient-to-br from-slate-900 to-slate-800 p-6 lg:p-8 rounded-2xl border border-slate-700/50 hover:border-emerald-500/50 transition-all duration-500 hover:transform hover:-translate-y-2 flex-1 flex flex-col">
+                <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mb-4 lg:mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Award className="w-6 h-6 lg:w-8 lg:h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 group-hover:text-emerald-400 transition-colors">Quality Assured</h3>
-                <p className="text-slate-400 leading-relaxed mb-6 flex-grow">
+                <h3 className="text-xl lg:text-2xl font-bold mb-3 lg:mb-4 group-hover:text-emerald-400 transition-colors">Quality Assured</h3>
+                <p className="text-slate-400 text-sm lg:text-base leading-relaxed mb-4 lg:mb-6 flex-grow">
                   Every project undergoes rigorous testing and quality checks to ensure exceptional performance and user experience.
                 </p>
                 <div className="flex items-center gap-2 text-emerald-400 font-semibold mt-auto">
-                  <span>Learn More</span>
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  <span className="text-sm lg:text-base">Learn More</span>
+                  <ArrowRight className="w-3 h-3 lg:w-4 lg:h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
 
-              <div className="group bg-gradient-to-br from-slate-900 to-slate-800 p-8 rounded-2xl border border-slate-700/50 hover:border-purple-500/50 transition-all duration-500 hover:transform hover:-translate-y-2 flex-1 flex flex-col">
-                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Users className="w-8 h-8 text-white" />
+              <div className="group bg-gradient-to-br from-slate-900 to-slate-800 p-6 lg:p-8 rounded-2xl border border-slate-700/50 hover:border-purple-500/50 transition-all duration-500 hover:transform hover:-translate-y-2 flex-1 flex flex-col">
+                <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mb-4 lg:mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Users className="w-6 h-6 lg:w-8 lg:h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 group-hover:text-purple-400 transition-colors">Dedicated Support</h3>
-                <p className="text-slate-400 leading-relaxed mb-6 flex-grow">
+                <h3 className="text-xl lg:text-2xl font-bold mb-3 lg:mb-4 group-hover:text-purple-400 transition-colors">Dedicated Support</h3>
+                <p className="text-slate-400 text-sm lg:text-base leading-relaxed mb-4 lg:mb-6 flex-grow">
                   Our team provides ongoing support and maintenance to keep your digital solutions running smoothly.
                 </p>
                 <div className="flex items-center gap-2 text-purple-400 font-semibold mt-auto">
-                  <span>Learn More</span>
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  <span className="text-sm lg:text-base">Learn More</span>
+                  <ArrowRight className="w-3 h-3 lg:w-4 lg:h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
             </div>
 
-            <div className="relative">
-              <div className="relative bg-gradient-to-br from-cyan-600 via-blue-600 to-purple-700 rounded-3xl p-16 overflow-hidden shadow-2xl min-h-[600px]">
+            <div className="relative order-first lg:order-last">
+              <div className="relative bg-gradient-to-br from-cyan-600 via-blue-600 to-purple-700 rounded-3xl p-8 lg:p-16 overflow-hidden shadow-2xl min-h-[500px] lg:min-h-[600px]">
                 {/* Enhanced animated background elements */}
                 <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
                 <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
@@ -903,30 +825,30 @@ export default function Home() {
                   </div>
 
                   {/* Dynamic heading with gradient animation */}
-                  <h3 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
+                  <h3 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 lg:mb-6 text-white leading-tight">
                     Let's Build Something
                     <span className="block bg-gradient-to-r from-yellow-300 via-orange-300 to-red-300 bg-clip-text text-transparent animate-gradient-x">
                       Amazing Together
                     </span>
                   </h3>
 
-                  <p className="text-xl text-blue-100 mb-10 max-w-3xl mx-auto leading-relaxed">
+                  <p className="text-lg lg:text-xl text-blue-100 mb-8 lg:mb-10 max-w-3xl mx-auto leading-relaxed px-4 lg:px-0">
                     Schedule a free consultation and discover how we can help bring your vision to life with cutting-edge technology and creative solutions.
                   </p>
 
                   {/* Enhanced buttons with better animations - stacked vertically */}
-                  <div className="flex flex-col gap-6 justify-center items-center mb-10">
+                  <div className="flex flex-col gap-4 lg:gap-6 justify-center items-center mb-8 lg:mb-10 px-4 lg:px-0">
                     <Link
                       to="/contact"
-                      className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 px-8 py-6 rounded-full hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 font-medium"
+                      className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 px-6 lg:px-8 py-4 lg:py-6 rounded-full hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 font-medium text-sm lg:text-base w-full lg:w-auto justify-center"
                     >
                       Let's Build Something Amazing Together
-                      <ArrowRight className="w-5 h-5" />
+                      <ArrowRight className="w-4 h-4 lg:w-5 lg:h-5" />
                     </Link>
 
                     <Link
                       to="/portfolio"
-                      className="group px-10 py-5 rounded-full text-lg font-semibold border-2 border-white/40 text-white hover:bg-white/10 hover:border-white/60 transition-all duration-300 backdrop-blur-sm"
+                      className="group px-8 lg:px-10 py-4 lg:py-5 rounded-full text-base lg:text-lg font-semibold border-2 border-white/40 text-white hover:bg-white/10 hover:border-white/60 transition-all duration-300 backdrop-blur-sm w-full lg:w-auto text-center"
                     >
                       View Our Work
                     </Link>
