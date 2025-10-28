@@ -1,92 +1,180 @@
 import { Link } from 'react-router-dom';
-import { Code2, Mail, Phone, MapPin, Linkedin, Instagram, Facebook, Youtube } from 'lucide-react';
+import { Code2, Mail, Phone, MapPin, Linkedin, Instagram, Facebook, Youtube, ArrowRight, Sparkles } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 border-t border-slate-800 py-12 px-4">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-          <div className="text-center md:text-left">
-            <div className="flex items-center justify-center md:justify-start space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-lg flex items-center justify-center">
-                <Code2 className="w-6 h-6 text-white" />
-              </div>
-              <span className="text-xl font-bold text-white">DevCraft</span>
+    <footer className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
+      {/* Animated Background */}
+      <div className="absolute inset-0">
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-purple-500/5 rounded-full blur-2xl animate-pulse delay-500"></div>
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 py-16">
+        {/* Main Content Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          {/* Services */}
+          <div className="space-y-4">
+            <h4 className="text-lg font-semibold text-white mb-6 relative">
+              <span className="relative z-10">Services</span>
+              <div className="absolute -bottom-2 left-0 w-8 h-1 bg-gradient-to-r from-cyan-400 to-blue-600 rounded-full"></div>
+            </h4>
+            <ul className="space-y-3">
+              <li>
+                <Link to="/services/web-development" className="group flex items-center gap-2 text-slate-400 hover:text-cyan-400 transition-colors duration-200">
+                  <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  Web Development
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/app-development" className="group flex items-center gap-2 text-slate-400 hover:text-cyan-400 transition-colors duration-200">
+                  <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  App Development
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/ecommerce" className="group flex items-center gap-2 text-slate-400 hover:text-cyan-400 transition-colors duration-200">
+                  <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  E-commerce
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/custom-software" className="group flex items-center gap-2 text-slate-400 hover:text-cyan-400 transition-colors duration-200">
+                  <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  Custom Software
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Digital Marketing */}
+          <div className="space-y-4">
+            <h4 className="text-lg font-semibold text-white mb-6 relative">
+              <span className="relative z-10">Digital Marketing</span>
+              <div className="absolute -bottom-2 left-0 w-8 h-1 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full"></div>
+            </h4>
+            <ul className="space-y-3">
+              <li>
+                <Link to="/services/digital-marketing/seo" className="group flex items-center gap-2 text-slate-400 hover:text-blue-400 transition-colors duration-200">
+                  <div className="w-1.5 h-1.5 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  SEO
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/digital-marketing/ppc" className="group flex items-center gap-2 text-slate-400 hover:text-blue-400 transition-colors duration-200">
+                  <div className="w-1.5 h-1.5 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  PPC
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/digital-marketing/social-media-marketing" className="group flex items-center gap-2 text-slate-400 hover:text-blue-400 transition-colors duration-200">
+                  <div className="w-1.5 h-1.5 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  Social Media
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/digital-marketing/content-marketing" className="group flex items-center gap-2 text-slate-400 hover:text-blue-400 transition-colors duration-200">
+                  <div className="w-1.5 h-1.5 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  Content Marketing
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Company */}
+          <div className="space-y-4">
+            <h4 className="text-lg font-semibold text-white mb-6 relative">
+              <span className="relative z-10">Company</span>
+              <div className="absolute -bottom-2 left-0 w-8 h-1 bg-gradient-to-r from-purple-400 to-pink-600 rounded-full"></div>
+            </h4>
+            <ul className="space-y-3">
+              <li>
+                <Link to="/about" className="group flex items-center gap-2 text-slate-400 hover:text-purple-400 transition-colors duration-200">
+                  <div className="w-1.5 h-1.5 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/portfolio" className="group flex items-center gap-2 text-slate-400 hover:text-purple-400 transition-colors duration-200">
+                  <div className="w-1.5 h-1.5 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  Portfolio
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog" className="group flex items-center gap-2 text-slate-400 hover:text-purple-400 transition-colors duration-200">
+                  <div className="w-1.5 h-1.5 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="group flex items-center gap-2 text-slate-400 hover:text-purple-400 transition-colors duration-200">
+                  <div className="w-1.5 h-1.5 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div className="space-y-4">
+            <h4 className="text-lg font-semibold text-white mb-6 relative">
+              <span className="relative z-10">Get In Touch</span>
+              <div className="absolute -bottom-2 left-0 w-8 h-1 bg-gradient-to-r from-cyan-400 to-blue-600 rounded-full"></div>
+            </h4>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <Mail className="w-5 h-5 text-cyan-400 mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="text-slate-400 text-sm">info@devcraft.com</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <Phone className="w-5 h-5 text-cyan-400 mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="text-slate-400 text-sm">+91 1234567890</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 text-cyan-400 mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="text-slate-400 text-sm">Udaipur, Rajasthan</p>
+                  <p className="text-slate-400 text-sm">India</p>
+                </div>
+              </li>
+            </ul>
+
+            {/* Social Links */}
+            <div className="flex gap-3 mt-6">
+              <a href="#" className="w-10 h-10 bg-slate-800 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg group">
+                <Linkedin className="w-5 h-5 text-slate-400 group-hover:text-white transition-colors" />
+              </a>
+              <a href="#" className="w-10 h-10 bg-slate-800 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg group">
+                <Instagram className="w-5 h-5 text-slate-400 group-hover:text-white transition-colors" />
+              </a>
+              <a href="#" className="w-10 h-10 bg-slate-800 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-700 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg group">
+                <Facebook className="w-5 h-5 text-slate-400 group-hover:text-white transition-colors" />
+              </a>
+              <a href="#" className="w-10 h-10 bg-slate-800 hover:bg-gradient-to-r hover:from-red-500 hover:to-red-700 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg group">
+                <Youtube className="w-5 h-5 text-slate-400 group-hover:text-white transition-colors" />
+              </a>
             </div>
+          </div>
+        </div>
+
+        {/* Bottom Section */}
+        <div className="border-t border-slate-800 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-400 text-sm">
-              Building exceptional digital solutions with cutting-edge technology and creative innovation.
+              © 2025 DevCraft. All rights reserved. Made with ❤️ in India.
             </p>
-          </div>
-
-          <div className="text-center">
-            <h4 className="font-semibold mb-4 text-white">Services</h4>
-            <ul className="space-y-2 text-slate-400 text-sm">
-              <li><Link to="/services" className="hover:text-cyan-400 transition-colors">Web Development</Link></li>
-              <li><Link to="/services" className="hover:text-cyan-400 transition-colors">App Development</Link></li>
-              <li><Link to="/services" className="hover:text-cyan-400 transition-colors">E-commerce Solutions</Link></li>
-              <li><Link to="/services" className="hover:text-cyan-400 transition-colors">Custom Software</Link></li>
-            </ul>
-          </div>
-
-          <div className="text-center">
-            <h4 className="font-semibold mb-4 text-white">Digital Marketing</h4>
-            <ul className="space-y-2 text-slate-400 text-sm">
-              <li><Link to="/services/digital-marketing/seo" className="hover:text-cyan-400 transition-colors">SEO</Link></li>
-              <li><Link to="/services/digital-marketing/ppc" className="hover:text-cyan-400 transition-colors">PPC</Link></li>
-              <li><Link to="/services/digital-marketing/social-media-marketing" className="hover:text-cyan-400 transition-colors">Social Media Marketing</Link></li>
-              <li><Link to="/services/digital-marketing/content-marketing" className="hover:text-cyan-400 transition-colors">Content Marketing</Link></li>
-              <li><Link to="/services/digital-marketing/email-marketing" className="hover:text-cyan-400 transition-colors">Email Marketing</Link></li>
-            </ul>
-          </div>
-
-          <div className="text-center">
-            <h4 className="font-semibold mb-4 text-white">Company</h4>
-            <ul className="space-y-2 text-slate-400 text-sm">
-              <li><Link to="/about" className="hover:text-cyan-400 transition-colors">About Us</Link></li>
-              <li><Link to="/portfolio" className="hover:text-cyan-400 transition-colors">Portfolio</Link></li>
-              <li><Link to="/contact" className="hover:text-cyan-400 transition-colors">Contact</Link></li>
-              <li><a href="#" className="hover:text-cyan-400 transition-colors">Careers</a></li>
-            </ul>
-          </div>
-
-          <div className="text-center md:text-right">
-            <h4 className="font-semibold mb-4 text-white">Contact</h4>
-            <ul className="space-y-3 text-slate-400 text-sm mb-4">
-              <li className="flex items-center gap-2 justify-center md:justify-end">
-                <Mail className="w-4 h-4 text-cyan-400" />
-                info@devcraft.com
-              </li>
-              <li className="flex items-center gap-2 justify-center md:justify-end">
-                <Phone className="w-4 h-4 text-cyan-400" />
-                +91 1234567890
-              </li>
-              <li className="flex items-center gap-2 justify-center md:justify-end">
-                <MapPin className="w-4 h-4 text-cyan-400" />
-                udaipur,rajasthan,india
-              </li>
-            </ul>
-            <div className="flex justify-center md:justify-end space-x-3">
-              <a href="#" className="w-9 h-9 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-cyan-500 transition-colors">
-                <Linkedin className="w-5 h-5 text-white" />
-              </a>
-              <a href="#" className="w-9 h-9 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-cyan-500 transition-colors">
-                <Instagram className="w-5 h-5 text-white" />
-              </a>
-              <a href="#" className="w-9 h-9 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-cyan-500 transition-colors">
-                <Facebook className="w-5 h-5 text-white" />
-              </a>
-              <a href="#" className="w-9 h-9 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-cyan-500 transition-colors">
-                <Youtube className="w-5 h-5 text-white" />
-              </a>
+            <div className="flex gap-6 text-sm">
+              <a href="#" className="text-slate-400 hover:text-cyan-400 transition-colors duration-200">Privacy Policy</a>
+              <a href="#" className="text-slate-400 hover:text-cyan-400 transition-colors duration-200">Terms of Service</a>
+              <a href="#" className="text-slate-400 hover:text-cyan-400 transition-colors duration-200">Cookie Policy</a>
             </div>
           </div>
         </div>
-
-        <div className="border-t border-slate-800 pt-8 text-center text-white text-sm">
-          <p>&copy; 2025 DevCraft. All rights reserved.</p>
-        </div>
-
-
       </div>
     </footer>
   );

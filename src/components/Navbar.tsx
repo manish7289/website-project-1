@@ -1,6 +1,6 @@
-  import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Code2, ChevronDown } from 'lucide-react';
+import { Menu, X, Code2, ChevronDown, Calendar } from 'lucide-react';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -100,34 +100,51 @@ export default function Navbar() {
               </Link>
 
               {servicesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-96 bg-slate-900 border border-slate-700 rounded-xl shadow-xl overflow-hidden flex">
-                  <div className="flex-1 border-r border-slate-700">
-                    <div className="px-4 py-3 text-cyan-400 font-semibold text-sm uppercase tracking-wider border-b border-slate-700">
-                      Development
-                    </div>
-                    {developmentLinks.map((link) => (
+                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-screen max-w-7xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border border-slate-700 rounded-xl shadow-2xl overflow-hidden flex animate-in fade-in-0 zoom-in-95 duration-300">
+                  <div className="w-80 border-r border-slate-700 p-6 bg-gradient-to-br from-cyan-500/10 to-blue-600/10 relative overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-blue-600/20 rounded-xl"></div>
+                    <div className="relative bg-gradient-to-br from-cyan-500 via-cyan-600 to-blue-600 rounded-xl p-8 text-center shadow-2xl hover:shadow-cyan-500/30 transition-all duration-500 border border-cyan-400/20">
+                      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-transparent via-cyan-500/5 to-transparent rounded-xl animate-pulse"></div>
+                      <Calendar className="w-16 h-16 text-white mx-auto mb-4 drop-shadow-lg animate-bounce" />
+                      <h3 className="text-2xl font-bold text-white mb-3 drop-shadow-md">Book Consultation</h3>
+                      <p className="text-slate-100 mb-8 text-base leading-relaxed">Get expert advice for your project and turn ideas into reality</p>
                       <Link
-                        key={link.path}
-                        to={link.path}
-                        className="block px-4 py-3 text-white hover:bg-slate-800 hover:text-cyan-400 transition-colors border-b border-slate-800 last:border-b-0"
+                        to="/contact"
+                        className="inline-block bg-white text-slate-900 px-8 py-4 rounded-full font-bold hover:bg-slate-50 hover:scale-110 transition-all duration-300 shadow-xl hover:shadow-white/20 text-lg"
                       >
-                        {link.name}
+                        Book Now →
                       </Link>
-                    ))}
+                    </div>
                   </div>
-                  <div className="flex-1">
-                    <div className="px-4 py-3 text-cyan-400 font-semibold text-sm uppercase tracking-wider border-b border-slate-700">
-                      Digital Marketing
+                  <div className="flex-1 flex">
+                    <div className="flex-1 border-r border-slate-700">
+                      <div className="px-4 py-3 text-cyan-400 font-semibold text-sm uppercase tracking-wider border-b border-slate-700">
+                        Development
+                      </div>
+                      {developmentLinks.map((link) => (
+                        <Link
+                          key={link.path}
+                          to={link.path}
+                          className="block px-4 py-3 text-white hover:bg-slate-800 hover:text-cyan-400 transition-colors border-b border-slate-800 last:border-b-0"
+                        >
+                          {link.name}
+                        </Link>
+                      ))}
                     </div>
-                    {digitalMarketingLinks.map((link) => (
-                      <Link
-                        key={link.path}
-                        to={link.path}
-                        className="block px-4 py-3 text-white hover:bg-slate-800 hover:text-cyan-400 transition-colors border-b border-slate-800 last:border-b-0"
-                      >
-                        {link.name}
-                      </Link>
-                    ))}
+                    <div className="flex-1">
+                      <div className="px-4 py-3 text-cyan-400 font-semibold text-sm uppercase tracking-wider border-b border-slate-700">
+                        Digital Marketing
+                      </div>
+                      {digitalMarketingLinks.map((link) => (
+                        <Link
+                          key={link.path}
+                          to={link.path}
+                          className="block px-4 py-3 text-white hover:bg-slate-800 hover:text-cyan-400 transition-colors border-b border-slate-800 last:border-b-0"
+                        >
+                          {link.name}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 </div>
               )}
@@ -210,47 +227,13 @@ export default function Navbar() {
               Home
             </Link>
 
-            <div>
-              <button
-                onClick={() => setServicesOpen(!servicesOpen)}
-                className="flex items-center justify-between w-full py-2 text-white hover:text-cyan-400 transition-colors"
-              >
-                Services
-                <ChevronDown className={`w-4 h-4 transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
-              </button>
-              {servicesOpen && (
-                <div className="pl-4 mt-2 space-y-2">
-                  <div className="text-cyan-400 font-semibold text-sm uppercase tracking-wider mb-2">
-                    Development
-                  </div>
-                  {developmentLinks.map((link) => (
-                    <Link
-                      key={link.path}
-                      to={link.path}
-                      className="block py-2 text-slate-300 hover:text-cyan-400 transition-colors"
-                    >
-                      {link.name}
-                    </Link>
-                  ))}
-                  <div className="border-t border-slate-700 pt-2 mt-2">
-                    <div className="text-cyan-400 font-semibold text-sm uppercase tracking-wider mb-2">
-                      Digital Marketing
-                    </div>
-                    {digitalMarketingLinks.map((link) => (
-                      <Link
-                        key={link.path}
-                        to={link.path}
-                        className="block py-2 text-slate-300 hover:text-cyan-400 transition-colors"
-                      >
-                        {link.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
-
-
+            <button
+              onClick={() => setServicesOpen(true)}
+              className="flex items-center justify-between w-full py-2 text-white hover:text-cyan-400 transition-colors"
+            >
+              Services
+              <ChevronDown className="w-4 h-4" />
+            </button>
 
             <Link
               to="/about"
@@ -302,6 +285,71 @@ export default function Navbar() {
             >
               Get Started
             </Link>
+          </div>
+        </div>
+      )}
+
+      {servicesOpen && (
+        <div className="md:hidden fixed inset-0 bg-slate-900 z-50 flex flex-col">
+          <div className="flex items-center justify-between p-4 border-b border-slate-800">
+            <h2 className="text-xl font-bold text-white">Services</h2>
+            <button
+              onClick={() => setServicesOpen(false)}
+              className="text-white hover:text-cyan-400 transition-colors"
+            >
+              <X className="w-6 h-6" />
+            </button>
+          </div>
+
+          <div className="flex-1 overflow-y-auto">
+            <div className="p-6">
+              <div className="bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl p-6 text-center mb-6">
+                <Calendar className="w-12 h-12 text-white mx-auto mb-4" />
+                <h3 className="text-xl font-bold text-white mb-2">Book Consultation</h3>
+                <p className="text-slate-200 mb-6">Get expert advice for your project</p>
+                <Link
+                  to="/contact"
+                  onClick={() => setServicesOpen(false)}
+                  className="inline-block bg-white text-slate-900 px-6 py-3 rounded-full font-semibold hover:bg-slate-100 transition-colors"
+                >
+                  Book Now
+                </Link>
+              </div>
+
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-cyan-400 font-semibold text-lg uppercase tracking-wider mb-4">Development</h4>
+                  <div className="space-y-2">
+                    {developmentLinks.map((link) => (
+                      <Link
+                        key={link.path}
+                        to={link.path}
+                        onClick={() => setServicesOpen(false)}
+                        className="block py-3 px-4 text-white hover:bg-slate-800 hover:text-cyan-400 transition-colors rounded-lg"
+                      >
+                        {link.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <h4 className="text-cyan-400 font-semibold text-lg uppercase tracking-wider mb-4">Digital Marketing</h4>
+                  <div className="space-y-2">
+                    {digitalMarketingLinks.map((link) => (
+                      <Link
+                        key={link.path}
+                        to={link.path}
+                        onClick={() => setServicesOpen(false)}
+                        className="block py-3 px-4 text-white hover:bg-slate-800 hover:text-cyan-400 transition-colors rounded-lg"
+                      >
+                        {link.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       )}

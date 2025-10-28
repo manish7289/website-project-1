@@ -754,115 +754,46 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16">
-            <div className="flex flex-col gap-6 lg:gap-8 h-full">
-              <div className="group bg-gradient-to-br from-slate-900 to-slate-800 p-6 lg:p-8 rounded-2xl border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-500 hover:transform hover:-translate-y-2 flex-1 flex flex-col">
-                <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center mb-4 lg:mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Rocket className="w-6 h-6 lg:w-8 lg:h-8 text-white" />
-                </div>
-                <h3 className="text-xl lg:text-2xl font-bold mb-3 lg:mb-4 group-hover:text-cyan-400 transition-colors">Fast Delivery</h3>
-                <p className="text-slate-400 text-sm lg:text-base leading-relaxed mb-4 lg:mb-6 flex-grow">
-                  We deliver high-quality projects on time with our proven development process and agile methodology.
-                </p>
-                <div className="flex items-center gap-2 text-cyan-400 font-semibold mt-auto">
-                  <span className="text-sm lg:text-base">Learn More</span>
-                  <ArrowRight className="w-3 h-3 lg:w-4 lg:h-4 group-hover:translate-x-1 transition-transform" />
-                </div>
+          <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 mb-16">
+            <div className="group bg-gradient-to-br from-slate-900 to-slate-800 p-6 lg:p-8 rounded-2xl border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-500 hover:transform hover:-translate-y-2 flex-1 flex flex-col">
+              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center mb-4 lg:mb-6 group-hover:scale-110 transition-transform duration-300">
+                <Rocket className="w-6 h-6 lg:w-8 lg:h-8 text-white" />
               </div>
-
-              <div className="group bg-gradient-to-br from-slate-900 to-slate-800 p-6 lg:p-8 rounded-2xl border border-slate-700/50 hover:border-emerald-500/50 transition-all duration-500 hover:transform hover:-translate-y-2 flex-1 flex flex-col">
-                <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mb-4 lg:mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Award className="w-6 h-6 lg:w-8 lg:h-8 text-white" />
-                </div>
-                <h3 className="text-xl lg:text-2xl font-bold mb-3 lg:mb-4 group-hover:text-emerald-400 transition-colors">Quality Assured</h3>
-                <p className="text-slate-400 text-sm lg:text-base leading-relaxed mb-4 lg:mb-6 flex-grow">
-                  Every project undergoes rigorous testing and quality checks to ensure exceptional performance and user experience.
-                </p>
-                <div className="flex items-center gap-2 text-emerald-400 font-semibold mt-auto">
-                  <span className="text-sm lg:text-base">Learn More</span>
-                  <ArrowRight className="w-3 h-3 lg:w-4 lg:h-4 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </div>
-
-              <div className="group bg-gradient-to-br from-slate-900 to-slate-800 p-6 lg:p-8 rounded-2xl border border-slate-700/50 hover:border-purple-500/50 transition-all duration-500 hover:transform hover:-translate-y-2 flex-1 flex flex-col">
-                <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mb-4 lg:mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Users className="w-6 h-6 lg:w-8 lg:h-8 text-white" />
-                </div>
-                <h3 className="text-xl lg:text-2xl font-bold mb-3 lg:mb-4 group-hover:text-purple-400 transition-colors">Dedicated Support</h3>
-                <p className="text-slate-400 text-sm lg:text-base leading-relaxed mb-4 lg:mb-6 flex-grow">
-                  Our team provides ongoing support and maintenance to keep your digital solutions running smoothly.
-                </p>
-                <div className="flex items-center gap-2 text-purple-400 font-semibold mt-auto">
-                  <span className="text-sm lg:text-base">Learn More</span>
-                  <ArrowRight className="w-3 h-3 lg:w-4 lg:h-4 group-hover:translate-x-1 transition-transform" />
-                </div>
+              <h3 className="text-xl lg:text-2xl font-bold mb-3 lg:mb-4 group-hover:text-cyan-400 transition-colors">Fast Delivery</h3>
+              <p className="text-slate-400 text-sm lg:text-base leading-relaxed mb-4 lg:mb-6 flex-grow">
+                We deliver high-quality projects on time with our proven development process and agile methodology.
+              </p>
+              <div className="flex items-center gap-2 text-cyan-400 font-semibold mt-auto">
+                <span className="text-sm lg:text-base">Learn More</span>
+                <ArrowRight className="w-3 h-3 lg:w-4 lg:h-4 group-hover:translate-x-1 transition-transform" />
               </div>
             </div>
 
-            <div className="relative order-first lg:order-last">
-              <div className="relative bg-gradient-to-br from-cyan-600 via-blue-600 to-purple-700 rounded-3xl p-8 lg:p-16 overflow-hidden shadow-2xl min-h-[500px] lg:min-h-[600px]">
-                {/* Enhanced animated background elements */}
-                <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
-                <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-white/5 rounded-full animate-ping" style={{ animationDelay: '2s' }}></div>
+            <div className="group bg-gradient-to-br from-slate-900 to-slate-800 p-6 lg:p-8 rounded-2xl border border-slate-700/50 hover:border-emerald-500/50 transition-all duration-500 hover:transform hover:-translate-y-2 flex-1 flex flex-col">
+              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mb-4 lg:mb-6 group-hover:scale-110 transition-transform duration-300">
+                <Award className="w-6 h-6 lg:w-8 lg:h-8 text-white" />
+              </div>
+              <h3 className="text-xl lg:text-2xl font-bold mb-3 lg:mb-4 group-hover:text-emerald-400 transition-colors">Quality Assured</h3>
+              <p className="text-slate-400 text-sm lg:text-base leading-relaxed mb-4 lg:mb-6 flex-grow">
+                Every project undergoes rigorous testing and quality checks to ensure exceptional performance and user experience.
+              </p>
+              <div className="flex items-center gap-2 text-emerald-400 font-semibold mt-auto">
+                <span className="text-sm lg:text-base">Learn More</span>
+                <ArrowRight className="w-3 h-3 lg:w-4 lg:h-4 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </div>
 
-                {/* Floating geometric shapes */}
-                <div className="absolute top-10 left-10 w-6 h-6 bg-white/20 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
-                <div className="absolute top-20 right-20 w-4 h-4 bg-yellow-300/30 rotate-45 animate-spin" style={{ animationDelay: '1.5s', animationDuration: '3s' }}></div>
-                <div className="absolute bottom-20 left-20 w-8 h-8 border-2 border-white/20 rounded-lg animate-pulse" style={{ animationDelay: '2.5s' }}></div>
-                <div className="absolute bottom-10 right-10 w-3 h-3 bg-cyan-300/40 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
-
-                {/* Animated rings */}
-                <div className="absolute top-1/4 left-1/4 w-20 h-20 border border-white/10 rounded-full animate-spin" style={{ animationDuration: '8s' }}></div>
-                <div className="absolute bottom-1/4 right-1/4 w-16 h-16 border border-white/10 rounded-full animate-spin" style={{ animationDuration: '6s', animationDirection: 'reverse' }}></div>
-
-                <div className="relative text-center">
-                  {/* Enhanced badge with animation */}
-                  <div className="inline-flex items-center gap-3 px-6 py-3 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-8 animate-fade-in">
-                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                    <span className="text-white font-semibold text-sm">Free Consultation Available</span>
-                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" style={{ animationDelay: '0.3s' }}></div>
-                  </div>
-
-                  {/* Dynamic heading with gradient animation */}
-                  <h3 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 lg:mb-6 text-white leading-tight">
-                    Let's Build Something
-                    <span className="block bg-gradient-to-r from-yellow-300 via-orange-300 to-red-300 bg-clip-text text-transparent animate-gradient-x">
-                      Amazing Together
-                    </span>
-                  </h3>
-
-                  <p className="text-lg lg:text-xl text-blue-100 mb-8 lg:mb-10 max-w-3xl mx-auto leading-relaxed px-4 lg:px-0">
-                    Schedule a free consultation and discover how we can help bring your vision to life with cutting-edge technology and creative solutions.
-                  </p>
-
-                  {/* Enhanced buttons with better animations - stacked vertically */}
-                  <div className="flex flex-col gap-4 lg:gap-6 justify-center items-center mb-8 lg:mb-10 px-4 lg:px-0">
-                    <Link
-                      to="/contact"
-                      className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 px-6 lg:px-8 py-4 lg:py-6 rounded-full hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 font-medium text-sm lg:text-base w-full lg:w-auto justify-center"
-                    >
-                      Let's Build Something Amazing Together
-                      <ArrowRight className="w-4 h-4 lg:w-5 lg:h-5" />
-                    </Link>
-
-                    <Link
-                      to="/portfolio"
-                      className="group px-8 lg:px-10 py-4 lg:py-5 rounded-full text-base lg:text-lg font-semibold border-2 border-white/40 text-white hover:bg-white/10 hover:border-white/60 transition-all duration-300 backdrop-blur-sm w-full lg:w-auto text-center"
-                    >
-                      View Our Work
-                    </Link>
-                  </div>
-
-                  {/* Additional animated elements */}
-                  <div className="mt-8 flex justify-center">
-                    <div className="flex items-center gap-2 text-white/60">
-                      <div className="w-1 h-1 bg-cyan-400 rounded-full animate-ping"></div>
-                      <span className="text-xs font-medium">Available 24/7</span>
-                      <div className="w-1 h-1 bg-cyan-400 rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
-                    </div>
-                  </div>
-                </div>
+            <div className="group bg-gradient-to-br from-slate-900 to-slate-800 p-6 lg:p-8 rounded-2xl border border-slate-700/50 hover:border-purple-500/50 transition-all duration-500 hover:transform hover:-translate-y-2 flex-1 flex flex-col">
+              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mb-4 lg:mb-6 group-hover:scale-110 transition-transform duration-300">
+                <Users className="w-6 h-6 lg:w-8 lg:h-8 text-white" />
+              </div>
+              <h3 className="text-xl lg:text-2xl font-bold mb-3 lg:mb-4 group-hover:text-purple-400 transition-colors">Dedicated Support</h3>
+              <p className="text-slate-400 text-sm lg:text-base leading-relaxed mb-4 lg:mb-6 flex-grow">
+                Our team provides ongoing support and maintenance to keep your digital solutions running smoothly.
+              </p>
+              <div className="flex items-center gap-2 text-purple-400 font-semibold mt-auto">
+                <span className="text-sm lg:text-base">Learn More</span>
+                <ArrowRight className="w-3 h-3 lg:w-4 lg:h-4 group-hover:translate-x-1 transition-transform" />
               </div>
             </div>
           </div>
