@@ -50,7 +50,7 @@ export default function BlogPost() {
           The future of React development looks bright. With continued focus on developer experience, performance, and modern web standards, React remains the framework of choice for building interactive web applications. As we move into 2025, staying updated with these trends will be crucial for developers looking to build cutting-edge applications.
         </p>
       `,
-      author: 'DevCraft Team',
+      author: 'Techcellence Team',
       date: '2025-01-15',
       readTime: '5 min read',
       category: 'Web Development',

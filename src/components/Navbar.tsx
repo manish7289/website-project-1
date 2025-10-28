@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Code2, ChevronDown, Calendar } from 'lucide-react';
+import { Menu, X, Code2, ChevronDown, Calendar, Briefcase, Globe, Smartphone, ShoppingCart, Code, Palette, TrendingUp, Search, Users, Target, FileText, Mail, PenTool, Store } from 'lucide-react';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,22 +28,22 @@ export default function Navbar() {
   }, [location]);
 
   const developmentLinks = [
-    { name: 'Web Development', path: '/services/web-development' },
-    { name: 'WordPress & Shopify', path: '/services/wordpress-development' },
-    { name: 'App Development', path: '/services/app-development' },
-    { name: 'E-commerce Solutions', path: '/services/ecommerce' },
-    { name: 'Custom Software', path: '/services/custom-software' },
-    { name: 'Graphic Design', path: '/services/graphic-design' }
+    { name: 'Web Development', path: '/services/web-development', icon: Globe },
+    { name: 'WordPress & Shopify', path: '/services/wordpress-development', icon: Store },
+    { name: 'App Development', path: '/services/app-development', icon: Smartphone },
+    { name: 'E-commerce Solutions', path: '/services/ecommerce', icon: ShoppingCart },
+    { name: 'Custom Software', path: '/services/custom-software', icon: Code },
+    { name: 'Graphic Design', path: '/services/graphic-design', icon: Palette }
   ];
 
   const digitalMarketingLinks = [
-    { name: 'Digital Marketing', path: '/services/digital-marketing' },
-    { name: 'SEO', path: '/services/digital-marketing/seo' },
-    { name: 'Social Media Marketing', path: '/services/digital-marketing/social-media' },
-    { name: 'PPC', path: '/services/digital-marketing/ppc' },
-    { name: 'Content Marketing', path: '/services/digital-marketing/content' },
-    { name: 'Email Marketing', path: '/services/digital-marketing/email' },
-    { name: 'Content Writing', path: '/services/content-writing' }
+    { name: 'Digital Marketing', path: '/services/digital-marketing', icon: TrendingUp },
+    { name: 'SEO', path: '/services/digital-marketing/seo', icon: Search },
+    { name: 'Social Media Marketing', path: '/services/digital-marketing/social-media', icon: Users },
+    { name: 'PPC', path: '/services/digital-marketing/ppc', icon: Target },
+    { name: 'Content Marketing', path: '/services/digital-marketing/content', icon: FileText },
+    { name: 'Email Marketing', path: '/services/digital-marketing/email', icon: Mail },
+    { name: 'Content Writing', path: '/services/content-writing', icon: PenTool }
   ];
 
   return (
@@ -57,7 +57,7 @@ export default function Navbar() {
               <Code2 className="w-6 h-6 text-white" />
             </div>
             <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              DevCraft
+              Techcellence
             </span>
           </Link>
 
@@ -89,18 +89,19 @@ export default function Navbar() {
             >
               <Link
                 to="/services"
-                className={`flex items-center gap-1 transition-colors ${
+                className={`flex items-center gap-2 transition-colors ${
                   location.pathname.includes('/services')
                     ? 'text-cyan-400'
                     : 'text-white hover:text-cyan-400'
                 }`}
               >
+                <Briefcase className="w-5 h-5" />
                 Services
                 <ChevronDown className="w-4 h-4" />
               </Link>
 
               {servicesOpen && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-screen max-w-7xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border border-slate-700 rounded-xl shadow-2xl overflow-hidden flex animate-in fade-in-0 zoom-in-95 duration-300">
+                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-screen max-w-7xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border border-slate-700 rounded-xl shadow-2xl overflow-hidden flex animate-in fade-in-0 zoom-in-95 slide-in-from-top-2 duration-500">
                   <div className="w-80 border-r border-slate-700 p-6 bg-gradient-to-br from-cyan-500/10 to-blue-600/10 relative overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-blue-600/20 rounded-xl"></div>
                     <div className="relative bg-gradient-to-br from-cyan-500 via-cyan-600 to-blue-600 rounded-xl p-8 text-center shadow-2xl hover:shadow-cyan-500/30 transition-all duration-500 border border-cyan-400/20">
@@ -125,9 +126,10 @@ export default function Navbar() {
                         <Link
                           key={link.path}
                           to={link.path}
-                          className="block px-4 py-3 text-white hover:bg-slate-800 hover:text-cyan-400 transition-colors border-b border-slate-800 last:border-b-0"
+                          className="flex items-center gap-3 px-4 py-3 text-white hover:bg-slate-800 hover:text-cyan-400 transition-all duration-300 border-b border-slate-800 last:border-b-0 group"
                         >
-                          {link.name}
+                          <link.icon className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform duration-300" />
+                          <span className="group-hover:translate-x-1 transition-transform duration-300">{link.name}</span>
                         </Link>
                       ))}
                     </div>
@@ -139,9 +141,10 @@ export default function Navbar() {
                         <Link
                           key={link.path}
                           to={link.path}
-                          className="block px-4 py-3 text-white hover:bg-slate-800 hover:text-cyan-400 transition-colors border-b border-slate-800 last:border-b-0"
+                          className="flex items-center gap-3 px-4 py-3 text-white hover:bg-slate-800 hover:text-cyan-400 transition-all duration-300 border-b border-slate-800 last:border-b-0 group"
                         >
-                          {link.name}
+                          <link.icon className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform duration-300" />
+                          <span className="group-hover:translate-x-1 transition-transform duration-300">{link.name}</span>
                         </Link>
                       ))}
                     </div>
@@ -231,7 +234,10 @@ export default function Navbar() {
               onClick={() => setServicesOpen(true)}
               className="flex items-center justify-between w-full py-2 text-white hover:text-cyan-400 transition-colors"
             >
-              Services
+              <div className="flex items-center gap-2">
+                <Briefcase className="w-5 h-5" />
+                Services
+              </div>
               <ChevronDown className="w-4 h-4" />
             </button>
 
@@ -325,9 +331,10 @@ export default function Navbar() {
                         key={link.path}
                         to={link.path}
                         onClick={() => setServicesOpen(false)}
-                        className="block py-3 px-4 text-white hover:bg-slate-800 hover:text-cyan-400 transition-colors rounded-lg"
+                        className="flex items-center gap-3 py-3 px-4 text-white hover:bg-slate-800 hover:text-cyan-400 transition-all duration-300 rounded-lg group"
                       >
-                        {link.name}
+                        <link.icon className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform duration-300" />
+                        <span className="group-hover:translate-x-1 transition-transform duration-300">{link.name}</span>
                       </Link>
                     ))}
                   </div>
@@ -341,9 +348,10 @@ export default function Navbar() {
                         key={link.path}
                         to={link.path}
                         onClick={() => setServicesOpen(false)}
-                        className="block py-3 px-4 text-white hover:bg-slate-800 hover:text-cyan-400 transition-colors rounded-lg"
+                        className="flex items-center gap-3 py-3 px-4 text-white hover:bg-slate-800 hover:text-cyan-400 transition-all duration-300 rounded-lg group"
                       >
-                        {link.name}
+                        <link.icon className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform duration-300" />
+                        <span className="group-hover:translate-x-1 transition-transform duration-300">{link.name}</span>
                       </Link>
                     ))}
                   </div>

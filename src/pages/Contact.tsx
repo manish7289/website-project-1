@@ -271,7 +271,7 @@ export default function Contact() {
 
             <div className="space-y-6">
               <div className="bg-gradient-to-br from-slate-900 to-slate-800 p-8 rounded-2xl border border-slate-700/50">
-                <h3 className="text-2xl font-bold mb-6">Why Choose DevCraft?</h3>
+                <h3 className="text-2xl font-bold mb-6">Why Choose Techcellence?</h3>
                 <ul className="space-y-4">
                   {[
                     'Expert team with 10+ years experience',

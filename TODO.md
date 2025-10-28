@@ -1,7 +1,8 @@
-# New Footer Design Tasks
+# TODO List for Services Dropdown Enhancement
 
-- [x] Design a completely new footer layout with modern aesthetics
-- [x] Implement mobile-first responsive design
-- [x] Add contemporary styling with gradients and animations
-- [x] Ensure all sections are properly aligned and spaced
-- [x] Test the new footer on different screen sizes
+- [x] Import Briefcase icon from lucide-react
+- [x] Add Briefcase icon next to "Services" in desktop navbar
+- [x] Add Briefcase icon next to "Services" in mobile navbar
+- [x] Enhance dropdown animation with slide-down effect
+- [x] Add icons to each service link in dropdown
+- [x] Add hover animations to service links (icon scale and text slide)
