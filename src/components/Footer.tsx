@@ -17,11 +17,11 @@ export default function Footer() {
           {/* About Company */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-white mb-6 relative">
-              <span className="relative z-10">About Techcellence</span>
+              <span className="relative z-10">About Techxellence</span>
               <div className="absolute -bottom-2 left-0 w-8 h-1 bg-gradient-to-r from-cyan-400 to-blue-600 rounded-full"></div>
             </h4>
             <p className="text-white text-sm leading-relaxed">
-              Techcellence is a leading digital solutions provider specializing in web development,
+              Techxellence is a leading digital solutions provider specializing in web development,
               mobile applications, and digital marketing. We transform ideas into innovative digital
               experiences that drive business growth.
             </p>
@@ -179,7 +179,7 @@ export default function Footer() {
         <div className="border-t border-slate-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-white text-sm">
-              © 2025 Techcellence. All rights reserved.
+              © 2025 Techxellence. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#" className="text-white hover:text-cyan-400 transition-colors duration-200">Privacy Policy</a>

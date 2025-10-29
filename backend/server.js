@@ -36,7 +36,7 @@ app.post('/api/contact', async (req, res) => {
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to: 'manishurbanmedia@gmail.com',
-      subject: 'New Contact Form Submission - Techcellence Website',
+      subject: 'New Contact Form Submission - Techxellence Website',
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #06b6d4;">New Contact Form Submission</h2>
@@ -53,7 +53,7 @@ app.post('/api/contact', async (req, res) => {
             <p style="white-space: pre-wrap;">${message}</p>
           </div>
           <p style="color: #64748b; font-size: 14px;">
-            This message was sent from the Techcellence website contact form.
+            This message was sent from the Techxellence website contact form.
           </p>
         </div>
       `

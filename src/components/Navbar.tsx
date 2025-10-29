@@ -57,7 +57,7 @@ export default function Navbar() {
               <Code2 className="w-6 h-6 text-white" />
             </div>
             <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              Techcellence
+              Techxellence
             </span>
           </Link>
 
