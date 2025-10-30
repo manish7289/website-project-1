@@ -70,49 +70,49 @@ export default function Home() {
     {
       icon: Code2,
       title: 'Web Development',
-      description: 'Custom responsive websites built with modern frameworks and best practices.',
+      description: 'Custom responsive websites built with modern frameworks like React, Next.js, and Node.js for optimal performance and SEO.',
       color: 'from-emerald-500 to-teal-600'
     },
     {
       icon: FileText,
       title: 'WordPress & Shopify',
-      description: 'Powerful CMS and e-commerce platforms for scalable websites and online stores.',
+      description: 'Headless CMS and e-commerce platforms for scalable websites and online stores with fast loading speeds.',
       color: 'from-purple-500 to-pink-600'
     },
     {
       icon: Smartphone,
       title: 'App Development',
-      description: 'Native and cross-platform mobile applications for iOS and Android.',
+      description: 'Native and cross-platform mobile applications for iOS and Android with Progressive Web App capabilities.',
       color: 'from-blue-500 to-cyan-600'
     },
     {
       icon: ShoppingCart,
       title: 'E-commerce Solution',
-      description: 'Powerful online stores with seamless payment integration and management.',
+      description: 'Powerful online stores with seamless payment integration, inventory management, and AI-powered features.',
       color: 'from-orange-500 to-rose-600'
     },
     {
       icon: Database,
       title: 'Custom Software',
-      description: 'Tailored software solutions designed specifically for your business needs.',
+      description: 'Tailored software solutions with microservices architecture, API development, and cloud-based deployment.',
       color: 'from-purple-500 to-pink-600'
     },
     {
       icon: TrendingUp,
       title: 'Digital Marketing',
-      description: 'Comprehensive digital marketing strategies to boost your online presence and drive growth.',
+      description: 'Comprehensive digital marketing strategies including SEO optimization, PPC advertising, and social media marketing.',
       color: 'from-orange-500 to-red-600'
     },
     {
       icon: Palette,
       title: 'Graphic Design',
-      description: 'Creative visual solutions that bring your brand to life and captivate your audience.',
+      description: 'Creative UI/UX design solutions that enhance user experience and drive engagement across all devices.',
       color: 'from-pink-500 to-purple-600'
     },
     {
       icon: PenTool,
       title: 'Content Writing',
-      description: 'Professional content writing that engages your audience and drives conversions.',
+      description: 'Professional SEO content writing that engages audiences and improves search engine rankings.',
       color: 'from-teal-500 to-cyan-600'
     }
   ];
@@ -132,14 +132,17 @@ export default function Home() {
           <source src={patternVideo} type="video/mp4" />
         </video>
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px] bg-cyan-500/30 rounded-full blur-3xl -top-24 sm:-top-32 md:-top-48 left-1/4 animate-pulse"></div>
-          <div className="absolute w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px] bg-blue-500/30 rounded-full blur-3xl top-1/2 right-1/4 animate-pulse" style={{ animationDelay: '2s' }}></div>
-          <div className="absolute w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] bg-purple-500/20 rounded-full blur-3xl bottom-0 left-1/2 animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute w-[220px] h-[220px] sm:w-[320px] sm:h-[320px] md:w-[450px] md:h-[450px] lg:w-[650px] lg:h-[650px] bg-cyan-500/35 rounded-full blur-3xl -top-28 sm:-top-36 md:-top-52 left-1/4 animate-pulse"></div>
+          <div className="absolute w-[190px] h-[190px] sm:w-[290px] sm:h-[290px] md:w-[390px] md:h-[390px] lg:w-[580px] lg:h-[580px] bg-blue-500/30 rounded-full blur-3xl top-2/5 right-1/5 animate-pulse" style={{ animationDelay: '1.8s' }}></div>
+          <div className="absolute w-[160px] h-[160px] sm:w-[260px] sm:h-[260px] md:w-[360px] md:h-[360px] lg:w-[480px] lg:h-[480px] bg-purple-500/25 rounded-full blur-3xl bottom-1/3 left-2/5 animate-pulse" style={{ animationDelay: '2.5s' }}></div>
+          <div className="absolute w-[140px] h-[140px] sm:w-[220px] sm:h-[220px] md:w-[320px] md:h-[320px] lg:w-[420px] lg:h-[420px] bg-indigo-500/20 rounded-full blur-3xl top-1/2 right-1/3 animate-pulse" style={{ animationDelay: '0.5s' }}></div>
 
-          <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-1 h-1 sm:w-2 sm:h-2 bg-cyan-400 rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
-          <div className="absolute top-20 sm:top-40 right-5 sm:right-20 w-2 h-2 sm:w-3 sm:h-3 bg-blue-400 rounded-full animate-ping" style={{ animationDelay: '1.5s' }}></div>
-          <div className="absolute bottom-20 sm:bottom-40 left-1/3 w-1 h-1 sm:w-2 sm:h-2 bg-purple-400 rounded-full animate-ping" style={{ animationDelay: '2.5s' }}></div>
-          <div className="absolute bottom-10 sm:bottom-20 right-1/3 w-2 h-2 sm:w-3 sm:h-3 bg-cyan-400 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute top-8 sm:top-16 left-6 sm:left-12 w-2 h-2 sm:w-3 sm:h-3 bg-cyan-400 rounded-full animate-ping" style={{ animationDelay: '0.2s' }}></div>
+          <div className="absolute top-24 sm:top-40 right-8 sm:right-16 w-1 h-1 sm:w-2 sm:h-2 bg-blue-400 rounded-full animate-ping" style={{ animationDelay: '1.0s' }}></div>
+          <div className="absolute bottom-28 sm:bottom-52 left-1/2 w-2 h-2 sm:w-3 sm:h-3 bg-purple-400 rounded-full animate-ping" style={{ animationDelay: '2.0s' }}></div>
+          <div className="absolute bottom-12 sm:bottom-24 right-2/5 w-1 h-1 sm:w-2 sm:h-2 bg-indigo-400 rounded-full animate-ping" style={{ animationDelay: '1.5s' }}></div>
+          <div className="absolute top-3/5 left-1/6 w-1 h-1 sm:w-2 sm:h-2 bg-cyan-300 rounded-full animate-ping" style={{ animationDelay: '2.7s' }}></div>
+          <div className="absolute top-1/4 right-1/6 w-2 h-2 sm:w-3 sm:h-3 bg-blue-300 rounded-full animate-ping" style={{ animationDelay: '0.8s' }}></div>
         </div>
 
         <div className="max-w-7xl mx-auto relative px-4 sm:px-6 lg:px-8">
@@ -151,14 +154,14 @@ export default function Home() {
             </div>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold mb-6 sm:mb-8 animate-slide-up leading-tight">
-              Transforming Ideas Into
+             
               <span className="block bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent mt-1 sm:mt-2">
-                Digital Reality
+                Digital Transformation Experts
               </span>
             </h1>
 
             <p className="text-lg sm:text-xl md:text-2xl text-slate-300 mb-8 sm:mb-12 max-w-3xl mx-auto animate-slide-up animation-delay-200 leading-relaxed px-4 sm:px-0">
-              We craft innovative <span className="text-cyan-400 font-semibold">web applications</span>, <span className="text-blue-400 font-semibold">mobile apps</span>, and <span className="text-purple-400 font-semibold">custom software</span> that transform businesses and delight users worldwide.
+              We specialize in <span className="text-cyan-400 font-semibold">custom website development</span>, <span className="text-blue-400 font-semibold">mobile app development</span>, and <span className="text-purple-400 font-semibold">full-stack development</span> using cutting-edge technologies like React, Next.js, and Node.js to deliver exceptional digital experiences.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up animation-delay-300 px-4 sm:px-0">
@@ -195,10 +198,10 @@ export default function Home() {
                   </span>
                 </h2>
                 <p className="text-base sm:text-lg md:text-xl text-slate-300 leading-relaxed mb-6 sm:mb-8">
-                  We are a leading software development agency specializing in creating innovative digital solutions that drive business growth. With years of experience and a team of expert developers, we transform complex ideas into user-friendly applications that deliver real results.
+                  We are a premier <span className="text-cyan-400 font-semibold">web development company</span> specializing in <span className="text-blue-400 font-semibold">custom website development</span>, <span className="text-purple-400 font-semibold">e-commerce website development</span>, and <span className="text-emerald-400 font-semibold">mobile app development</span>. Our expert team delivers innovative digital solutions using modern technologies like React, Next.js, and Node.js.
                 </p>
                 <p className="text-sm sm:text-base md:text-lg text-slate-400 leading-relaxed mb-6 sm:mb-8">
-                  Our mission is to empower businesses with cutting-edge technology, helping them stay ahead in the digital landscape. We believe in quality, innovation, and building long-term partnerships with our clients.
+                  Our mission is to provide <span className="text-cyan-400 font-semibold">SEO-friendly websites</span> and <span className="text-blue-400 font-semibold">performance optimization</span> services that drive business growth. We specialize in <span className="text-purple-400 font-semibold">digital transformation</span> solutions, helping businesses stay ahead in the competitive digital landscape through quality, innovation, and long-term partnerships.
                 </p>
                 <div className="flex flex-wrap gap-3 sm:gap-4">
                   <div className="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-cyan-500/30">
@@ -289,10 +292,10 @@ export default function Home() {
         <div className="text-center mb-16">
             <span className="text-cyan-400 font-semibold text-sm uppercase tracking-wider">Our Expertise</span>
             <h2 className="text-4xl sm:text-5xl font-bold mt-3 mb-4">
-            Cutting-Edge <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Technology Stack</span>
+            Modern <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Development Technologies</span>
             </h2>
             <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-            We leverage the latest technologies and frameworks to build robust, scalable, and future-proof solutions that drive your business forward.
+            We specialize in <span className="text-cyan-400 font-semibold">full-stack development</span> using cutting-edge technologies like React, Next.js, Node.js, and cloud-based solutions to build robust, scalable, and SEO-optimized applications.
             </p>
           </div>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -343,8 +346,8 @@ export default function Home() {
                       <Code2 className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-cyan-400">Modern Frameworks</h4>
-                      <p className="text-sm text-slate-400">Latest tools & technologies</p>
+                      <h4 className="font-semibold text-cyan-400">React & Next.js Development</h4>
+                      <p className="text-sm text-slate-400">Modern frontend frameworks for fast, SEO-optimized websites</p>
                     </div>
                   </div>
 
@@ -353,8 +356,8 @@ export default function Home() {
                       <Database className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-emerald-400">Scalable Architecture</h4>
-                      <p className="text-sm text-slate-400">Built for growth & performance</p>
+                      <h4 className="font-semibold text-emerald-400">Microservices Architecture</h4>
+                      <p className="text-sm text-slate-400">Scalable backend solutions with API development</p>
                     </div>
                   </div>
 
@@ -363,8 +366,8 @@ export default function Home() {
                       <Smartphone className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-blue-400">Cross-Platform</h4>
-                      <p className="text-sm text-slate-400">Seamless user experience</p>
+                      <h4 className="font-semibold text-blue-400">Progressive Web Apps</h4>
+                      <p className="text-sm text-slate-400">Cross-platform mobile experiences with PWA technology</p>
                     </div>
                   </div>
 
@@ -373,8 +376,8 @@ export default function Home() {
                       <TrendingUp className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-purple-400">Cloud-Native</h4>
-                      <p className="text-sm text-slate-400">Future-ready deployments</p>
+                      <h4 className="font-semibold text-purple-400">Cloud-Based Solutions</h4>
+                      <p className="text-sm text-slate-400">Serverless architecture and DevOps deployment</p>
                     </div>
                   </div>
                 </div>
@@ -391,10 +394,10 @@ export default function Home() {
           <div className="text-center mb-16">
             <span className="text-cyan-400 font-semibold text-sm uppercase tracking-wider">How We Work</span>
             <h2 className="text-4xl sm:text-5xl font-bold mt-3 mb-4">
-              Our <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Development Process</span>
+              Agile <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Development Methodology</span>
             </h2>
             <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-              We follow a proven methodology to deliver exceptional results for every project
+              We follow proven <span className="text-cyan-400 font-semibold">agile development</span> and <span className="text-blue-400 font-semibold">scrum methodology</span> to deliver exceptional results with DevOps and CI/CD integration
             </p>
           </div>
 
@@ -406,9 +409,9 @@ export default function Home() {
                 </div>
                 <div className="absolute -top-2 -right-2 w-8 h-8 bg-cyan-400 rounded-full flex items-center justify-center text-slate-900 font-bold text-sm">1</div>
               </div>
-              <h3 className="text-xl font-bold mb-3 group-hover:text-cyan-400 transition-colors">Discovery</h3>
+              <h3 className="text-xl font-bold mb-3 group-hover:text-cyan-400 transition-colors">Discovery & Planning</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
-                We analyze your requirements, goals, and target audience to create a comprehensive project roadmap.
+                We analyze your requirements and create detailed wireframes, user flows, and technical specifications for <span className="text-cyan-400 font-semibold">UI/UX design</span> and development planning.
               </p>
             </div>
 
@@ -419,9 +422,9 @@ export default function Home() {
                 </div>
                 <div className="absolute -top-2 -right-2 w-8 h-8 bg-emerald-400 rounded-full flex items-center justify-center text-slate-900 font-bold text-sm">2</div>
               </div>
-              <h3 className="text-xl font-bold mb-3 group-hover:text-emerald-400 transition-colors">Planning</h3>
+              <h3 className="text-xl font-bold mb-3 group-hover:text-emerald-400 transition-colors">Design & Prototyping</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Detailed project planning with wireframes, user flows, and technical specifications for clear execution.
+                Our designers create interactive prototypes and mockups using modern design tools for optimal <span className="text-emerald-400 font-semibold">user experience</span> and functionality.
               </p>
             </div>
 
@@ -432,9 +435,9 @@ export default function Home() {
                 </div>
                 <div className="absolute -top-2 -right-2 w-8 h-8 bg-blue-400 rounded-full flex items-center justify-center text-slate-900 font-bold text-sm">3</div>
               </div>
-              <h3 className="text-xl font-bold mb-3 group-hover:text-blue-400 transition-colors">Development</h3>
+              <h3 className="text-xl font-bold mb-3 group-hover:text-blue-400 transition-colors">Agile Development</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Agile development with regular updates, using modern technologies and best coding practices.
+                Sprint-based development with daily standups, regular updates, and <span className="text-blue-400 font-semibold">CI/CD pipeline</span> integration for quality assurance.
               </p>
             </div>
 
@@ -445,9 +448,9 @@ export default function Home() {
                 </div>
                 <div className="absolute -top-2 -right-2 w-8 h-8 bg-orange-400 rounded-full flex items-center justify-center text-slate-900 font-bold text-sm">4</div>
               </div>
-              <h3 className="text-xl font-bold mb-3 group-hover:text-orange-400 transition-colors">Testing</h3>
+              <h3 className="text-xl font-bold mb-3 group-hover:text-orange-400 transition-colors">Quality Assurance</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Comprehensive testing across devices and browsers to ensure quality and performance.
+                Automated and manual testing across all devices and browsers with <span className="text-orange-400 font-semibold">performance optimization</span> and security validation.
               </p>
             </div>
 
@@ -458,9 +461,9 @@ export default function Home() {
                 </div>
                 <div className="absolute -top-2 -right-2 w-8 h-8 bg-purple-400 rounded-full flex items-center justify-center text-slate-900 font-bold text-sm">5</div>
               </div>
-              <h3 className="text-xl font-bold mb-3 group-hover:text-purple-400 transition-colors">Launch</h3>
+              <h3 className="text-xl font-bold mb-3 group-hover:text-purple-400 transition-colors">Deployment & Support</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Smooth deployment with ongoing support and monitoring to ensure everything runs perfectly.
+                Cloud deployment with <span className="text-purple-400 font-semibold">DevOps</span> practices, monitoring, and ongoing maintenance to ensure optimal performance and security.
               </p>
             </div>
           </div>

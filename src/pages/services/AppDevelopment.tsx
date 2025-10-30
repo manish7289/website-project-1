@@ -3,10 +3,10 @@ import { Smartphone, CheckCircle, ArrowRight, Apple, Chrome, Zap } from 'lucide-
 
 export default function AppDevelopment() {
   const features = [
-    'Native iOS Development',
-    'Native Android Development',
-    'Cross-Platform Solutions',
-    'Intuitive User Interface',
+    'Native iOS App Development',
+    'Native Android App Development',
+    'Cross-Platform Mobile Solutions',
+    'Intuitive UI/UX Design',
     'Offline Functionality',
     'Push Notifications',
     'In-App Purchases',
@@ -17,21 +17,21 @@ export default function AppDevelopment() {
 
   const platforms = [
     {
-      name: 'iOS Apps',
+      name: 'iOS App Development',
       icon: Apple,
-      description: 'Native apps for iPhone and iPad using Swift',
+      description: 'Native apps for iPhone and iPad using Swift with <span className="text-cyan-400 font-semibold">performance optimization</span>',
       color: 'from-slate-400 to-slate-600'
     },
     {
-      name: 'Android Apps',
+      name: 'Android App Development',
       icon: Chrome,
-      description: 'Native apps for Android devices using Kotlin',
+      description: 'Native apps for Android devices using Kotlin with <span className="text-green-400 font-semibold">user experience</span> focus',
       color: 'from-green-500 to-emerald-600'
     },
     {
-      name: 'Cross-Platform',
+      name: 'Cross-Platform Development',
       icon: Zap,
-      description: 'Single codebase for both iOS and Android',
+      description: 'Single codebase for both iOS and Android using <span className="text-blue-400 font-semibold">React Native development</span>',
       color: 'from-blue-500 to-cyan-600'
     }
   ];
@@ -56,13 +56,13 @@ export default function AppDevelopment() {
               </div>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-              Mobile App Development
+              Professional <span className="text-cyan-400">Mobile App Development</span>
               <span className="block bg-gradient-to-r from-blue-400 to-cyan-500 bg-clip-text text-transparent">
-                Services
+                Custom App Development Services
               </span>
             </h1>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-              Build powerful mobile applications for iOS and Android that users love. Our expert team creates custom apps that deliver exceptional performance and user experience.
+              Build powerful <span className="text-cyan-400 font-semibold">mobile app development</span> for iOS and Android with <span className="text-blue-400 font-semibold">React Native development</span> and <span className="text-purple-400 font-semibold">Progressive Web Apps</span> that users love. Our expert team creates custom apps with exceptional <span className="text-emerald-400 font-semibold">user experience</span> and <span className="text-orange-400 font-semibold">performance optimization</span>.
             </p>
           </div>
         </div>

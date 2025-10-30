@@ -3,14 +3,14 @@ import { Code2, CheckCircle, ArrowRight, Zap, Globe, Smartphone, Layers } from '
 
 export default function WebDevelopment() {
   const features = [
-    'Responsive Design for All Devices',
-    'Fast Loading & Optimized Performance',
-    'SEO-Friendly Architecture',
+    'Responsive Web Design for All Devices',
+    'Fast Loading & Performance Optimization',
+    'SEO-Friendly Website Architecture',
     'Modern UI/UX Design',
     'Cross-Browser Compatibility',
     'Secure & Scalable Solutions',
-    'Content Management System',
-    'Third-Party Integrations',
+    'Headless CMS Integration',
+    'Third-Party API Integrations',
     'Analytics & Tracking Setup',
     'Ongoing Support & Maintenance'
   ];
@@ -32,27 +32,27 @@ export default function WebDevelopment() {
     {
       step: '1',
       title: 'Discovery & Planning',
-      description: 'We start by understanding your business goals, target audience, and project requirements. Our team conducts thorough research to create a comprehensive project plan.'
+      description: 'We analyze your requirements and create detailed wireframes, user flows, and technical specifications for <span className="text-cyan-400 font-semibold">UI/UX design</span> and development planning with <span className="text-blue-400 font-semibold">agile development</span> methodology.'
     },
     {
       step: '2',
-      title: 'Design & Wireframing',
-      description: 'Our designers create detailed wireframes and mockups, focusing on user experience and visual appeal. You review and provide feedback until we achieve the perfect design.'
+      title: 'Design & Prototyping',
+      description: 'Our designers create interactive prototypes and mockups using modern design tools for optimal <span className="text-purple-400 font-semibold">user experience</span> and functionality with <span className="text-emerald-400 font-semibold">responsive web design</span> principles.'
     },
     {
       step: '3',
-      title: 'Development',
-      description: 'Expert developers bring the design to life using cutting-edge technologies. We follow best practices and write clean, maintainable code for optimal performance.'
+      title: 'Agile Development',
+      description: 'Sprint-based development with daily standups, regular updates, and <span className="text-orange-400 font-semibold">CI/CD pipeline</span> integration using <span className="text-teal-400 font-semibold">React development</span>, <span className="text-cyan-400 font-semibold">Next.js development</span>, and <span className="text-blue-400 font-semibold">Node.js development</span>.'
     },
     {
       step: '4',
-      title: 'Testing & QA',
-      description: 'Rigorous testing across devices and browsers ensures everything works flawlessly. We fix bugs and optimize performance before launch.'
+      title: 'Quality Assurance',
+      description: 'Automated and manual testing across all devices and browsers with <span className="text-purple-400 font-semibold">performance optimization</span> and security validation to ensure <span className="text-emerald-400 font-semibold">SEO-friendly websites</span>.'
     },
     {
       step: '5',
-      title: 'Launch & Support',
-      description: 'We deploy your website to production and provide training. Our support team remains available for updates, maintenance, and technical assistance.'
+      title: 'Deployment & Support',
+      description: 'Cloud deployment with <span className="text-orange-400 font-semibold">DevOps</span> practices, monitoring, and ongoing maintenance to ensure optimal performance and security for your <span className="text-teal-400 font-semibold">custom website development</span>.'
     }
   ];
 
@@ -74,13 +74,13 @@ export default function WebDevelopment() {
               </div>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-              Web Development
+              Professional <span className="text-cyan-400">Web Development Services</span>
               <span className="block bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent">
-                Services
+                Custom Website Development
               </span>
             </h1>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-              Create powerful, responsive websites that engage users and drive business growth. Our expert team builds custom web solutions tailored to your unique needs.
+              Create powerful, <span className="text-cyan-400 font-semibold">responsive web design</span> websites with <span className="text-blue-400 font-semibold">React development</span>, <span className="text-purple-400 font-semibold">Next.js development</span>, and <span className="text-emerald-400 font-semibold">Node.js development</span> that engage users and drive business growth through <span className="text-orange-400 font-semibold">SEO-friendly websites</span> and <span className="text-teal-400 font-semibold">performance optimization</span>.
             </p>
           </div>
 

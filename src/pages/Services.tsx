@@ -22,13 +22,13 @@ export default function Services() {
     {
       icon: Code2,
       title: 'Web Development',
-      description: 'We create stunning, responsive websites that deliver exceptional user experiences across all devices.',
+      description: 'We create stunning, <span className="text-cyan-400 font-semibold">responsive web design</span> websites that deliver exceptional <span className="text-blue-400 font-semibold">user experience (UX)</span> across all devices with <span className="text-purple-400 font-semibold">SEO-friendly</span> architecture.',
       features: [
-        'Custom Website Design',
+        'Custom Website Development',
         'React & Next.js Development',
         'Progressive Web Apps (PWA)',
         'RESTful API Development',
-        'Content Management Systems',
+        'Headless CMS Integration',
         'Performance Optimization'
       ],
       technologies: ['React', 'Next.js', 'TypeScript', 'Node.js', 'Tailwind CSS'],
@@ -37,7 +37,7 @@ export default function Services() {
     {
       icon: Smartphone,
       title: 'App Development',
-      description: 'Build powerful native and cross-platform mobile applications for iOS and Android that users love.',
+      description: 'Build powerful native and cross-platform <span className="text-cyan-400 font-semibold">mobile app development</span> for iOS and Android with <span className="text-blue-400 font-semibold">Progressive Web Apps</span> capabilities that users love.',
       features: [
         'iOS & Android Apps',
         'React Native Development',
@@ -52,7 +52,7 @@ export default function Services() {
     {
       icon: ShoppingCart,
       title: 'E-commerce Solutions',
-      description: 'Complete online store solutions with secure payment integration and inventory management.',
+      description: 'Complete <span className="text-cyan-400 font-semibold">e-commerce website development</span> with secure payment integration, inventory management, and <span className="text-blue-400 font-semibold">AI-powered</span> features for modern online stores.',
       features: [
         'Custom Shopping Cart',
         'Payment Gateway Integration',
@@ -67,7 +67,7 @@ export default function Services() {
     {
       icon: Database,
       title: 'Custom Software Development',
-      description: 'Tailored software solutions designed to solve your unique business challenges efficiently.',
+      description: 'Tailored <span className="text-cyan-400 font-semibold">full-stack development</span> solutions with <span className="text-blue-400 font-semibold">microservices architecture</span> and <span className="text-purple-400 font-semibold">API development</span> to solve your unique business challenges efficiently.',
       features: [
         'Business Process Automation',
         'Enterprise Applications',
@@ -82,7 +82,7 @@ export default function Services() {
     {
       icon: TrendingUp,
       title: 'Digital Marketing',
-      description: 'Comprehensive digital marketing strategies to boost your online presence and drive growth.',
+      description: 'Comprehensive <span className="text-cyan-400 font-semibold">digital marketing</span> strategies including <span className="text-blue-400 font-semibold">SEO optimization</span>, <span className="text-purple-400 font-semibold">PPC advertising</span>, and <span className="text-emerald-400 font-semibold">social media marketing</span> to boost your online presence and drive growth.',
       features: [
         'SEO Optimization',
         'Social Media Marketing',
@@ -97,7 +97,7 @@ export default function Services() {
     {
       icon: Palette,
       title: 'Graphic Design',
-      description: 'Creative visual solutions that bring your brand to life and captivate your audience.',
+      description: 'Creative <span className="text-cyan-400 font-semibold">UI/UX design</span> solutions that bring your brand to life and captivate your audience with exceptional <span className="text-blue-400 font-semibold">user experience</span>.',
       features: [
         'Logo Design & Branding',
         'UI/UX Design',
@@ -112,7 +112,7 @@ export default function Services() {
     {
       icon: PenTool,
       title: 'Content Writing',
-      description: 'Professional content writing that engages your audience and drives conversions.',
+      description: 'Professional <span className="text-cyan-400 font-semibold">SEO content writing</span> that engages your audience and drives conversions with optimized content strategies.',
       features: [
         'Blog Writing',
         'Website Content',
@@ -163,27 +163,27 @@ export default function Services() {
     {
       step: '01',
       title: 'Discovery & Planning',
-      description: 'We analyze your requirements and create a detailed project roadmap.'
+      description: 'We analyze your requirements and create detailed wireframes, user flows, and technical specifications for <span className="text-cyan-400 font-semibold">UI/UX design</span> and development planning.'
     },
     {
       step: '02',
-      title: 'Design & Prototype',
-      description: 'Our designers create mockups and interactive prototypes for your approval.'
+      title: 'Design & Prototyping',
+      description: 'Our designers create interactive prototypes and mockups using modern design tools for optimal <span className="text-blue-400 font-semibold">user experience</span> and functionality.'
     },
     {
       step: '03',
-      title: 'Development',
-      description: 'Expert developers bring your vision to life using cutting-edge technologies.'
+      title: 'Agile Development',
+      description: 'Sprint-based development with daily standups, regular updates, and <span className="text-purple-400 font-semibold">CI/CD pipeline</span> integration for quality assurance.'
     },
     {
       step: '04',
-      title: 'Testing & Launch',
-      description: 'Rigorous testing ensures quality before deploying to production.'
+      title: 'Quality Assurance',
+      description: 'Automated and manual testing across all devices and browsers with <span className="text-emerald-400 font-semibold">performance optimization</span> and security validation.'
     },
     {
       step: '05',
-      title: 'Support & Growth',
-      description: 'Ongoing maintenance and updates to keep your application running smoothly.'
+      title: 'Deployment & Support',
+      description: 'Cloud deployment with <span className="text-orange-400 font-semibold">DevOps</span> practices, monitoring, and ongoing maintenance to ensure optimal performance and security.'
     }
   ];
 
@@ -199,13 +199,13 @@ export default function Services() {
           <div className="text-center mb-16">
             <span className="text-cyan-400 font-semibold text-sm uppercase tracking-wider">Our Services</span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mt-3 mb-6">
-              Development Services
+              Comprehensive <span className="text-cyan-400">Web Development Services</span>
               <span className="block bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
                 That Drive Results
               </span>
             </h1>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              From web and mobile applications to e-commerce platforms and custom software, we deliver comprehensive solutions tailored to your business needs.
+              From <span className="text-cyan-400 font-semibold">custom website development</span> and <span className="text-blue-400 font-semibold">mobile app development</span> to <span className="text-purple-400 font-semibold">e-commerce website development</span> and <span className="text-emerald-400 font-semibold">full-stack development</span>, we deliver comprehensive solutions using modern technologies like React, Next.js, and Node.js.
             </p>
           </div>
         </div>

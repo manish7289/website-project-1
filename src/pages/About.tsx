@@ -18,22 +18,22 @@ export default function About() {
     {
       icon: Lightbulb,
       title: 'Innovation',
-      description: 'We constantly explore new technologies and approaches to deliver cutting-edge solutions.'
+      description: 'We constantly explore new technologies like <span className="text-cyan-400 font-semibold">AI-powered websites</span>, <span className="text-blue-400 font-semibold">Progressive Web Apps</span>, and <span className="text-purple-400 font-semibold">serverless architecture</span> to deliver cutting-edge solutions.'
     },
     {
       icon: Heart,
       title: 'Client-Focused',
-      description: 'Your success is our priority. We build lasting relationships through exceptional service.'
+      description: 'Your success is our priority. We build lasting relationships through exceptional <span className="text-cyan-400 font-semibold">digital transformation</span> services and ongoing support.'
     },
     {
       icon: CheckCircle,
       title: 'Quality',
-      description: 'We maintain the highest standards in every project, ensuring flawless execution.'
+      description: 'We maintain the highest standards in every project, ensuring flawless execution with <span className="text-blue-400 font-semibold">performance optimization</span> and <span className="text-purple-400 font-semibold">SEO-friendly websites</span>.'
     },
     {
       icon: Shield,
       title: 'Integrity',
-      description: 'Transparency and honesty guide every decision and interaction with our clients.'
+      description: 'Transparency and honesty guide every decision and interaction with our clients, backed by proven <span className="text-cyan-400 font-semibold">agile development</span> and <span className="text-blue-400 font-semibold">DevOps</span> practices.'
     }
   ];
 
@@ -42,37 +42,37 @@ export default function About() {
       name: 'Alex Thompson',
       role: 'CEO & Founder',
       image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: '15+ years experience in software development and business leadership.'
+      bio: '15+ years experience in <span className="text-cyan-400 font-semibold">full-stack development</span> and business leadership, specializing in <span className="text-blue-400 font-semibold">digital transformation</span> strategies.'
     },
     {
       name: 'Sarah Mitchell',
       role: 'CTO',
       image: 'https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: 'Expert in scalable architecture and emerging technologies.'
+      bio: 'Expert in <span className="text-cyan-400 font-semibold">microservices architecture</span>, <span className="text-blue-400 font-semibold">cloud-based solutions</span>, and emerging technologies like <span className="text-purple-400 font-semibold">serverless architecture</span>.'
     },
     {
       name: 'David Chen',
       role: 'Lead Developer',
       image: 'https://images.pexels.com/photos/2182975/pexels-photo-2182975.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: 'Full-stack specialist with expertise in modern web frameworks.'
+      bio: '<span className="text-cyan-400 font-semibold">Full-stack specialist</span> with expertise in <span className="text-blue-400 font-semibold">React development</span>, <span className="text-purple-400 font-semibold">Next.js development</span>, and <span className="text-emerald-400 font-semibold">Node.js development</span>.'
     },
     {
       name: 'Emily Roberts',
       role: 'UI/UX Designer',
       image: 'https://images.pexels.com/photos/3756681/pexels-photo-3756681.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: 'Creative designer focused on user-centered design principles.'
+      bio: 'Creative designer focused on <span className="text-cyan-400 font-semibold">user experience (UX) design</span> and <span className="text-blue-400 font-semibold">UI/UX design</span> principles for optimal user engagement.'
     },
     {
       name: 'Michael Lee',
       role: 'Mobile Developer',
       image: 'https://images.pexels.com/photos/2102416/pexels-photo-2102416.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: 'iOS and Android expert building native and cross-platform apps.'
+      bio: 'iOS and Android expert building native and cross-platform <span className="text-cyan-400 font-semibold">mobile app development</span> with <span className="text-blue-400 font-semibold">Progressive Web Apps</span> capabilities.'
     },
     {
       name: 'Lisa Anderson',
       role: 'Project Manager',
       image: 'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: 'Agile methodology specialist ensuring smooth project delivery.'
+      bio: '<span className="text-cyan-400 font-semibold">Agile development</span> and <span className="text-blue-400 font-semibold">scrum methodology</span> specialist ensuring smooth project delivery with <span className="text-purple-400 font-semibold">DevOps</span> integration.'
     }
   ];
 
@@ -97,13 +97,13 @@ export default function About() {
           <div className="text-center mb-16">
             <span className="text-cyan-400 font-semibold text-sm uppercase tracking-wider">About Us</span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mt-3 mb-6">
-              Building Digital Excellence
+              Leading <span className="text-cyan-400">Web Development</span> Company
               <span className="block bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                Since 2025
+                Digital Transformation Experts
               </span>
             </h1>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-              We are a passionate team of developers, designers, and innovators dedicated to creating exceptional digital solutions that drive business growth and deliver measurable results.
+              We specialize in <span className="text-cyan-400 font-semibold">custom website development</span>, <span className="text-blue-400 font-semibold">mobile app development</span>, and <span className="text-purple-400 font-semibold">full-stack development</span> using cutting-edge technologies like React, Next.js, and Node.js to deliver exceptional digital experiences.
             </p>
           </div>
 
@@ -131,10 +131,10 @@ export default function About() {
                 <h2 className="text-3xl sm:text-4xl font-bold">Our Mission</h2>
               </div>
               <p className="text-slate-300 text-lg leading-relaxed mb-6">
-                To empower businesses with innovative technology solutions that transform ideas into reality. We strive to be the trusted partner for companies seeking to accelerate their digital transformation and achieve sustainable growth.
+                To empower businesses with innovative <span className="text-cyan-400 font-semibold">web development services</span> that transform ideas into reality. We strive to be the trusted partner for companies seeking to accelerate their <span className="text-blue-400 font-semibold">digital transformation</span> through <span className="text-purple-400 font-semibold">SEO-friendly websites</span> and <span className="text-emerald-400 font-semibold">performance optimization</span>.
               </p>
               <p className="text-slate-300 text-lg leading-relaxed">
-                Through cutting-edge development practices and unwavering commitment to quality, we deliver solutions that exceed expectations and create lasting value.
+                Through cutting-edge <span className="text-cyan-400 font-semibold">full-stack development</span> practices, <span className="text-blue-400 font-semibold">agile development</span> methodology, and unwavering commitment to quality, we deliver solutions that exceed expectations and create lasting value.
               </p>
             </div>
 
@@ -144,10 +144,10 @@ export default function About() {
                 <h2 className="text-3xl sm:text-4xl font-bold">Our Vision</h2>
               </div>
               <p className="text-slate-300 text-lg leading-relaxed mb-6">
-                To become the world's most trusted development partner, recognized for excellence in delivering transformative digital experiences that shape the future of technology.
+                To become the world's most trusted <span className="text-cyan-400 font-semibold">web development company</span>, recognized for excellence in delivering transformative <span className="text-blue-400 font-semibold">digital experiences</span> using <span className="text-purple-400 font-semibold">React development</span>, <span className="text-emerald-400 font-semibold">Next.js development</span>, and <span className="text-orange-400 font-semibold">Node.js development</span>.
               </p>
               <p className="text-slate-300 text-lg leading-relaxed">
-                We envision a future where every business, regardless of size, has access to enterprise-grade technology solutions that drive innovation and success.
+                We envision a future where every business, regardless of size, has access to enterprise-grade <span className="text-cyan-400 font-semibold">cloud-based solutions</span>, <span className="text-blue-400 font-semibold">SaaS development</span>, and <span className="text-purple-400 font-semibold">API development</span> that drive innovation and success.
               </p>
             </div>
           </div>
