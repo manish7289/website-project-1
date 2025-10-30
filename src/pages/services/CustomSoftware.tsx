@@ -21,25 +21,25 @@ export default function CustomSoftware() {
     {
       icon: Database,
       title: 'Enterprise Software',
-      description: 'Large-scale business applications with complex workflows and integrations.',
+      description: 'Large-scale business applications with complex workflows, <Link to="/services/custom-software-development" className="text-cyan-400 font-semibold">SaaS development</Link>, and seamless integrations using <Link to="/services/custom-software-development" className="text-blue-400 font-semibold">agile development</Link> methodology.',
       color: 'from-purple-500 to-pink-600'
     },
     {
       icon: Settings,
       title: 'Business Automation',
-      description: 'Streamline operations with custom automation tools and workflows.',
+      description: 'Streamline operations with custom automation tools, <Link to="/services/custom-software-development" className="text-cyan-400 font-semibold">DevOps</Link> practices, and intelligent workflows for maximum efficiency.',
       color: 'from-blue-500 to-cyan-600'
     },
     {
       icon: Cloud,
       title: 'Cloud Solutions',
-      description: 'Scalable cloud-based applications with AWS, Azure, or Google Cloud.',
+      description: 'Scalable <Link to="/services/custom-software-development" className="text-cyan-400 font-semibold">cloud-based solutions</Link> with AWS, Azure, or Google Cloud featuring <Link to="/services/custom-software-development" className="text-blue-400 font-semibold">serverless architecture</Link> and <Link to="/services/custom-software-development" className="text-purple-400 font-semibold">microservices architecture</Link>.',
       color: 'from-emerald-500 to-teal-600'
     },
     {
       icon: Lock,
       title: 'Secure Systems',
-      description: 'High-security applications with advanced encryption and compliance.',
+      description: 'High-security applications with advanced encryption, compliance standards, and <Link to="/services/custom-software-development" className="text-cyan-400 font-semibold">API development</Link> for secure data handling.',
       color: 'from-orange-500 to-rose-600'
     }
   ];
@@ -49,32 +49,32 @@ export default function CustomSoftware() {
   const industries = [
     {
       name: 'Healthcare',
-      description: 'HIPAA-compliant medical software, patient management systems, and telemedicine platforms.',
+      description: 'HIPAA-compliant medical software, patient management systems, and telemedicine platforms with <Link to="/services/custom-software-development" className="text-cyan-400 font-semibold">AI-powered</Link> diagnostics and <Link to="/services/custom-software-development" className="text-blue-400 font-semibold">cloud-based solutions</Link>.',
       image: 'https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=800'
     },
     {
       name: 'Finance',
-      description: 'Banking systems, payment processing, investment platforms, and financial analytics.',
+      description: 'Banking systems, payment processing, investment platforms, and financial analytics with <Link to="/services/custom-software-development" className="text-cyan-400 font-semibold">API development</Link> and advanced security protocols.',
       image: 'https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=800'
     },
     {
       name: 'Manufacturing',
-      description: 'Inventory management, supply chain optimization, and production tracking systems.',
+      description: 'Inventory management, supply chain optimization, and production tracking systems with <span className="text-cyan-400 font-semibold">IoT integration</span> and <span className="text-blue-400 font-semibold">real-time analytics</span>.',
       image: 'https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=800'
     },
     {
       name: 'Real Estate',
-      description: 'Property management, CRM systems, and virtual tour platforms.',
+      description: 'Property management, CRM systems, and virtual tour platforms with <span className="text-cyan-400 font-semibold">Progressive Web Apps</span> and <span className="text-blue-400 font-semibold">mobile app development</span>.',
       image: 'https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=800'
     },
     {
       name: 'Education',
-      description: 'Learning management systems, student portals, and online examination platforms.',
+      description: 'Learning management systems, student portals, and online examination platforms with <span className="text-cyan-400 font-semibold">e-learning solutions</span> and <span className="text-blue-400 font-semibold">gamification features</span>.',
       image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800'
     },
     {
       name: 'Logistics',
-      description: 'Fleet management, route optimization, and delivery tracking systems.',
+      description: 'Fleet management, route optimization, and delivery tracking systems with <span className="text-cyan-400 font-semibold">GPS integration</span> and <span className="text-blue-400 font-semibold">predictive analytics</span>.',
       image: 'https://images.pexels.com/photos/4246120/pexels-photo-4246120.jpeg?auto=compress&cs=tinysrgb&w=800'
     }
   ];
@@ -101,7 +101,7 @@ export default function CustomSoftware() {
               </span>
             </h1>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-              Build tailored software solutions designed specifically for your business needs. We create scalable, secure applications that solve your unique challenges.
+              Build tailored <span className="text-cyan-400 font-semibold">full-stack development</span> solutions designed specifically for your business needs. We create scalable, secure applications using <Link to="/services/custom-software-development" className="text-blue-400 font-semibold">microservices architecture</Link>, <Link to="/services/custom-software-development" className="text-purple-400 font-semibold">API development</Link>, and <Link to="/services/custom-software-development" className="text-emerald-400 font-semibold">cloud-based solutions</Link> that solve your unique challenges and drive <Link to="/services/custom-software-development" className="text-orange-400 font-semibold">digital transformation</Link>.
             </p>
           </div>
         </div>

@@ -252,13 +252,22 @@ export default function Services() {
                     ))}
                   </div>
                 </div>
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 px-6 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300"
-                >
-                  Get Started
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
+                <div className="flex gap-4">
+                  <Link
+                    to={`/services/${service.title.toLowerCase().replace(/\s+/g, '-').replace('&', 'and').replace('solutions', 'solutions')}`}
+                    className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 px-6 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300"
+                  >
+                    Learn More
+                    <ArrowRight className="w-5 h-5" />
+                  </Link>
+                  <Link
+                    to="/contact"
+                    className="inline-flex items-center gap-2 border-2 border-cyan-500/50 px-6 py-3 rounded-full font-semibold hover:bg-cyan-500/10 transition-all duration-300"
+                  >
+                    Get Started
+                    <ArrowRight className="w-5 h-5" />
+                  </Link>
+                </div>
               </div>
 
               <div className="flex-1">

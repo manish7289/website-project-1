@@ -31,10 +31,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/web-development" element={<WebDevelopment />} />
-          <Route path="/services/wordpress-development" element={<WordPressDevelopment />} />
+          <Route path="/services/wordpress-and-shopify" element={<WordPressDevelopment />} />
           <Route path="/services/app-development" element={<AppDevelopment />} />
-          <Route path="/services/ecommerce" element={<Ecommerce />} />
-          <Route path="/services/custom-software" element={<CustomSoftware />} />
+          <Route path="/services/e-commerce-solutions" element={<Ecommerce />} />
+          <Route path="/services/custom-software-development" element={<CustomSoftware />} />
           <Route path="/services/digital-marketing" element={<DigitalMarketing />} />
           <Route path="/services/digital-marketing/seo" element={<SEO />} />
           <Route path="/services/digital-marketing/social-media" element={<SocialMediaMarketing />} />

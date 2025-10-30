@@ -201,7 +201,7 @@ export default function Home() {
                   We are a premier <span className="text-cyan-400 font-semibold">web development company</span> specializing in <span className="text-blue-400 font-semibold">custom website development</span>, <span className="text-purple-400 font-semibold">e-commerce website development</span>, and <span className="text-emerald-400 font-semibold">mobile app development</span>. Our expert team delivers innovative digital solutions using modern technologies like React, Next.js, and Node.js.
                 </p>
                 <p className="text-sm sm:text-base md:text-lg text-slate-400 leading-relaxed mb-6 sm:mb-8">
-                  Our mission is to provide <span className="text-cyan-400 font-semibold">SEO-friendly websites</span> and <span className="text-blue-400 font-semibold">performance optimization</span> services that drive business growth. We specialize in <span className="text-purple-400 font-semibold">digital transformation</span> solutions, helping businesses stay ahead in the competitive digital landscape through quality, innovation, and long-term partnerships.
+                  Our mission is to provide <Link to="/services/digital-marketing/seo" className="text-cyan-400 font-semibold">SEO-friendly websites</Link> and <Link to="/services/web-development" className="text-blue-400 font-semibold">performance optimization</Link> services that drive business growth. We specialize in <Link to="/services/custom-software-development" className="text-purple-400 font-semibold">digital transformation</Link> solutions, helping businesses stay ahead in the competitive digital landscape through quality, innovation, and long-term partnerships.
                 </p>
                 <div className="flex flex-wrap gap-3 sm:gap-4">
                   <div className="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-cyan-500/30">
@@ -245,22 +245,36 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="group bg-gradient-to-br from-slate-900 to-slate-800 p-6 rounded-2xl border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300 hover:transform hover:-translate-y-2 cursor-pointer"
-              >
-                <div className={`w-14 h-14 bg-gradient-to-br ${service.color} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                  <service.icon className="w-7 h-7 text-white" />
-                </div>
-                <h3 className="text-xl font-bold mb-3 group-hover:text-cyan-400 transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-slate-400 text-sm leading-relaxed">
-                  {service.description}
-                </p>
-              </div>
-            ))}
+            {services.map((service, index) => {
+              const serviceRoutes = {
+                'Web Development': '/services/web-development',
+                'WordPress & Shopify': '/services/wordpress-and-shopify',
+                'App Development': '/services/app-development',
+                'E-commerce Solution': '/services/e-commerce-solutions',
+                'Custom Software': '/services/custom-software-development',
+                'Digital Marketing': '/services/digital-marketing',
+                'Graphic Design': '/services/graphic-design',
+                'Content Writing': '/services/content-writing'
+              };
+
+              return (
+                <Link
+                  key={index}
+                  to={serviceRoutes[service.title as keyof typeof serviceRoutes] || '/services'}
+                  className="group bg-gradient-to-br from-slate-900 to-slate-800 p-6 rounded-2xl border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300 hover:transform hover:-translate-y-2 cursor-pointer"
+                >
+                  <div className={`w-14 h-14 bg-gradient-to-br ${service.color} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                    <service.icon className="w-7 h-7 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-cyan-400 transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-slate-400 text-sm leading-relaxed">
+                    {service.description}
+                  </p>
+                </Link>
+              );
+            })}
           </div>
 
           <div className="text-center mt-10">
@@ -295,7 +309,7 @@ export default function Home() {
             Modern <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Development Technologies</span>
             </h2>
             <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-            We specialize in <span className="text-cyan-400 font-semibold">full-stack development</span> using cutting-edge technologies like React, Next.js, Node.js, and cloud-based solutions to build robust, scalable, and SEO-optimized applications.
+            We specialize in <span className="text-cyan-400 font-semibold">full-stack development</span> using cutting-edge technologies like React, Next.js, Node.js, and <Link to="/services/custom-software-development" className="text-blue-400 font-semibold">cloud-based solutions</Link> to build robust, scalable, and SEO-optimized applications.
             </p>
           </div>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -397,7 +411,7 @@ export default function Home() {
               Agile <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Development Methodology</span>
             </h2>
             <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-              We follow proven <span className="text-cyan-400 font-semibold">agile development</span> and <span className="text-blue-400 font-semibold">scrum methodology</span> to deliver exceptional results with DevOps and CI/CD integration
+              We follow proven <Link to="/services/web-development" className="text-cyan-400 font-semibold">agile development</Link> and <Link to="/services/custom-software-development" className="text-blue-400 font-semibold">scrum methodology</Link> to deliver exceptional results with DevOps and CI/CD integration
             </p>
           </div>
 
@@ -411,7 +425,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold mb-3 group-hover:text-cyan-400 transition-colors">Discovery & Planning</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
-                We analyze your requirements and create detailed wireframes, user flows, and technical specifications for <span className="text-cyan-400 font-semibold">UI/UX design</span> and development planning.
+                We analyze your requirements and create detailed wireframes, user flows, and technical specifications for <Link to="/services/graphic-design" className="text-cyan-400 font-semibold">UI/UX design</Link> and development planning.
               </p>
             </div>
 
@@ -424,7 +438,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold mb-3 group-hover:text-emerald-400 transition-colors">Design & Prototyping</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Our designers create interactive prototypes and mockups using modern design tools for optimal <span className="text-emerald-400 font-semibold">user experience</span> and functionality.
+                Our designers create interactive prototypes and mockups using modern design tools for optimal <Link to="/services/graphic-design" className="text-emerald-400 font-semibold">user experience</Link> and functionality.
               </p>
             </div>
 
@@ -437,7 +451,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold mb-3 group-hover:text-blue-400 transition-colors">Agile Development</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Sprint-based development with daily standups, regular updates, and <span className="text-blue-400 font-semibold">CI/CD pipeline</span> integration for quality assurance.
+                Sprint-based development with daily standups, regular updates, and <Link to="/services/custom-software-development" className="text-blue-400 font-semibold">CI/CD pipeline</Link> integration for quality assurance.
               </p>
             </div>
 
@@ -450,7 +464,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold mb-3 group-hover:text-orange-400 transition-colors">Quality Assurance</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Automated and manual testing across all devices and browsers with <span className="text-orange-400 font-semibold">performance optimization</span> and security validation.
+                Automated and manual testing across all devices and browsers with <Link to="/services/custom-software-development" className="text-orange-400 font-semibold">performance optimization</Link> and security validation.
               </p>
             </div>
 
@@ -463,7 +477,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold mb-3 group-hover:text-purple-400 transition-colors">Deployment & Support</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Cloud deployment with <span className="text-purple-400 font-semibold">DevOps</span> practices, monitoring, and ongoing maintenance to ensure optimal performance and security.
+                Cloud deployment with <Link to="/services/custom-software-development" className="text-purple-400 font-semibold">DevOps</Link> practices, monitoring, and ongoing maintenance to ensure optimal performance and security.
               </p>
             </div>
           </div>
@@ -522,7 +536,7 @@ export default function Home() {
                     The Future of React Development: What to Expect in 2025
                   </h3>
                   <p className="text-slate-400 text-base mb-6 leading-relaxed">
-                    Explore the upcoming features and trends that will shape React development in the coming year. From concurrent features to improved performance optimizations, discover what's next for the most popular frontend library. Learn about the latest hooks, server components, and how these innovations will impact your development workflow. Stay ahead of the curve with insights into React's roadmap and best practices for modern web development.
+                    Explore the upcoming features and trends that will shape React development in the coming year. From concurrent features to improved <Link to="/services/web-development" className="text-blue-400 font-semibold">performance optimizations</Link>, discover what's next for the most popular frontend library. Learn about the latest hooks, server components, and how these innovations will impact your development workflow. Stay ahead of the curve with insights into React's roadmap and best practices for modern web development.
                   </p>
 
                   <Link
