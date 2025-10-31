@@ -35,7 +35,7 @@ function App() {
 
 function AppContent() {
   const location = useLocation();
-  const isMetaAdsLanding = location.pathname === '/meta-ads-landing';
+  const isMetaAdsLanding = location.pathname === '/MetaAdsLanding';
 
   return (
     <>
@@ -61,7 +61,7 @@ function AppContent() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/meta-ads-landing" element={<MetaAdsLanding />} />
+          <Route path="/MetaAdsLanding" element={<MetaAdsLanding />} />
         </Routes>
         {!isMetaAdsLanding && <Footer />}
       </>
