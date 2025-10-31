@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -21,13 +21,26 @@ import SocialMediaMarketing from './pages/services/digital-marketing/SocialMedia
 import PPC from './pages/services/digital-marketing/PPC';
 import ContentMarketing from './pages/services/digital-marketing/ContentMarketing';
 import EmailMarketing from './pages/services/digital-marketing/EmailMarketing';
+import MetaAdsLanding from './pages/MetaAdsLanding';
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-slate-950">
-        <Navbar />
-        <Routes>
+        <AppContent />
+      </div>
+    </Router>
+  );
+}
+
+function AppContent() {
+  const location = useLocation();
+  const isMetaAdsLanding = location.pathname === '/meta-ads-landing';
+
+  return (
+    <>
+      {!isMetaAdsLanding && <Navbar />}
+      <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/web-development" element={<WebDevelopment />} />
@@ -48,11 +61,11 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/meta-ads-landing" element={<MetaAdsLanding />} />
         </Routes>
-        <Footer />
-      </div>
-    </Router>
-  );
+        {!isMetaAdsLanding && <Footer />}
+      </>
+    );
 }
 
 export default App;
