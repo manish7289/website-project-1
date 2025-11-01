@@ -132,6 +132,12 @@ export default function Footer() {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link to="/MetaAdsLanding" className="group flex items-center gap-2 text-white hover:text-purple-400 transition-colors duration-200">
+                  <div className="w-1.5 h-1.5 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  Meta Ads Landing
+                </Link>
+              </li>
             </ul>
           </div>
 
