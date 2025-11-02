@@ -10,12 +10,12 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
-// Email configuration - Using Gmail
+// Email configuration - Using Gmail with app password
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS
+    pass: process.env.EMAIL_PASS // This should be an app password, not regular password
   }
 });
 
