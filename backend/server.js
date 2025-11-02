@@ -22,10 +22,12 @@ const transporter = nodemailer.createTransport({
 // Contact form endpoint
 app.post('/api/contact', async (req, res) => {
   try {
+    console.log('Received request body:', req.body);
     const { name, email, phone, company, service, message } = req.body;
 
     // Validate required fields
     if (!name || !email || !message) {
+      console.log('Validation failed: missing required fields');
       return res.status(400).json({
         success: false,
         message: 'Name, email, and message are required'
