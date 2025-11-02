@@ -28,7 +28,7 @@ function MinimalFooter() {
   );
 }
 
-export default function MetaAdsLanding() {
+export default function Ma() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',

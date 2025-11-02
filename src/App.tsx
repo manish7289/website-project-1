@@ -21,7 +21,7 @@ import SocialMediaMarketing from './pages/services/digital-marketing/SocialMedia
 import PPC from './pages/services/digital-marketing/PPC';
 import ContentMarketing from './pages/services/digital-marketing/ContentMarketing';
 import EmailMarketing from './pages/services/digital-marketing/EmailMarketing';
-import MetaAdsLanding from './pages/MetaAdsLanding';
+import Ma from './pages/Ma';
 
 function App() {
   return (
@@ -35,11 +35,11 @@ function App() {
 
 function AppContent() {
   const location = useLocation();
-  const isMetaAdsLanding = location.pathname === '/MetaAdsLanding';
+  const isMa = location.pathname === '/ma';
 
   return (
     <>
-      {!isMetaAdsLanding && <Navbar />}
+      {!isMa && <Navbar />}
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
@@ -61,9 +61,9 @@ function AppContent() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/MetaAdsLanding" element={<MetaAdsLanding />} />
+          <Route path="/ma" element={<Ma />} />
         </Routes>
-        {!isMetaAdsLanding && <Footer />}
+        {!isMa && <Footer />}
       </>
     );
 }
