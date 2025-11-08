@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState, useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
 import {
   ArrowRight,
   Code2,
@@ -17,12 +18,11 @@ import {
   TestTube,
   Rocket,
   ChevronDown,
-  ChevronUp,
-  Palette,
-  PenTool
+  ChevronUp
 } from 'lucide-react';
 import aboutUsImage from '../assets/images/about us image-Photoroom.png';
 import patternVideo from '../assets/images/Updated-Pattern.mp4';
+import logo from '../assets/images/logo3_1-removebg-preview (1).png';
 
 export default function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -102,18 +102,6 @@ export default function Home() {
       title: 'Digital Marketing',
       description: 'Comprehensive digital marketing strategies including SEO optimization, PPC advertising, and social media marketing.',
       color: 'from-orange-500 to-red-600'
-    },
-    {
-      icon: Palette,
-      title: 'Graphic Design',
-      description: 'Creative UI/UX design solutions that enhance user experience and drive engagement across all devices.',
-      color: 'from-pink-500 to-purple-600'
-    },
-    {
-      icon: PenTool,
-      title: 'Content Writing',
-      description: 'Professional SEO content writing that engages audiences and improves search engine rankings.',
-      color: 'from-teal-500 to-cyan-600'
     }
   ];
 
@@ -121,6 +109,21 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <Helmet>
+        <title>TechXellence - Leading Web Development & Digital Transformation Agency</title>
+        <meta name="description" content="Premier web development company specializing in custom website development, mobile app development, and full-stack development using React, Next.js, and Node.js. Transform your digital vision with our expert team." />
+        <meta name="keywords" content="web development, custom website development, mobile app development, React development, Next.js development, Node.js development, digital transformation, SEO optimization, e-commerce solutions, full-stack development, software development agency" />
+        <meta name="author" content="TechXellence" />
+        <meta property="og:title" content="TechXellence - Leading Web Development & Digital Transformation Agency" />
+        <meta property="og:description" content="Premier web development company specializing in custom website development, mobile app development, and full-stack development using React, Next.js, and Node.js." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.techxellence.com" />
+        <meta property="og:image" content="https://www.techxellence.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="TechXellence - Leading Web Development & Digital Transformation Agency" />
+        <meta name="twitter:description" content="Premier web development company specializing in custom website development, mobile app development, and full-stack development." />
+        <link rel="canonical" href="https://www.techxellence.com" />
+      </Helmet>
       <section className="relative pt-32 pb-20 px-4 overflow-hidden min-h-screen flex items-center">
         <video
           className="absolute inset-0 w-full h-full object-cover opacity-100"
@@ -244,7 +247,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => {
               const serviceRoutes = {
                 'Web Development': '/services/web-development',
@@ -252,9 +255,7 @@ export default function Home() {
                 'App Development': '/services/app-development',
                 'E-commerce Solution': '/services/e-commerce-solutions',
                 'Custom Software': '/services/custom-software-development',
-                'Digital Marketing': '/services/digital-marketing',
-                'Graphic Design': '/services/graphic-design',
-                'Content Writing': '/services/content-writing'
+                'Digital Marketing': '/services/digital-marketing'
               };
 
               return (

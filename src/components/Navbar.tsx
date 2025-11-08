@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Code2, ChevronDown, Calendar, Briefcase, Globe, Smartphone, ShoppingCart, Code, Palette, TrendingUp, Store } from 'lucide-react';
+import logo from '../assets/images/logo3_1-removebg-preview (1).png';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,12 +48,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-2 group cursor-pointer">
-            <div className="w-10 h-10 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-lg flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
-              <Code2 className="w-6 h-6 text-white" />
-            </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              Techxellence
-            </span>
+            <img src={logo} alt="TechXellence Logo" className="h-16 w-auto" />
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">

@@ -225,9 +225,7 @@ export default function Services() {
                   <service.icon className="w-10 h-10 text-white" />
                 </div>
                 <h2 className="text-3xl sm:text-4xl font-bold mb-4">{service.title}</h2>
-                <p className="text-slate-300 text-lg mb-6 leading-relaxed">
-                  {service.description}
-                </p>
+                <p className="text-slate-300 text-lg mb-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: service.description }} />
                 <div className="mb-6">
                   <h3 className="text-xl font-semibold mb-4 text-cyan-400">Key Features:</h3>
                   <div className="grid sm:grid-cols-2 gap-3">
