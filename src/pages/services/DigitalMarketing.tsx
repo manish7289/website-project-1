@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { TrendingUp, Users, Target, Mail, FileText, ArrowRight, CheckCircle, Zap } from 'lucide-react';
+import { TrendingUp, ArrowRight, CheckCircle } from 'lucide-react';
 
 export default function DigitalMarketing() {
   const features = [
@@ -13,38 +13,7 @@ export default function DigitalMarketing() {
     'Lead Generation'
   ];
 
-  const subServices = [
-    {
-      icon: TrendingUp,
-      title: 'SEO',
-      description: 'Improve search engine rankings and organic traffic.',
-      path: '/services/digital-marketing/seo'
-    },
-    {
-      icon: Users,
-      title: 'Social Media Marketing',
-      description: 'Build brand awareness and engage with your audience.',
-      path: '/services/digital-marketing/social-media'
-    },
-    {
-      icon: Target,
-      title: 'PPC',
-      description: 'Targeted paid advertising for immediate results.',
-      path: '/services/digital-marketing/ppc'
-    },
-    {
-      icon: FileText,
-      title: 'Content Marketing',
-      description: 'Create valuable content that drives engagement.',
-      path: '/services/digital-marketing/content'
-    },
-    {
-      icon: Mail,
-      title: 'Email Marketing',
-      description: 'Nurture leads and build customer relationships.',
-      path: '/services/digital-marketing/email'
-    }
-  ];
+
 
   const process = [
     {
@@ -111,33 +80,7 @@ export default function DigitalMarketing() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-slate-900/50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              Our <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">Services</span>
-            </h2>
-            <p className="text-slate-400 text-lg">Comprehensive digital marketing solutions</p>
-          </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {subServices.map((service, index) => (
-              <Link
-                key={index}
-                to={service.path}
-                className="bg-gradient-to-br from-slate-900 to-slate-800 p-6 rounded-2xl border border-slate-700/50 hover:border-orange-500/50 transition-all duration-300 hover:transform hover:-translate-y-2"
-              >
-                <service.icon className="w-10 h-10 text-orange-400 mb-4" />
-                <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                <p className="text-slate-400 text-sm mb-4">{service.description}</p>
-                <div className="flex items-center text-orange-400 text-sm font-medium">
-                  Learn More <ArrowRight className="w-4 h-4 ml-2" />
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">

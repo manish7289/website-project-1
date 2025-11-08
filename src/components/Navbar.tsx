@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Code2, ChevronDown, Calendar, Briefcase, Globe, Smartphone, ShoppingCart, Code, Palette, TrendingUp, Search, Users, Target, FileText, Mail, PenTool, Store } from 'lucide-react';
+import { Menu, X, Code2, ChevronDown, Calendar, Briefcase, Globe, Smartphone, ShoppingCart, Code, Palette, TrendingUp, Store } from 'lucide-react';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,13 +37,7 @@ export default function Navbar() {
   ];
 
   const digitalMarketingLinks = [
-    { name: 'Digital Marketing', path: '/services/digital-marketing', icon: TrendingUp },
-    { name: 'SEO', path: '/services/digital-marketing/seo', icon: Search },
-    { name: 'Social Media Marketing', path: '/services/digital-marketing/social-media', icon: Users },
-    { name: 'PPC', path: '/services/digital-marketing/ppc', icon: Target },
-    { name: 'Content Marketing', path: '/services/digital-marketing/content', icon: FileText },
-    { name: 'Email Marketing', path: '/services/digital-marketing/email', icon: Mail },
-    { name: 'Content Writing', path: '/services/content-writing', icon: PenTool }
+    { name: 'Digital Marketing', path: '/services/digital-marketing', icon: TrendingUp }
   ];
 
   return (
@@ -117,27 +111,12 @@ export default function Navbar() {
                       </Link>
                     </div>
                   </div>
-                  <div className="flex-1 flex">
-                    <div className="flex-1 border-r border-slate-700">
-                      <div className="px-4 py-3 text-cyan-400 font-semibold text-sm uppercase tracking-wider border-b border-slate-700">
-                        Development
-                      </div>
-                      {developmentLinks.map((link) => (
-                        <Link
-                          key={link.path}
-                          to={link.path}
-                          className="flex items-center gap-3 px-4 py-3 text-white hover:bg-slate-800 hover:text-cyan-400 transition-all duration-300 border-b border-slate-800 last:border-b-0 group"
-                        >
-                          <link.icon className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform duration-300" />
-                          <span className="group-hover:translate-x-1 transition-transform duration-300">{link.name}</span>
-                        </Link>
-                      ))}
+                  <div className="flex-1">
+                    <div className="px-4 py-3 text-cyan-400 font-semibold text-sm uppercase tracking-wider border-b border-slate-700">
+                      Services
                     </div>
-                    <div className="flex-1">
-                      <div className="px-4 py-3 text-cyan-400 font-semibold text-sm uppercase tracking-wider border-b border-slate-700">
-                        Digital Marketing
-                      </div>
-                      {digitalMarketingLinks.map((link) => (
+                    <div className="flex flex-col gap-2 px-4 py-3">
+                      {[...developmentLinks, ...digitalMarketingLinks].map((link) => (
                         <Link
                           key={link.path}
                           to={link.path}

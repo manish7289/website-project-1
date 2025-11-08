@@ -15,12 +15,8 @@ import Ecommerce from './pages/services/Ecommerce';
 import CustomSoftware from './pages/services/CustomSoftware';
 import DigitalMarketing from './pages/services/DigitalMarketing';
 import GraphicDesign from './pages/services/GraphicDesign';
-import ContentWriting from './pages/services/ContentWriting';
-import SEO from './pages/services/digital-marketing/SEO';
-import SocialMediaMarketing from './pages/services/digital-marketing/SocialMediaMarketing';
-import PPC from './pages/services/digital-marketing/PPC';
-import ContentMarketing from './pages/services/digital-marketing/ContentMarketing';
-import EmailMarketing from './pages/services/digital-marketing/EmailMarketing';
+
+
 import Ma from './pages/Ma';
 
 function App() {
@@ -49,13 +45,9 @@ function AppContent() {
           <Route path="/services/e-commerce-solutions" element={<Ecommerce />} />
           <Route path="/services/custom-software-development" element={<CustomSoftware />} />
           <Route path="/services/digital-marketing" element={<DigitalMarketing />} />
-          <Route path="/services/digital-marketing/seo" element={<SEO />} />
-          <Route path="/services/digital-marketing/social-media" element={<SocialMediaMarketing />} />
-          <Route path="/services/digital-marketing/ppc" element={<PPC />} />
-          <Route path="/services/digital-marketing/content" element={<ContentMarketing />} />
-          <Route path="/services/digital-marketing/email" element={<EmailMarketing />} />
+
           <Route path="/services/graphic-design" element={<GraphicDesign />} />
-          <Route path="/services/content-writing" element={<ContentWriting />} />
+
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/blog" element={<Blog />} />
