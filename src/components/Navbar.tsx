@@ -95,38 +95,21 @@ export default function Navbar() {
               </Link>
 
               {servicesOpen && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-screen max-w-7xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border border-slate-700 rounded-xl shadow-2xl overflow-hidden flex animate-in fade-in-0 zoom-in-95 slide-in-from-top-2 duration-500">
-                  <div className="w-80 border-r border-slate-700 p-6 bg-gradient-to-br from-cyan-500/10 to-blue-600/10 relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-blue-600/20 rounded-xl"></div>
-                    <div className="relative bg-gradient-to-br from-cyan-500 via-cyan-600 to-blue-600 rounded-xl p-8 text-center shadow-2xl hover:shadow-cyan-500/30 transition-all duration-500 border border-cyan-400/20">
-                      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-transparent via-cyan-500/5 to-transparent rounded-xl animate-pulse"></div>
-                      <Calendar className="w-16 h-16 text-white mx-auto mb-4 drop-shadow-lg animate-bounce" />
-                      <h3 className="text-2xl font-bold text-white mb-3 drop-shadow-md">Book Consultation</h3>
-                      <p className="text-slate-100 mb-8 text-base leading-relaxed">Get expert advice for your project and turn ideas into reality</p>
-                      <Link
-                        to="/contact"
-                        className="inline-block bg-white text-slate-900 px-8 py-4 rounded-full font-bold hover:bg-slate-50 hover:scale-110 transition-all duration-300 shadow-xl hover:shadow-white/20 text-lg"
-                      >
-                        Book Now →
-                      </Link>
-                    </div>
+                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border border-slate-700 rounded-xl shadow-2xl overflow-hidden flex flex-col animate-in fade-in-0 zoom-in-95 slide-in-from-top-2 duration-500">
+                  <div className="px-4 py-3 text-cyan-400 font-semibold text-sm uppercase tracking-wider border-b border-slate-700">
+                    Services
                   </div>
-                  <div className="flex-1">
-                    <div className="px-4 py-3 text-cyan-400 font-semibold text-sm uppercase tracking-wider border-b border-slate-700">
-                      Services
-                    </div>
-                    <div className="flex flex-col gap-2 px-4 py-3">
-                      {[...developmentLinks, ...digitalMarketingLinks].map((link) => (
-                        <Link
-                          key={link.path}
-                          to={link.path}
-                          className="flex items-center gap-3 px-4 py-3 text-white hover:bg-slate-800 hover:text-cyan-400 transition-all duration-300 border-b border-slate-800 last:border-b-0 group"
-                        >
-                          <link.icon className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform duration-300" />
-                          <span className="group-hover:translate-x-1 transition-transform duration-300">{link.name}</span>
-                        </Link>
-                      ))}
-                    </div>
+                  <div className="flex flex-col gap-2 px-4 py-3">
+                    {[...developmentLinks, ...digitalMarketingLinks].map((link) => (
+                      <Link
+                        key={link.path}
+                        to={link.path}
+                        className="flex items-center gap-3 px-4 py-3 text-white hover:bg-slate-800 hover:text-cyan-400 transition-all duration-300 border-b border-slate-800 last:border-b-0 group"
+                      >
+                        <link.icon className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform duration-300" />
+                        <span className="group-hover:translate-x-1 transition-transform duration-300">{link.name}</span>
+                      </Link>
+                    ))}
                   </div>
                 </div>
               )}
