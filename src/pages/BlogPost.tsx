@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import {
   Calendar,
   Clock,
@@ -165,6 +166,24 @@ export default function BlogPost() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white pt-20">
+      <Helmet>
+        <title>{post.title} | Techxellence Blog</title>
+        <meta name="description" content={`${post.title} - ${post.category} article by ${post.author}. ${post.readTime}.`} />
+        <link rel="canonical" href={`https://www.techxellence.com/blog/${post.id}`} />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content={`${post.title} | Techxellence Blog`} />
+        <meta property="og:description" content={`${post.title} - ${post.category} article by ${post.author}. ${post.readTime}.`} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={`https://www.techxellence.com/blog/${post.id}`} />
+        <meta property="og:image" content={post.image} />
+        <meta property="article:author" content={post.author} />
+        <meta property="article:published_time" content={post.date} />
+        <meta property="article:section" content={post.category} />
+        <meta property="article:tag" content={post.tags.join(', ')} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${post.title} | Techxellence Blog`} />
+        <meta name="twitter:description" content={`${post.title} - ${post.category} article by ${post.author}.`} />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0">

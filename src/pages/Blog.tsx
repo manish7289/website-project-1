@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import {
   Calendar,
   Clock,
@@ -106,6 +107,20 @@ export default function Blog() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white pt-20">
+      <Helmet>
+        <title>Techxellence Blog | Web Development Insights & Technology Trends</title>
+        <meta name="description" content="Stay updated with the latest web development insights, mobile app trends, and technology news from Techxellence. Expert articles on React, AI, and digital transformation." />
+        <link rel="canonical" href="https://www.techxellence.com/blog" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Techxellence Blog | Web Development Insights & Technology Trends" />
+        <meta property="og:description" content="Stay updated with the latest web development insights, mobile app trends, and technology news from Techxellence. Expert articles on React, AI, and digital transformation." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.techxellence.com/blog" />
+        <meta property="og:image" content="https://www.techxellence.com/images/blog-og.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Techxellence Blog | Web Development Insights" />
+        <meta name="twitter:description" content="Stay updated with the latest web development insights, mobile app trends, and technology news from Techxellence." />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0">

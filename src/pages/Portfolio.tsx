@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { ExternalLink, ArrowRight } from 'lucide-react';
 
 export default function Portfolio() {
@@ -69,6 +70,20 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <Helmet>
+        <title>Techxellence Portfolio | Our Web Development & Digital Solutions Projects</title>
+        <meta name="description" content="Explore Techxellence's portfolio of successful web development, mobile apps, and digital transformation projects. See our expertise in React, Node.js, and modern technologies." />
+        <link rel="canonical" href="https://www.techxellence.com/portfolio" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Techxellence Portfolio | Our Web Development & Digital Solutions Projects" />
+        <meta property="og:description" content="Explore Techxellence's portfolio of successful web development, mobile apps, and digital transformation projects. See our expertise in React, Node.js, and modern technologies." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.techxellence.com/portfolio" />
+        <meta property="og:image" content="https://www.techxellence.com/images/portfolio-og.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Techxellence Portfolio | Web Development Projects" />
+        <meta name="twitter:description" content="Explore Techxellence's portfolio of successful web development, mobile apps, and digital transformation projects." />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"></div>

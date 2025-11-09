@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import {
   Code2,
   Smartphone,
@@ -189,6 +190,20 @@ export default function Services() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white pt-20">
+      <Helmet>
+        <title>Web Development Services | Techxellence - Custom Website & App Development</title>
+        <meta name="description" content="Comprehensive web development services including custom website development, mobile app development, e-commerce solutions, and full-stack development using React, Next.js, and Node.js." />
+        <link rel="canonical" href="https://www.techxellence.com/services" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Web Development Services | Techxellence - Custom Website & App Development" />
+        <meta property="og:description" content="Comprehensive web development services including custom website development, mobile app development, e-commerce solutions, and full-stack development using React, Next.js, and Node.js." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.techxellence.com/services" />
+        <meta property="og:image" content="https://www.techxellence.com/images/services-og.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Web Development Services | Techxellence" />
+        <meta name="twitter:description" content="Comprehensive web development services including custom website development, mobile app development, e-commerce solutions, and full-stack development." />
+      </Helmet>
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl top-0 right-0"></div>

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Code2, CheckCircle, ArrowRight, Zap, Globe, Smartphone, Layers } from 'lucide-react';
 
 export default function WebDevelopment() {
@@ -60,6 +61,20 @@ export default function WebDevelopment() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white pt-20">
+      <Helmet>
+        <title>Web Development Services | Custom Website Development | Techxellence</title>
+        <meta name="description" content="Professional web development services including custom website development, responsive web design, React development, Next.js development, and Node.js development for modern businesses." />
+        <link rel="canonical" href="https://www.techxellence.com/services/web-development" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Web Development Services | Custom Website Development | Techxellence" />
+        <meta property="og:description" content="Professional web development services including custom website development, responsive web design, React development, Next.js development, and Node.js development for modern businesses." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.techxellence.com/services/web-development" />
+        <meta property="og:image" content="https://www.techxellence.com/images/web-development-og.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Web Development Services | Techxellence" />
+        <meta name="twitter:description" content="Professional web development services including custom website development, responsive web design, React development, Next.js development, and Node.js development." />
+      </Helmet>
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute w-[500px] h-[500px] bg-emerald-500/20 rounded-full blur-3xl top-0 left-1/4 animate-pulse"></div>

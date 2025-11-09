@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import {
   Target,
   Eye,
@@ -87,6 +88,20 @@ export default function About() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white pt-20">
+      <Helmet>
+        <title>About Techxellence | Leading Web Development Company & Digital Transformation Experts</title>
+        <meta name="description" content="Learn about Techxellence, a leading web development company specializing in custom website development, mobile app development, and full-stack development using React, Next.js, and Node.js." />
+        <link rel="canonical" href="https://www.techxellence.com/about" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="About Techxellence | Leading Web Development Company & Digital Transformation Experts" />
+        <meta property="og:description" content="Learn about Techxellence, a leading web development company specializing in custom website development, mobile app development, and full-stack development using React, Next.js, and Node.js." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.techxellence.com/about" />
+        <meta property="og:image" content="https://www.techxellence.com/images/about-og.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Techxellence | Leading Web Development Company" />
+        <meta name="twitter:description" content="Learn about Techxellence, a leading web development company specializing in custom website development, mobile app development, and full-stack development." />
+      </Helmet>
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl top-0 right-0"></div>

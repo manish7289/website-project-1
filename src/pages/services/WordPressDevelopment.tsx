@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Code2, CheckCircle, ArrowRight, Zap, Globe, Smartphone, Layers, FileText, ShoppingCart } from 'lucide-react';
 
 export default function WordPressDevelopment() {
@@ -76,6 +77,20 @@ export default function WordPressDevelopment() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white pt-20">
+      <Helmet>
+        <title>Techxellence WordPress & Shopify Development Services | CMS & E-commerce Solutions</title>
+        <meta name="description" content="Professional WordPress and Shopify development services including custom themes, plugins, WooCommerce integration, and e-commerce store setups with SEO optimization and performance." />
+        <link rel="canonical" href="https://www.techxellence.com/services/wordpress-development" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Techxellence WordPress & Shopify Development | CMS & E-commerce Solutions" />
+        <meta property="og:description" content="Professional WordPress and Shopify development services including custom themes, plugins, WooCommerce integration, and e-commerce store setups." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.techxellence.com/services/wordpress-development" />
+        <meta property="og:image" content="https://www.techxellence.com/images/wordpress-shopify-og.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Techxellence WordPress & Shopify Development | CMS Solutions" />
+        <meta name="twitter:description" content="Professional WordPress and Shopify development services including custom themes, plugins, and e-commerce solutions." />
+      </Helmet>
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-3xl top-0 left-1/4 animate-pulse"></div>

@@ -1,4 +1,5 @@
 import { useState, FormEvent } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle } from 'lucide-react';
 
 export default function Contact() {
@@ -72,6 +73,20 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white pt-20">
+      <Helmet>
+        <title>Contact Techxellence | Get in Touch with Our Web Development Experts</title>
+        <meta name="description" content="Contact Techxellence for professional web development, mobile app development, and digital transformation services. Get a free consultation and discuss your project today." />
+        <link rel="canonical" href="https://www.techxellence.com/contact" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Contact Techxellence | Get in Touch with Our Web Development Experts" />
+        <meta property="og:description" content="Contact Techxellence for professional web development, mobile app development, and digital transformation services. Get a free consultation and discuss your project today." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.techxellence.com/contact" />
+        <meta property="og:image" content="https://www.techxellence.com/images/contact-og.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Techxellence | Web Development Experts" />
+        <meta name="twitter:description" content="Contact Techxellence for professional web development, mobile app development, and digital transformation services." />
+      </Helmet>
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl top-0 right-0"></div>

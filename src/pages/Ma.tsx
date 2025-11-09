@@ -1,5 +1,6 @@
 import { useState, FormEvent } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { ArrowRight, CheckCircle, AlertCircle, Zap, Target, TrendingUp, Users, Star, Code2 } from 'lucide-react';
 
 function MinimalFooter() {
@@ -136,6 +137,20 @@ export default function Ma() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <Helmet>
+        <title>Free Consultation - Techxellence Development Services</title>
+        <meta name="description" content="Get a free consultation for your web development, app development, or custom software project. Transform your business with expert development services." />
+        <link rel="canonical" href="https://www.techxellence.com/ma" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Free Consultation - Techxellence Development Services" />
+        <meta property="og:description" content="Get a free consultation for your web development, app development, or custom software project. Transform your business with expert development services." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.techxellence.com/ma" />
+        <meta property="og:image" content="https://www.techxellence.com/images/og-image-ma.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Free Consultation - Techxellence Development Services" />
+        <meta name="twitter:description" content="Get a free consultation for your web development, app development, or custom software project." />
+      </Helmet>
       {/* Header with Logo and Get Started Button */}
       <header className="fixed w-full z-50 bg-slate-950/95 backdrop-blur-md shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

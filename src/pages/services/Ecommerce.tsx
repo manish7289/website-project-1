@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { ShoppingCart, CheckCircle, ArrowRight, CreditCard, Package, TrendingUp } from 'lucide-react';
 
 export default function Ecommerce() {
@@ -86,6 +87,20 @@ export default function Ecommerce() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white pt-20">
+      <Helmet>
+        <title>Techxellence E-commerce Development Services | Online Store Solutions</title>
+        <meta name="description" content="Professional e-commerce development services including Shopify, WooCommerce, and custom online stores with secure payment gateways, inventory management, and analytics." />
+        <link rel="canonical" href="https://www.techxellence.com/services/ecommerce" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Techxellence E-commerce Development Services | Online Store Solutions" />
+        <meta property="og:description" content="Professional e-commerce development services including Shopify, WooCommerce, and custom online stores with secure payment gateways, inventory management, and analytics." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.techxellence.com/services/ecommerce" />
+        <meta property="og:image" content="https://www.techxellence.com/images/ecommerce-og.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Techxellence E-commerce Development | Online Store Solutions" />
+        <meta name="twitter:description" content="Professional e-commerce development services including Shopify, WooCommerce, and custom online stores." />
+      </Helmet>
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute w-[500px] h-[500px] bg-orange-500/20 rounded-full blur-3xl top-0 left-1/4 animate-pulse"></div>

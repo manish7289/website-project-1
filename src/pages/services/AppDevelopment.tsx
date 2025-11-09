@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Smartphone, CheckCircle, ArrowRight, Apple, Chrome, Zap } from 'lucide-react';
 
 export default function AppDevelopment() {
@@ -42,6 +43,20 @@ export default function AppDevelopment() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white pt-20">
+      <Helmet>
+        <title>Techxellence Mobile App Development | iOS & Android App Development Services</title>
+        <meta name="description" content="Professional mobile app development services for iOS and Android. Expert React Native development, native apps, and cross-platform solutions for exceptional user experience." />
+        <link rel="canonical" href="https://www.techxellence.com/services/app-development" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Techxellence Mobile App Development | iOS & Android App Development Services" />
+        <meta property="og:description" content="Professional mobile app development services for iOS and Android. Expert React Native development, native apps, and cross-platform solutions for exceptional user experience." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.techxellence.com/services/app-development" />
+        <meta property="og:image" content="https://www.techxellence.com/images/app-development-og.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Techxellence Mobile App Development | iOS & Android Services" />
+        <meta name="twitter:description" content="Professional mobile app development services for iOS and Android. Expert React Native development, native apps, and cross-platform solutions." />
+      </Helmet>
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-3xl top-0 right-1/4 animate-pulse"></div>

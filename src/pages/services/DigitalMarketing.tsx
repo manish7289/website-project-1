@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { TrendingUp, ArrowRight, CheckCircle } from 'lucide-react';
 
 export default function DigitalMarketing() {
@@ -45,6 +46,20 @@ export default function DigitalMarketing() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white pt-20">
+      <Helmet>
+        <title>Techxellence Digital Marketing Services | SEO, PPC & Social Media Marketing</title>
+        <meta name="description" content="Comprehensive digital marketing services including SEO optimization, PPC advertising, social media marketing, and content marketing to drive growth and increase visibility." />
+        <link rel="canonical" href="https://www.techxellence.com/services/digital-marketing" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Techxellence Digital Marketing Services | SEO, PPC & Social Media Marketing" />
+        <meta property="og:description" content="Comprehensive digital marketing services including SEO optimization, PPC advertising, social media marketing, and content marketing to drive growth and increase visibility." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.techxellence.com/services/digital-marketing" />
+        <meta property="og:image" content="https://www.techxellence.com/images/digital-marketing-og.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Techxellence Digital Marketing Services | SEO & PPC" />
+        <meta name="twitter:description" content="Comprehensive digital marketing services including SEO optimization, PPC advertising, social media marketing, and content marketing." />
+      </Helmet>
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute w-[500px] h-[500px] bg-orange-500/20 rounded-full blur-3xl top-0 left-1/4 animate-pulse"></div>

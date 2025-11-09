@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Palette, Image, PenTool, Monitor, Smartphone, ArrowRight, CheckCircle, Zap } from 'lucide-react';
 
 export default function GraphicDesign() {
@@ -52,6 +53,20 @@ export default function GraphicDesign() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white pt-20">
+      <Helmet>
+        <title>Techxellence Graphic Design Services | Logo Design & Branding Solutions</title>
+        <meta name="description" content="Professional graphic design services including logo design, branding, UI/UX design, print materials, and digital graphics to create stunning visual identities." />
+        <link rel="canonical" href="https://www.techxellence.com/services/graphic-design" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Techxellence Graphic Design Services | Logo Design & Branding Solutions" />
+        <meta property="og:description" content="Professional graphic design services including logo design, branding, UI/UX design, print materials, and digital graphics to create stunning visual identities." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.techxellence.com/services/graphic-design" />
+        <meta property="og:image" content="https://www.techxellence.com/images/graphic-design-og.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Techxellence Graphic Design | Logo & Branding" />
+        <meta name="twitter:description" content="Professional graphic design services including logo design, branding, UI/UX design, and digital graphics." />
+      </Helmet>
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute w-[500px] h-[500px] bg-purple-500/20 rounded-full blur-3xl top-0 left-1/4 animate-pulse"></div>

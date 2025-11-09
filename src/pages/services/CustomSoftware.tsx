@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Database, CheckCircle, ArrowRight, Settings, Cloud, Lock } from 'lucide-react';
 
 export default function CustomSoftware() {
@@ -81,6 +82,20 @@ export default function CustomSoftware() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white pt-20">
+      <Helmet>
+        <title>Techxellence Custom Software Development | Enterprise Solutions & SaaS Development</title>
+        <meta name="description" content="Custom software development services for enterprise applications, SaaS platforms, and business automation. Full-stack development with microservices, API integration, and cloud solutions." />
+        <link rel="canonical" href="https://www.techxellence.com/services/custom-software" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Techxellence Custom Software Development | Enterprise Solutions & SaaS Development" />
+        <meta property="og:description" content="Custom software development services for enterprise applications, SaaS platforms, and business automation. Full-stack development with microservices, API integration, and cloud solutions." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.techxellence.com/services/custom-software" />
+        <meta property="og:image" content="https://www.techxellence.com/images/custom-software-og.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Techxellence Custom Software Development | Enterprise Solutions" />
+        <meta name="twitter:description" content="Custom software development services for enterprise applications, SaaS platforms, and business automation." />
+      </Helmet>
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute w-[500px] h-[500px] bg-purple-500/20 rounded-full blur-3xl top-0 right-1/4 animate-pulse"></div>
