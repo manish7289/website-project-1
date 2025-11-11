@@ -1,31 +1,12 @@
-# SEO Meta Tags Update Plan
+# TODO: Update Services Routing to Direct Paths
 
-## Pages to Update
-- [x] Home.tsx (already has meta tags)
-- [x] Services.tsx
-- [x] About.tsx
-- [x] Contact.tsx
-- [x] Blog.tsx
-- [x] Portfolio.tsx
-- [x] WebDevelopment.tsx
-- [x] AppDevelopment.tsx
-- [x] ContentWriting.tsx
-- [x] CustomSoftware.tsx
-- [x] DigitalMarketing.tsx
-- [x] Ecommerce.tsx
-- [x] GraphicDesign.tsx
-- [x] WordPressDevelopment.tsx
-- [x] BlogPost.tsx
-- [x] Ma.tsx
-
-## Meta Tags to Add
-- Canonical URL
-- Meta robots="index, follow"
-- OG title, description, type, url, image
-- Twitter card tags
-- Unique page titles and descriptions
+## Tasks
+- [x] Update src/App.tsx: Change route paths from /services/web-development to /web-development, and similarly for other services (app-development, wordpress-and-shopify, etc.).
+- [x] Update src/components/Navbar.tsx: Modify any links to services to use the new direct paths.
+- [x] Update src/pages/Services.tsx: Ensure internal links or navigation use the new paths.
+- [x] Update public/sitemap.xml: Adjust URLs to reflect the new direct paths.
 
 ## Followup Steps
-- [ ] Test meta tags in browser dev tools
-- [ ] Verify canonical URLs
-- [ ] Check OG tags for social sharing
+- [x] Test the updated routing by running the app and checking URLs.
+- [x] Verify links in navbar and services page work correctly.
+- [x] Update Footer.tsx links to use new direct paths.

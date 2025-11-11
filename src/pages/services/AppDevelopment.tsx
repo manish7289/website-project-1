@@ -20,19 +20,19 @@ export default function AppDevelopment() {
     {
       name: 'iOS App Development',
       icon: Apple,
-      description: 'Native apps for iPhone and iPad using Swift with <span className="text-cyan-400 font-semibold">performance optimization</span>',
+      description: <>Native apps for iPhone and iPad using Swift with <span className="text-cyan-400 font-semibold">performance optimization</span></>,
       color: 'from-slate-400 to-slate-600'
     },
     {
       name: 'Android App Development',
       icon: Chrome,
-      description: 'Native apps for Android devices using Kotlin with <span className="text-green-400 font-semibold">user experience</span> focus',
+      description: <>Native apps for Android devices using Kotlin with <span className="text-green-400 font-semibold">user experience</span> focus</>,
       color: 'from-green-500 to-emerald-600'
     },
     {
       name: 'Cross-Platform Development',
       icon: Zap,
-      description: 'Single codebase for both iOS and Android using <span className="text-blue-400 font-semibold">React Native development</span>',
+      description: <>Single codebase for both iOS and Android using <span className="text-blue-400 font-semibold">React Native development</span></>,
       color: 'from-blue-500 to-cyan-600'
     }
   ];

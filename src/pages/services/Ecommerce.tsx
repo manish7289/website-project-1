@@ -21,19 +21,19 @@ export default function Ecommerce() {
   const platforms = [
     {
       name: 'Custom Build',
-      description: 'Fully customized e-commerce solution built from scratch',
+      description: <>Fully customized e-commerce solution built from scratch</>,
       icon: ShoppingCart,
       color: 'from-orange-500 to-rose-600'
     },
     {
       name: 'Shopify',
-      description: 'Powerful platform with extensive features and apps',
+      description: <>Powerful platform with extensive features and apps</>,
       icon: Package,
       color: 'from-green-500 to-emerald-600'
     },
     {
       name: 'WooCommerce',
-      description: 'WordPress-based flexible e-commerce solution',
+      description: <>WordPress-based flexible e-commerce solution</>,
       icon: CreditCard,
       color: 'from-purple-500 to-pink-600'
     }

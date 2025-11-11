@@ -35,31 +35,31 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <Link to="/services/web-development" className="group flex items-center gap-2 text-white hover:text-cyan-400 transition-colors duration-200">
+                <Link to="/web-development" className="group flex items-center gap-2 text-white hover:text-cyan-400 transition-colors duration-200">
                   <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   Web Development
                 </Link>
               </li>
               <li>
-                <Link to="/services/wordpress-and-shopify" className="group flex items-center gap-2 text-white hover:text-cyan-400 transition-colors duration-200">
+                <Link to="/wordpress-and-shopify" className="group flex items-center gap-2 text-white hover:text-cyan-400 transition-colors duration-200">
                   <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   WordPress & Shopify
                 </Link>
               </li>
               <li>
-                <Link to="/services/app-development" className="group flex items-center gap-2 text-white hover:text-cyan-400 transition-colors duration-200">
+                <Link to="/app-development" className="group flex items-center gap-2 text-white hover:text-cyan-400 transition-colors duration-200">
                   <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   App Development
                 </Link>
               </li>
               <li>
-                <Link to="/services/e-commerce-solutions" className="group flex items-center gap-2 text-white hover:text-cyan-400 transition-colors duration-200">
+                <Link to="/e-commerce-solutions" className="group flex items-center gap-2 text-white hover:text-cyan-400 transition-colors duration-200">
                   <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   E-commerce Solutions
                 </Link>
               </li>
               <li>
-                <Link to="/services/custom-software-development" className="group flex items-center gap-2 text-white hover:text-cyan-400 transition-colors duration-200">
+                <Link to="/custom-software-development" className="group flex items-center gap-2 text-white hover:text-cyan-400 transition-colors duration-200">
                   <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   Custom Software Development
                 </Link>
@@ -75,25 +75,25 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <Link to="/services/digital-marketing/seo" className="group flex items-center gap-2 text-white hover:text-blue-400 transition-colors duration-200">
+                <Link to="/digital-marketing/seo" className="group flex items-center gap-2 text-white hover:text-blue-400 transition-colors duration-200">
                   <div className="w-1.5 h-1.5 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   SEO
                 </Link>
               </li>
               <li>
-                <Link to="/services/digital-marketing/ppc" className="group flex items-center gap-2 text-white hover:text-blue-400 transition-colors duration-200">
+                <Link to="/digital-marketing/ppc" className="group flex items-center gap-2 text-white hover:text-blue-400 transition-colors duration-200">
                   <div className="w-1.5 h-1.5 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   PPC
                 </Link>
               </li>
               <li>
-                <Link to="/services/digital-marketing/social-media-marketing" className="group flex items-center gap-2 text-white hover:text-blue-400 transition-colors duration-200">
+                <Link to="/digital-marketing/social-media-marketing" className="group flex items-center gap-2 text-white hover:text-blue-400 transition-colors duration-200">
                   <div className="w-1.5 h-1.5 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   Social Media
                 </Link>
               </li>
               <li>
-                <Link to="/services/digital-marketing/content-marketing" className="group flex items-center gap-2 text-white hover:text-blue-400 transition-colors duration-200">
+                <Link to="/digital-marketing/content-marketing" className="group flex items-center gap-2 text-white hover:text-blue-400 transition-colors duration-200">
                   <div className="w-1.5 h-1.5 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   Content Marketing
                 </Link>

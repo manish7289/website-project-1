@@ -33,27 +33,27 @@ export default function WebDevelopment() {
     {
       step: '1',
       title: 'Discovery & Planning',
-      description: 'We analyze your requirements and create detailed wireframes, user flows, and technical specifications for <span className="text-cyan-400 font-semibold">UI/UX design</span> and development planning with <span className="text-blue-400 font-semibold">agile development</span> methodology.'
+      description: <>We analyze your requirements and create detailed wireframes, user flows, and technical specifications for <span className="text-cyan-400 font-semibold">UI/UX design</span> and development planning with <span className="text-blue-400 font-semibold">agile development</span> methodology.</>
     },
     {
       step: '2',
       title: 'Design & Prototyping',
-      description: 'Our designers create interactive prototypes and mockups using modern design tools for optimal <span className="text-purple-400 font-semibold">user experience</span> and functionality with <span className="text-emerald-400 font-semibold">responsive web design</span> principles.'
+      description: <>Our designers create interactive prototypes and mockups using modern design tools for optimal <span className="text-purple-400 font-semibold">user experience</span> and functionality with <span className="text-emerald-400 font-semibold">responsive web design</span> principles.</>
     },
     {
       step: '3',
       title: 'Agile Development',
-      description: 'Sprint-based development with daily standups, regular updates, and <span className="text-orange-400 font-semibold">CI/CD pipeline</span> integration using <span className="text-teal-400 font-semibold">React development</span>, <span className="text-cyan-400 font-semibold">Next.js development</span>, and <span className="text-blue-400 font-semibold">Node.js development</span>.'
+      description: <>Sprint-based development with daily standups, regular updates, and <span className="text-orange-400 font-semibold">CI/CD pipeline</span> integration using <span className="text-teal-400 font-semibold">React development</span>, <span className="text-cyan-400 font-semibold">Next.js development</span>, and <span className="text-blue-400 font-semibold">Node.js development</span>.</>
     },
     {
       step: '4',
       title: 'Quality Assurance',
-      description: 'Automated and manual testing across all devices and browsers with <span className="text-purple-400 font-semibold">performance optimization</span> and security validation to ensure <span className="text-emerald-400 font-semibold">SEO-friendly websites</span>.'
+      description: <>Automated and manual testing across all devices and browsers with <span className="text-purple-400 font-semibold">performance optimization</span> and security validation to ensure <span className="text-emerald-400 font-semibold">SEO-friendly websites</span>.</>
     },
     {
       step: '5',
       title: 'Deployment & Support',
-      description: 'Cloud deployment with <span className="text-orange-400 font-semibold">DevOps</span> practices, monitoring, and ongoing maintenance to ensure optimal performance and security for your <span className="text-teal-400 font-semibold">custom website development</span>.'
+      description: <>Cloud deployment with <span className="text-orange-400 font-semibold">DevOps</span> practices, monitoring, and ongoing maintenance to ensure optimal performance and security for your <span className="text-teal-400 font-semibold">custom website development</span>.</>
     }
   ];
 

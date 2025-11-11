@@ -29,16 +29,16 @@ export default function Navbar() {
   }, [location]);
 
   const developmentLinks = [
-    { name: 'Web Development', path: '/services/web-development', icon: Globe },
-    { name: 'WordPress & Shopify', path: '/services/wordpress-and-shopify', icon: Store },
-    { name: 'App Development', path: '/services/app-development', icon: Smartphone },
-    { name: 'E-commerce Solutions', path: '/services/e-commerce-solutions', icon: ShoppingCart },
-    { name: 'Custom Software Development', path: '/services/custom-software-development', icon: Code },
-    { name: 'Graphic Design', path: '/services/graphic-design', icon: Palette }
+    { name: 'Web Development', path: '/web-development', icon: Globe },
+    { name: 'WordPress & Shopify', path: '/wordpress-and-shopify', icon: Store },
+    { name: 'App Development', path: '/app-development', icon: Smartphone },
+    { name: 'E-commerce Solutions', path: '/e-commerce-solutions', icon: ShoppingCart },
+    { name: 'Custom Software Development', path: '/custom-software-development', icon: Code },
+    { name: 'Graphic Design', path: '/graphic-design', icon: Palette }
   ];
 
   const digitalMarketingLinks = [
-    { name: 'Digital Marketing', path: '/services/digital-marketing', icon: TrendingUp }
+    { name: 'Digital Marketing', path: '/digital-marketing', icon: TrendingUp }
   ];
 
   return (

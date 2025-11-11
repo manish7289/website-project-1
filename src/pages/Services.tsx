@@ -23,7 +23,7 @@ export default function Services() {
     {
       icon: Code2,
       title: 'Web Development',
-      description: 'We create stunning, <span className="text-cyan-400 font-semibold">responsive web design</span> websites that deliver exceptional <span className="text-blue-400 font-semibold">user experience (UX)</span> across all devices with <span className="text-purple-400 font-semibold">SEO-friendly</span> architecture.',
+      description: <>We create stunning, <span className="text-cyan-400 font-semibold">responsive web design</span> websites that deliver exceptional <span className="text-blue-400 font-semibold">user experience (UX)</span> across all devices with <span className="text-purple-400 font-semibold">SEO-friendly</span> architecture.</>,
       features: [
         'Custom Website Development',
         'React & Next.js Development',
@@ -38,7 +38,7 @@ export default function Services() {
     {
       icon: Smartphone,
       title: 'App Development',
-      description: 'Build powerful native and cross-platform <span className="text-cyan-400 font-semibold">mobile app development</span> for iOS and Android with <span className="text-blue-400 font-semibold">Progressive Web Apps</span> capabilities that users love.',
+      description: <>Build powerful native and cross-platform <span className="text-cyan-400 font-semibold">mobile app development</span> for iOS and Android with <span className="text-blue-400 font-semibold">Progressive Web Apps</span> capabilities that users love.</>,
       features: [
         'iOS & Android Apps',
         'React Native Development',
@@ -53,7 +53,7 @@ export default function Services() {
     {
       icon: ShoppingCart,
       title: 'E-commerce Solutions',
-      description: 'Complete <span className="text-cyan-400 font-semibold">e-commerce website development</span> with secure payment integration, inventory management, and <span className="text-blue-400 font-semibold">AI-powered</span> features for modern online stores.',
+      description: <>Complete <span className="text-cyan-400 font-semibold">e-commerce website development</span> with secure payment integration, inventory management, and <span className="text-blue-400 font-semibold">AI-powered</span> features for modern online stores.</>,
       features: [
         'Custom Shopping Cart',
         'Payment Gateway Integration',
@@ -68,7 +68,7 @@ export default function Services() {
     {
       icon: Database,
       title: 'Custom Software Development',
-      description: 'Tailored <span className="text-cyan-400 font-semibold">full-stack development</span> solutions with <span className="text-blue-400 font-semibold">microservices architecture</span> and <span className="text-purple-400 font-semibold">API development</span> to solve your unique business challenges efficiently.',
+      description: <>Tailored <span className="text-cyan-400 font-semibold">full-stack development</span> solutions with <span className="text-blue-400 font-semibold">microservices architecture</span> and <span className="text-purple-400 font-semibold">API development</span> to solve your unique business challenges efficiently.</>,
       features: [
         'Business Process Automation',
         'Enterprise Applications',
@@ -83,7 +83,7 @@ export default function Services() {
     {
       icon: TrendingUp,
       title: 'Digital Marketing',
-      description: 'Comprehensive <span className="text-cyan-400 font-semibold">digital marketing</span> strategies including <span className="text-blue-400 font-semibold">SEO optimization</span>, <span className="text-purple-400 font-semibold">PPC advertising</span>, and <span className="text-emerald-400 font-semibold">social media marketing</span> to boost your online presence and drive growth.',
+      description: <>Comprehensive <span className="text-cyan-400 font-semibold">digital marketing</span> strategies including <span className="text-blue-400 font-semibold">SEO optimization</span>, <span className="text-purple-400 font-semibold">PPC advertising</span>, and <span className="text-emerald-400 font-semibold">social media marketing</span> to boost your online presence and drive growth.</>,
       features: [
         'SEO Optimization',
         'Social Media Marketing',
@@ -98,7 +98,7 @@ export default function Services() {
     {
       icon: Palette,
       title: 'Graphic Design',
-      description: 'Creative <span className="text-cyan-400 font-semibold">UI/UX design</span> solutions that bring your brand to life and captivate your audience with exceptional <span className="text-blue-400 font-semibold">user experience</span>.',
+      description: <>Creative <span className="text-cyan-400 font-semibold">UI/UX design</span> solutions that bring your brand to life and captivate your audience with exceptional <span className="text-blue-400 font-semibold">user experience</span>.</>,
       features: [
         'Logo Design & Branding',
         'UI/UX Design',
@@ -113,7 +113,7 @@ export default function Services() {
     {
       icon: PenTool,
       title: 'Content Writing',
-      description: 'Professional <span className="text-cyan-400 font-semibold">SEO content writing</span> that engages your audience and drives conversions with optimized content strategies.',
+      description: <>Professional <span className="text-cyan-400 font-semibold">SEO content writing</span> that engages your audience and drives conversions with optimized content strategies.</>,
       features: [
         'Blog Writing',
         'Website Content',
@@ -164,27 +164,27 @@ export default function Services() {
     {
       step: '01',
       title: 'Discovery & Planning',
-      description: 'We analyze your requirements and create detailed wireframes, user flows, and technical specifications for <span className="text-cyan-400 font-semibold">UI/UX design</span> and development planning.'
+      description: <>We analyze your requirements and create detailed wireframes, user flows, and technical specifications for <span className="text-cyan-400 font-semibold">UI/UX design</span> and development planning with <span className="text-blue-400 font-semibold">agile development</span> methodology.</>
     },
     {
       step: '02',
       title: 'Design & Prototyping',
-      description: 'Our designers create interactive prototypes and mockups using modern design tools for optimal <span className="text-blue-400 font-semibold">user experience</span> and functionality.'
+      description: <>Our designers create interactive prototypes and mockups using modern design tools for optimal <span className="text-blue-400 font-semibold">user experience</span> and functionality.</>
     },
     {
       step: '03',
       title: 'Agile Development',
-      description: 'Sprint-based development with daily standups, regular updates, and <span className="text-purple-400 font-semibold">CI/CD pipeline</span> integration for quality assurance.'
+      description: <>Sprint-based development with daily standups, regular updates, and <span className="text-orange-400 font-semibold">CI/CD pipeline</span> integration using <span className="text-teal-400 font-semibold">React development</span>, <span className="text-cyan-400 font-semibold">Next.js development</span>, and <span className="text-blue-400 font-semibold">Node.js development</span>.</>
     },
     {
       step: '04',
       title: 'Quality Assurance',
-      description: 'Automated and manual testing across all devices and browsers with <span className="text-emerald-400 font-semibold">performance optimization</span> and security validation.'
+      description: <>Automated and manual testing across all devices and browsers with <span className="text-emerald-400 font-semibold">performance optimization</span> and security validation.</>
     },
     {
       step: '05',
       title: 'Deployment & Support',
-      description: 'Cloud deployment with <span className="text-orange-400 font-semibold">DevOps</span> practices, monitoring, and ongoing maintenance to ensure optimal performance and security.'
+      description: <>Cloud deployment with <span className="text-orange-400 font-semibold">DevOps</span> practices, monitoring, and ongoing maintenance to ensure optimal performance and security.</>
     }
   ];
 
@@ -240,7 +240,7 @@ export default function Services() {
                   <service.icon className="w-10 h-10 text-white" />
                 </div>
                 <h2 className="text-3xl sm:text-4xl font-bold mb-4">{service.title}</h2>
-                <p className="text-slate-300 text-lg mb-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: service.description }} />
+                <p className="text-slate-300 text-lg mb-6 leading-relaxed">{service.description}</p>
                 <div className="mb-6">
                   <h3 className="text-xl font-semibold mb-4 text-cyan-400">Key Features:</h3>
                   <div className="grid sm:grid-cols-2 gap-3">
@@ -267,7 +267,7 @@ export default function Services() {
                 </div>
                 <div className="flex gap-4">
                   <Link
-                    to={`/services/${service.title.toLowerCase().replace(/\s+/g, '-').replace('&', 'and').replace('solutions', 'solutions')}`}
+                    to={`/${service.title.toLowerCase().replace(/\s+/g, '-').replace('&', 'and').replace('solutions', 'solutions')}`}
                     className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 px-6 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300"
                   >
                     Learn More
