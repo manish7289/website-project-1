@@ -13,7 +13,7 @@ export default function Footer() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 py-16">
         {/* Main Content Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* About Company */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-white mb-6 relative">
@@ -25,6 +25,46 @@ export default function Footer() {
               mobile applications, and digital marketing. We transform ideas into innovative digital
               experiences that drive business growth.
             </p>
+          </div>
+
+          {/* Quick Links */}
+          <div className="space-y-4">
+            <h4 className="text-lg font-semibold text-white mb-6 relative">
+              <span className="relative z-10">Quick Links</span>
+              <div className="absolute -bottom-2 left-0 w-8 h-1 bg-gradient-to-r from-purple-400 to-pink-600 rounded-full"></div>
+            </h4>
+            <ul className="space-y-3">
+              <li>
+                <Link to="/about" className="group flex items-center gap-2 text-white hover:text-purple-400 transition-colors duration-200">
+                  <div className="w-1.5 h-1.5 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/portfolio" className="group flex items-center gap-2 text-white hover:text-purple-400 transition-colors duration-200">
+                  <div className="w-1.5 h-1.5 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  Portfolio
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog" className="group flex items-center gap-2 text-white hover:text-purple-400 transition-colors duration-200">
+                  <div className="w-1.5 h-1.5 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="group flex items-center gap-2 text-white hover:text-purple-400 transition-colors duration-200">
+                  <div className="w-1.5 h-1.5 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link to="/ma" className="group flex items-center gap-2 text-white hover:text-purple-400 transition-colors duration-200">
+                  <div className="w-1.5 h-1.5 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  MA
+                </Link>
+              </li>
+            </ul>
           </div>
 
           {/* Services */}
@@ -67,80 +107,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Digital Marketing */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-white mb-6 relative">
-              <span className="relative z-10">Digital Marketing</span>
-              <div className="absolute -bottom-2 left-0 w-8 h-1 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full"></div>
-            </h4>
-            <ul className="space-y-3">
-              <li>
-                <Link to="/digital-marketing/seo" className="group flex items-center gap-2 text-white hover:text-blue-400 transition-colors duration-200">
-                  <div className="w-1.5 h-1.5 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                  SEO
-                </Link>
-              </li>
-              <li>
-                <Link to="/digital-marketing/ppc" className="group flex items-center gap-2 text-white hover:text-blue-400 transition-colors duration-200">
-                  <div className="w-1.5 h-1.5 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                  PPC
-                </Link>
-              </li>
-              <li>
-                <Link to="/digital-marketing/social-media-marketing" className="group flex items-center gap-2 text-white hover:text-blue-400 transition-colors duration-200">
-                  <div className="w-1.5 h-1.5 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                  Social Media
-                </Link>
-              </li>
-              <li>
-                <Link to="/digital-marketing/content-marketing" className="group flex items-center gap-2 text-white hover:text-blue-400 transition-colors duration-200">
-                  <div className="w-1.5 h-1.5 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                  Content Marketing
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-white mb-6 relative">
-              <span className="relative z-10">Company</span>
-              <div className="absolute -bottom-2 left-0 w-8 h-1 bg-gradient-to-r from-purple-400 to-pink-600 rounded-full"></div>
-            </h4>
-            <ul className="space-y-3">
-              <li>
-                <Link to="/about" className="group flex items-center gap-2 text-white hover:text-purple-400 transition-colors duration-200">
-                  <div className="w-1.5 h-1.5 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/portfolio" className="group flex items-center gap-2 text-white hover:text-purple-400 transition-colors duration-200">
-                  <div className="w-1.5 h-1.5 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                  Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link to="/blog" className="group flex items-center gap-2 text-white hover:text-purple-400 transition-colors duration-200">
-                  <div className="w-1.5 h-1.5 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="group flex items-center gap-2 text-white hover:text-purple-400 transition-colors duration-200">
-                  <div className="w-1.5 h-1.5 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link to="/ma" className="group flex items-center gap-2 text-white hover:text-purple-400 transition-colors duration-200">
-                  <div className="w-1.5 h-1.5 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                  MA
-                </Link>
-              </li>
-            </ul>
-          </div>
-
           {/* Contact Info */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-white mb-6 relative">
@@ -163,7 +129,6 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-white text-sm">Udaipur, Rajasthan</p>
                   <p className="text-white text-sm">India</p>
                 </div>
               </li>
