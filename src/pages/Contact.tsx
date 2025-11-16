@@ -29,7 +29,7 @@ export default function Contact() {
     setErrorMessage('');
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('/functions/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
