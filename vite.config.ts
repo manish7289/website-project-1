@@ -9,5 +9,12 @@ export default defineConfig({
   },
   server: {
     historyApiFallback: true,
+    proxy: {
+      '/functions': {
+        target: 'http://localhost:3001',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/functions/, '/api'),
+      },
+    },
   },
 });
