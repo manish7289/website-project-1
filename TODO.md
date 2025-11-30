@@ -11,4 +11,4 @@
 - [x] Test the updated routing by running the app and checking URLs.
 - [x] Verify links in navbar and services page work correctly.
 - [x] Update Footer.tsx links to use new direct paths.
-- [ ] Test contact form: Run backend server (cd backend && npm run dev) and Vite dev server (npm run dev) to ensure form submission works locally.
+- [x] Test contact form: Run backend server (cd backend && npm run dev) and Vite dev server (npm run dev) to ensure form submission works locally.
