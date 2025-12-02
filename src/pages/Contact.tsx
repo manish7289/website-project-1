@@ -117,7 +117,7 @@ export default function Contact() {
                 <Mail className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold mb-2">Email Us</h3>
-              <p className="text-slate-400 mb-2">info@devcraft.com</p>
+              <p className="text-slate-400 mb-2">techxellence@outlook.com</p>
               <p className="text-slate-400">support@devcraft.com</p>
             </div>
 
@@ -136,7 +136,7 @@ export default function Contact() {
               </div>
               <h3 className="text-xl font-bold mb-2">Visit Us</h3>
               <p className="text-slate-400 mb-2"></p>
-              <p className="text-slate-400">Udaipur Rajasthan </p>
+              <p className="text-slate-400">Gujarat </p>
             </div>
           </div>
 
@@ -310,7 +310,7 @@ export default function Contact() {
                   Not sure where to start? Book a free consultation with our experts to discuss your project and get professional advice.
                 </p>
                 <a
-                  href="mailto:info@devcraft.com"
+                  href="mailto:techxellence@outlook.com"
                   className="inline-block bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:shadow-xl transition-all duration-300"
                 >
                   Book Consultation
