@@ -32,7 +32,7 @@ export default async function handler(req, res) {
     // Email content
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'manishnagda530@gmail.com',
+      to: 'techxellence@outlook.com',
       subject: 'New Contact Form Submission - Techxellence Website',
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">

@@ -117,7 +117,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-white text-sm">info@devcraft.com</p>
+                  <p className="text-white text-sm">techxellence@outlook.com</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
