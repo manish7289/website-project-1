@@ -118,7 +118,7 @@ export default function Contact() {
               </div>
               <h3 className="text-xl font-bold mb-2">Email Us</h3>
               <p className="text-slate-400 mb-2">techxellence@outlook.com</p>
-              <p className="text-slate-400">support@devcraft.com</p>
+              <p className="text-slate-400">techxellence@outlook.com</p>
             </div>
 
             <div className="bg-gradient-to-br from-slate-900 to-slate-800 p-8 rounded-2xl border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300 text-center">
