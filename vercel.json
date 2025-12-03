@@ -3,9 +3,5 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],
-  "functions": {
-    "api/contact.js": {
-      "runtime": "@vercel/node@18"
-    }
-  }
+
 }
